@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="?attr/colorSurface" android:paddingHorizontal="18dp" android:paddingBottom="12dp">
+    <EditText android:id="@+id/number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:inputType="phone" android:textSize="30sp" android:gravity="center" android:hint="@string/number_hint" android:singleLine="true" android:selectAllOnFocus="false" android:importantForAutofill="no" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal">
+        <Button android:id="@+id/contact_access" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/contact_suggestions" android:textAllCaps="false" />
+        <Button android:id="@+id/backspace" android:layout_width="56dp" android:layout_height="48dp" android:contentDescription="@string/backspace" android:text="@string/backspace_symbol" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/account_access" android:layout_width="match_parent" android:layout_height="48dp" android:visibility="gone" android:text="@string/show_call_accounts" android:textAllCaps="false" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/suggestions" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="120dp" android:overScrollMode="never" />
+    <GridLayout android:id="@+id/keypad" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:columnCount="3" android:rowCount="4" android:alignmentMode="alignMargins" />
+    <LinearLayout android:id="@+id/sim_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:visibility="gone" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/call" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/call" android:textAllCaps="false" android:contentDescription="@string/place_call" />
+</LinearLayout>

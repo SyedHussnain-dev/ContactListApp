@@ -1,0 +1,8 @@
+<resources>
+    <color name="pulse_primary">#2563EB</color>
+    <color name="pulse_on_primary">#FFFFFF</color>
+    <color name="pulse_surface">#F7F9FD</color>
+    <color name="pulse_on_surface">#152238</color>
+    <color name="pulse_surface_variant">#E8EDF5</color>
+    <color name="pulse_outline">#D2DCE9</color>
+</resources>

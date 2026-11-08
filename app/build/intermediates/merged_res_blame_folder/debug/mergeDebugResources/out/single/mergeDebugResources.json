@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/xml_backup_rules.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_launcher.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_fragment_dialpad.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/fragment_dialpad.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/menu_navigation.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/menu/navigation.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_avatar_background.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/avatar_background.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/menu_toolbar.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/menu/toolbar.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_search_background.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/search_background.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_fragment_list.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/fragment_list.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_activity_call.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/activity_call.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_contact.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_contact.xml"
+    }
+]

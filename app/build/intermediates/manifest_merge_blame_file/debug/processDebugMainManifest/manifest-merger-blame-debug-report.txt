@@ -1,0 +1,240 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.pulsedialer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="26"
+8-->INJECTED
+9        android:targetSdkVersion="37" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.READ_CONTACTS" />
+11-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:2:5-72
+11-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:2:22-69
+12    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+12-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:3:5-73
+12-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:3:22-70
+13    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+13-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:4:5-72
+13-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:4:22-69
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:5:5-75
+14-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:5:22-72
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:6:5-69
+15-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:6:22-66
+16    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+16-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:7:5-81
+16-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:7:22-78
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:8:5-77
+17-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:8:22-74
+18
+19    <uses-feature
+19-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:9:5-88
+20        android:name="android.hardware.telephony"
+20-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:9:19-60
+21        android:required="false" />
+21-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:9:61-85
+22
+23    <permission
+23-->[androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.pulsedialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.pulsedialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:5-23:19
+30        android:allowBackup="true"
+30-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:171-197
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:244-300
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+34-->INJECTED
+35        android:fullBackupContent="@xml/backup_rules"
+35-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:198-243
+36        android:icon="@drawable/ic_launcher"
+36-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:92-128
+37        android:label="@string/app_name"
+37-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:59-91
+38        android:roundIcon="@drawable/ic_launcher"
+38-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:129-170
+39        android:supportsRtl="true"
+39-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:301-327
+40        android:testOnly="true"
+41        android:theme="@style/Theme.PulseDialer"
+41-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:18-58
+42        android:usesCleartextTraffic="false" >
+42-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:328-364
+43        <activity
+43-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:9-15:20
+44            android:name="com.example.pulsedialer.MainActivity"
+44-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:19-47
+45            android:exported="true"
+45-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:48-71
+46            android:launchMode="singleTop" >
+46-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:72-102
+47            <intent-filter>
+47-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:13-156
+48                <action android:name="android.intent.action.MAIN" />
+48-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:28-80
+48-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:36-77
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:80-140
+50-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:90-137
+51            </intent-filter>
+52            <intent-filter>
+52-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:13-245
+53                <action android:name="android.intent.action.DIAL" />
+53-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:28-80
+53-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:36-77
+54
+55                <category android:name="android.intent.category.DEFAULT" />
+55-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:80-139
+55-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:90-136
+56                <category android:name="android.intent.category.BROWSABLE" />
+56-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:139-200
+56-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:149-197
+57
+58                <data android:scheme="tel" />
+58-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:200-229
+58-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:206-226
+59            </intent-filter>
+60            <intent-filter>
+60-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:14:13-155
+61                <action android:name="android.intent.action.DIAL" />
+61-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:28-80
+61-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:36-77
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:80-139
+63-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:90-136
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:9-150
+67            android:name="com.example.pulsedialer.CallActivity"
+67-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:19-47
+68            android:excludeFromRecents="true"
+68-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:73-106
+69            android:exported="false"
+69-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:48-72
+70            android:theme="@style/Theme.PulseDialer" />
+70-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:107-147
+71
+72        <receiver
+72-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:17:9-81
+73            android:name="com.example.pulsedialer.CallActionReceiver"
+73-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:17:19-53
+74            android:exported="false" />
+74-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:17:54-78
+75
+76        <service
+76-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:9-22:19
+77            android:name="com.example.pulsedialer.PulseInCallService"
+77-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:18-52
+78            android:exported="true"
+78-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:113-136
+79            android:permission="android.permission.BIND_INCALL_SERVICE" >
+79-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:53-112
+80            <meta-data
+80-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:19:13-97
+81                android:name="android.telecom.IN_CALL_SERVICE_UI"
+81-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:19:24-73
+82                android:value="true" />
+82-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:19:74-94
+83            <meta-data
+83-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:20:13-102
+84                android:name="android.telecom.IN_CALL_SERVICE_RINGING"
+84-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:20:24-78
+85                android:value="true" />
+85-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:20:79-99
+86
+87            <intent-filter>
+87-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:21:13-99
+88                <action android:name="android.telecom.InCallService" />
+88-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:21:28-83
+88-->/home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:21:36-80
+89            </intent-filter>
+90        </service>
+91
+92        <provider
+92-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+93            android:name="androidx.startup.InitializationProvider"
+93-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+94            android:authorities="com.example.pulsedialer.androidx-startup"
+94-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+95            android:exported="false" >
+95-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+96            <meta-data
+96-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+97                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+97-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+98                android:value="androidx.startup" />
+98-->[androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+99            <meta-data
+99-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+100-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+101                android:value="androidx.startup" />
+101-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+102            <meta-data
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+104                android:value="androidx.startup" />
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+105        </provider>
+106
+107        <receiver
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+108            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+109            android:directBootAware="false"
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+110            android:enabled="true"
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+111            android:exported="true"
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+112            android:permission="android.permission.DUMP" >
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+114                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+117                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+118            </intent-filter>
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+120                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+123                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+124            </intent-filter>
+125        </receiver>
+126    </application>
+127
+128</manifest>

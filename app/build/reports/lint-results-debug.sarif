@@ -1,0 +1,2083 @@
+{
+    "$schema" : "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+    "version" : "2.1.0",
+    "runs" : [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Android Lint",
+                    "fullName": "Android Lint (in gradle)",
+                    "version": "9.4.1",
+                    "semanticVersion": "9.4.1",
+                    "organization": "Google",
+                    "informationUri": "https://developer.android.com/studio/write/lint",
+                    "fullDescription": {
+                        "text": "Static analysis originally for Android source code but now performing general analysis"
+                    },
+                    "language": "en-US",
+                    "rules": [
+                        {
+                            "id": "AndroidGradlePluginVersion",
+                            "shortDescription": {
+                                "text": "Obsolete Android Gradle Plugin Version"
+                            },
+                            "fullDescription": {
+                                "text": "This detector looks for usage of the Android Gradle Plugin where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ButtonStyle",
+                            "shortDescription": {
+                                "text": "Button should be borderless"
+                            },
+                            "fullDescription": {
+                                "text": "Button bars typically use a borderless style for the buttons. Set the style=\"?android:attr/buttonBarButtonStyle\" attribute on each of the buttons, and set style=\"?android:attr/buttonBarStyle\" on the parent layout",
+                                "markdown": "Button bars typically use a borderless style for the buttons. Set the `style=\"?android:attr/buttonBarButtonStyle\"` attribute on each of the buttons, and set `style=\"?android:attr/buttonBarStyle\"` on the parent layout"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 60
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DisableBaselineAlignment",
+                            "shortDescription": {
+                                "text": "Missing baselineAligned attribute",
+                                "markdown": "Missing `baselineAligned` attribute"
+                            },
+                            "fullDescription": {
+                                "text": "When a LinearLayout is used to distribute the space proportionally between nested layouts, the baseline alignment property should be turned off to make the layout computation faster.",
+                                "markdown": "When a `LinearLayout` is used to distribute the space proportionally between nested layouts, the baseline alignment property should be turned off to make the layout computation faster."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GradleDependency",
+                            "shortDescription": {
+                                "text": "Obsolete Gradle Dependency"
+                            },
+                            "fullDescription": {
+                                "text": "This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NotifyDataSetChanged",
+                            "shortDescription": {
+                                "text": "Invalidating All RecyclerView Data"
+                            },
+                            "fullDescription": {
+                                "text": "The RecyclerView adapter's onNotifyDataSetChanged method does not specify what about the data set has changed, forcing any observers to assume that all existing items and structure may no longer be valid. `LayoutManager`s will be forced to fully rebind and relayout all visible views.",
+                                "markdown": "The `RecyclerView` adapter's `onNotifyDataSetChanged` method does not specify what about the data set has changed, forcing any observers to assume that all existing items and structure may no longer be valid. `LayoutManager`s will be forced to fully rebind and relayout all visible views."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 30
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Overdraw",
+                            "shortDescription": {
+                                "text": "Overdraw: Painting regions more than once"
+                            },
+                            "fullDescription": {
+                                "text": "If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called \"overdraw\".\n\nNOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.\n\nIf you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.\n\nOf course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "RtlSymmetry",
+                            "shortDescription": {
+                                "text": "Padding and margin symmetry"
+                            },
+                            "fullDescription": {
+                                "text": "If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Bidirectional Text",
+                                    "Internationalization"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SetTextI18n",
+                            "shortDescription": {
+                                "text": "TextView Internationalization"
+                            },
+                            "fullDescription": {
+                                "text": "When calling TextView#setText\n* Never call Number#toString() to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using String#format with proper format specifications (%d or %f) instead.\n* Do not pass a string literal (e.g. \"Hello\") to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.\n* Do not build messages by concatenating text chunks. Such messages can not be properly translated.",
+                                "markdown": "When calling `TextView#setText`\n* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.\n* Do not pass a string literal (e.g. \"Hello\") to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.\n* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Internationalization"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "UnusedResources",
+                            "shortDescription": {
+                                "text": "Unused resources"
+                            },
+                            "fullDescription": {
+                                "text": "Unused resources make applications larger and slow down builds.\n\n\nThe unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.\n\nYou can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests=true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests=true.\n",
+                                "markdown": "Unused resources make applications larger and slow down builds.\n\n\nThe unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.\n\nYou can include test sources in the unused resource check by setting the system property `lint.unused-resources.include-tests=true`, and to exclude them (usually for performance reasons), use `lint.unused-resources.exclude-tests=true`.\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "originalUriBaseIds": {
+                "%SRCROOT%": {
+                    "uri": "file:///home/syed/AndroidStudioProjects/ContactListApp/"
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "AndroidGradlePluginVersion",
+                    "ruleIndex": 0,
+                    "message": {
+                        "text": "A newer version of Gradle than 9.7.1 is available: 9.8.2"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "gradle/wrapper/gradle-wrapper.properties"
+                                },
+                                "region": {
+                                    "startLine": 3,
+                                    "startColumn": 17,
+                                    "endLine": 3,
+                                    "endColumn": 80,
+                                    "charOffset": 81,
+                                    "charLength": 63,
+                                    "snippet": {
+                                        "text": "https\\://services.gradle.org/distributions/gradle-9.7.1-bin.zip"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 6,
+                                    "snippet": {
+                                        "text": "distributionBase=GRADLE_USER_HOME\ndistributionPath=wrapper/dists\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-9.7.1-bin.zip\nzipStoreBase=GRADLE_USER_HOME\nzipStorePath=wrapper/dists\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Update to 9.8.2"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/wrapper/gradle-wrapper.properties"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 3,
+                                                "startColumn": 67,
+                                                "charOffset": 131,
+                                                "endLine": 3,
+                                                "endColumn": 72,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "9.8.2\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "96335de69c5d0603"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 3,
+                    "message": {
+                        "text": "A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.8.0"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle"
+                                },
+                                "region": {
+                                    "startLine": 10,
+                                    "startColumn": 20,
+                                    "endLine": 10,
+                                    "endColumn": 56,
+                                    "charOffset": 500,
+                                    "charLength": 36,
+                                    "snippet": {
+                                        "text": "'androidx.appcompat:appcompat:1.7.0'"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 8,
+                                    "endLine": 13,
+                                    "snippet": {
+                                        "text": "}\ndependencies {\n    implementation 'androidx.appcompat:appcompat:1.7.0'\n    implementation 'androidx.activity:activity:1.9.2'\n    implementation 'androidx.fragment:fragment:1.8.4'\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 1.8.0"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 10,
+                                                "startColumn": 50,
+                                                "charOffset": 530,
+                                                "endLine": 10,
+                                                "endColumn": 55,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "1.8.0\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "fce8af2ff29c8c07"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 3,
+                    "message": {
+                        "text": "A newer version of androidx.activity:activity than 1.9.2 is available: 1.13.0"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 20,
+                                    "endLine": 11,
+                                    "endColumn": 54,
+                                    "charOffset": 556,
+                                    "charLength": 34,
+                                    "snippet": {
+                                        "text": "'androidx.activity:activity:1.9.2'"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 9,
+                                    "endLine": 14,
+                                    "snippet": {
+                                        "text": "dependencies {\n    implementation 'androidx.appcompat:appcompat:1.7.0'\n    implementation 'androidx.activity:activity:1.9.2'\n    implementation 'androidx.fragment:fragment:1.8.4'\n    implementation 'com.google.android.material:material:1.14.0'\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 1.13.0"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 11,
+                                                "startColumn": 48,
+                                                "charOffset": 584,
+                                                "endLine": 11,
+                                                "endColumn": 53,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "1.13.0\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "cb254b99b069b927"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 3,
+                    "message": {
+                        "text": "A newer version of androidx.fragment:fragment than 1.8.4 is available: 1.9.1"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle"
+                                },
+                                "region": {
+                                    "startLine": 12,
+                                    "startColumn": 20,
+                                    "endLine": 12,
+                                    "endColumn": 54,
+                                    "charOffset": 610,
+                                    "charLength": 34,
+                                    "snippet": {
+                                        "text": "'androidx.fragment:fragment:1.8.4'"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 10,
+                                    "endLine": 15,
+                                    "snippet": {
+                                        "text": "    implementation 'androidx.appcompat:appcompat:1.7.0'\n    implementation 'androidx.activity:activity:1.9.2'\n    implementation 'androidx.fragment:fragment:1.8.4'\n    implementation 'com.google.android.material:material:1.14.0'\n    implementation 'androidx.recyclerview:recyclerview:1.3.2'\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 1.9.1"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 12,
+                                                "startColumn": 48,
+                                                "charOffset": 638,
+                                                "endLine": 12,
+                                                "endColumn": 53,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "1.9.1\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "5a5a940ce3f20365"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 3,
+                    "message": {
+                        "text": "A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle"
+                                },
+                                "region": {
+                                    "startLine": 14,
+                                    "startColumn": 20,
+                                    "endLine": 14,
+                                    "endColumn": 62,
+                                    "charOffset": 729,
+                                    "charLength": 42,
+                                    "snippet": {
+                                        "text": "'androidx.recyclerview:recyclerview:1.3.2'"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 12,
+                                    "endLine": 17,
+                                    "snippet": {
+                                        "text": "    implementation 'androidx.fragment:fragment:1.8.4'\n    implementation 'com.google.android.material:material:1.14.0'\n    implementation 'androidx.recyclerview:recyclerview:1.3.2'\n    testImplementation 'junit:junit:4.13.2'\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 1.4.0"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 14,
+                                                "startColumn": 56,
+                                                "charOffset": 765,
+                                                "endLine": 14,
+                                                "endColumn": 61,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "1.4.0\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "a22d5d6196bb010e"
+                    }
+                },
+                {
+                    "ruleId": "NotifyDataSetChanged",
+                    "ruleIndex": 4,
+                    "message": {
+                        "text": "It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort.",
+                        "markdown": "It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/java/com/example/pulsedialer/DialpadFragment.java"
+                                },
+                                "region": {
+                                    "startLine": 57,
+                                    "startColumn": 254,
+                                    "endLine": 57,
+                                    "endColumn": 284,
+                                    "charOffset": 5884,
+                                    "charLength": 30,
+                                    "snippet": {
+                                        "text": "adapter.notifyDataSetChanged()"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 55,
+                                    "endLine": 60,
+                                    "snippet": {
+                                        "text": "    private int dp(int n){return (int)(n*getResources().getDisplayMetrics().density+.5f);}\n    private void loadContacts(){WORKER.execute(()->{List<ContactRepository.Contact> result=ContactRepository.contacts(requireContext().getApplicationContext());if(getActivity()!=null)getActivity().runOnUiThread(()->{all=result;findSuggestions(number.getText().toString());});});}\n    private void findSuggestions(String query){if(adapter==null)return;adapter.rows.clear();String q=query.trim();if(!q.isEmpty())for(ContactRepository.Contact c:all)if(T9.matches(q,c.name,c.number)){adapter.rows.add(c);if(adapter.rows.size()==6)break;}adapter.notifyDataSetChanged();}\n    private void refreshAccounts(){accounts=new ArrayList<>();if(ContextCompat.checkSelfPermission(requireContext(),Manifest.permission.READ_PHONE_STATE)!=PackageManager.PERMISSION_GRANTED)return;try{TelecomManager tm=(TelecomManager)requireContext().getSystemService(Context.TELECOM_SERVICE);accounts=tm==null?new ArrayList<>():tm.getCallCapablePhoneAccounts();}catch(SecurityException ignored){}}\n    void onPermissionChanged(){if(MainActivity.hasPermission(requireContext(),Manifest.permission.READ_CONTACTS))loadContacts();refreshAccounts();setupAccountButtons(rootView,accent);}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "eb294208f039b824"
+                    }
+                },
+                {
+                    "ruleId": "NotifyDataSetChanged",
+                    "ruleIndex": 4,
+                    "message": {
+                        "text": "It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort.",
+                        "markdown": "It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/java/com/example/pulsedialer/ListFragment.java"
+                                },
+                                "region": {
+                                    "startLine": 59,
+                                    "startColumn": 1084,
+                                    "endLine": 59,
+                                    "endColumn": 1114,
+                                    "charOffset": 8357,
+                                    "charLength": 30,
+                                    "snippet": {
+                                        "text": "adapter.notifyDataSetChanged()"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 57,
+                                    "endLine": 62,
+                                    "snippet": {
+                                        "text": "    private void loadData(){if(tab==R.id.nav_contacts){message.setText(R.string.loading);message.setVisibility(View.VISIBLE);WORKER.execute(()->{List<ContactRepository.Contact> result=ContactRepository.contacts(requireContext().getApplicationContext());if(getActivity()!=null)getActivity().runOnUiThread(()->{contacts=result;message.setVisibility(View.GONE);render();});});}else{message.setText(R.string.loading);message.setVisibility(View.VISIBLE);WORKER.execute(()->{List<ContactRepository.Recent> result=ContactRepository.recents(requireContext().getApplicationContext());if(getActivity()!=null)getActivity().runOnUiThread(()->{recents=result;message.setVisibility(View.GONE);render();});});}}\n    @Override public void onResume(){super.onResume();if(firstResume){firstResume=false;return;}if(adapter!=null){if(tab==R.id.nav_contacts&&MainActivity.hasPermission(requireContext(),Manifest.permission.READ_CONTACTS))loadData();if(tab==R.id.nav_recents&&MainActivity.isDefaultDialer(requireContext())&&MainActivity.hasPermission(requireContext(),Manifest.permission.READ_CALL_LOG))loadData();if(tab==R.id.nav_sim&&MainActivity.hasPermission(requireContext(),Manifest.permission.READ_PHONE_STATE))loadAccounts();}}\n    private void render(){if(adapter==null)return;adapter.rows.clear();String q=search==null?\"\":search.getText().toString().trim().toLowerCase(Locale.getDefault());if(tab==R.id.nav_contacts){List<ContactRepository.Contact> result=new ArrayList<>();for(ContactRepository.Contact c:contacts)if(q.isEmpty()||(c.name!=null&&c.name.toLowerCase(Locale.getDefault()).contains(q))||(c.number!=null&&c.number.toLowerCase(Locale.getDefault()).contains(q)))result.add(c);java.text.Collator collator=java.text.Collator.getInstance();Collections.sort(result,(a,b)->{int favorite=Boolean.compare(b.starred,a.starred);if(favorite!=0)return favorite;return collator.compare(a.name==null?\"\":a.name,b.name==null?\"\":b.name);});adapter.rows.addAll(result);}else{for(ContactRepository.Recent c:recents){if(!filter.equals(\"All\")&&!filter.equals(c.kind()))continue;String name=c.name==null||c.name.trim().isEmpty()?c.number:c.name;if(q.isEmpty()||(name!=null&&name.toLowerCase(Locale.getDefault()).contains(q))||(c.number!=null&&c.number.toLowerCase(Locale.getDefault()).contains(q)))adapter.rows.add(c);}}adapter.notifyDataSetChanged();if(adapter.getItemCount()==0&&message.getVisibility()!=View.VISIBLE){message.setVisibility(View.VISIBLE);message.setText(q.isEmpty()?(tab==R.id.nav_contacts?R.string.empty_contacts:R.string.empty_recents):R.string.no_results);}else if(adapter.getItemCount()>0)message.setVisibility(View.GONE);}\n    private void loadAccounts(){if(ContextCompat.checkSelfPermission(requireContext(),Manifest.permission.READ_PHONE_STATE)!=PackageManager.PERMISSION_GRANTED){message.setText(R.string.sim_permission);return;}TelecomManager tm=(TelecomManager)requireContext().getSystemService(android.content.Context.TELECOM_SERVICE);if(tm==null){message.setText(R.string.no_telecom);return;}try{List<PhoneAccountHandle> accounts=tm.getCallCapablePhoneAccounts();if(accounts==null||accounts.isEmpty()){message.setText(R.string.no_sim_accounts);return;}StringBuilder out=new StringBuilder(getString(R.string.accounts_heading));for(int i=0;i<accounts.size();i++){PhoneAccountHandle h=accounts.get(i);android.telecom.PhoneAccount a=tm.getPhoneAccount(h);out.append(\"\\n\\n\").append(a==null?getString(R.string.call_account_label,i+1):a.getLabel()).append(\"\\n\").append(a==null?\"\":a.getShortDescription());}out.append(\"\\n\\n\").append(getString(R.string.sim_contacts_limited));message.setText(out);message.setVisibility(View.VISIBLE);}catch(SecurityException e){message.setText(R.string.no_sim_accounts);}}\n    private void rowAction(Object row){if(row instanceof ContactRepository.Contact){ContactRepository.Contact c=(ContactRepository.Contact)row;String[] actions={getString(R.string.call),getString(R.string.message_action),getString(R.string.details),getString(c.starred?R.string.remove_favorite:R.string.add_favorite),getString(R.string.edit),getString(R.string.share),getString(R.string.delete)};new AlertDialog.Builder(requireContext()).setTitle(c.name).setItems(actions,(d,w)->{if(w==0)((MainActivity)requireActivity()).openDialpad(c.number);else if(w==1)message(c.number);else if(w==2)contactDetails(c);else if(w==3)favorite(c);else if(w==4)edit(c);else if(w==5)share(c);else delete(c);}).show();}else if(row instanceof ContactRepository.Recent){ContactRepository.Recent c=(ContactRepository.Recent)row;String[] actions={getString(R.string.call_back),getString(R.string.details),getString(R.string.message_action),getString(R.string.add_contact)};new AlertDialog.Builder(requireContext()).setTitle(c.name==null?c.number:c.name).setItems(actions,(d,w)->{if(w==0)((MainActivity)requireActivity()).openDialpad(c.number);else if(w==1)new AlertDialog.Builder(requireContext()).setTitle(R.string.call_details).setMessage((c.name==null?getString(R.string.unknown_number):c.name)+\"\\n\"+c.number+\"\\n\"+c.kind()+\"\\n\"+ContactRepository.dateLabel(c.date)+\"\\n\"+getString(R.string.duration_label,ContactRepository.duration(c.duration))+(c.account==null?\"\":\"\\n\"+c.account)).setPositiveButton(android.R.string.ok,null).show();else if(w==2)message(c.number);else addContact(c.number);}).show();}}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "8e404cbc2a1760cd"
+                    }
+                },
+                {
+                    "ruleId": "DisableBaselineAlignment",
+                    "ruleIndex": 2,
+                    "message": {
+                        "text": "Set android:baselineAligned=\"false\" on this element for better performance",
+                        "markdown": "Set `android:baselineAligned=\"false\"` on this element for better performance"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/item_contact.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 2,
+                                    "endLine": 1,
+                                    "endColumn": 14,
+                                    "charOffset": 1,
+                                    "charLength": 12,
+                                    "snippet": {
+                                        "text": "LinearLayout"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 4,
+                                    "snippet": {
+                                        "text": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"76dp\" android:gravity=\"center_vertical\" android:orientation=\"horizontal\" android:paddingVertical=\"10dp\" android:paddingHorizontal=\"4dp\" android:background=\"?attr/selectableItemBackground\" android:clickable=\"true\" android:focusable=\"true\">\n    <FrameLayout android:layout_width=\"48dp\" android:layout_height=\"48dp\" android:background=\"@drawable/avatar_background\">\n        <TextView android:id=\"@+id/avatar\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:gravity=\"center\" android:textSize=\"16sp\" android:textStyle=\"bold\" android:textColor=\"@color/pulse_on_primary\" android:contentDescription=\"@string/contact_avatar\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Set baselineAligned=\"false\""
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/item_contact.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 1,
+                                                "startColumn": 147,
+                                                "charOffset": 146
+                                            },
+                                            "insertedContent": {
+                                                "text": "android:baselineAligned=\"false\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "178e5ab0f89ff353"
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background ?attr/colorSurface with a theme that also paints a background (inferred theme is @style/Theme_PulseDialer)",
+                        "markdown": "Possible overdraw: Root element paints background `?attr/colorSurface` with a theme that also paints a background (inferred theme is `@style/Theme_PulseDialer`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 254,
+                                    "endLine": 1,
+                                    "endColumn": 293,
+                                    "charOffset": 253,
+                                    "charLength": 39,
+                                    "snippet": {
+                                        "text": "android:background=\"?attr/colorSurface\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 4,
+                                    "snippet": {
+                                        "text": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" android:id=\"@+id/call_root\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" android:gravity=\"center\" android:padding=\"28dp\" android:background=\"?attr/colorSurface\">\n    <TextView android:id=\"@+id/caller\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:gravity=\"center\" android:textSize=\"28sp\" android:textStyle=\"bold\" android:textColor=\"?attr/colorOnSurface\" android:text=\"@string/unknown_number\" />\n    <TextView android:id=\"@+id/call_state\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"14dp\" android:gravity=\"center\" android:textSize=\"16sp\" android:textColor=\"?attr/colorOnSurfaceVariant\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "22747dd39c748584"
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background ?attr/colorSurface with a theme that also paints a background (inferred theme is @style/Theme.PulseDialer)",
+                        "markdown": "Possible overdraw: Root element paints background `?attr/colorSurface` with a theme that also paints a background (inferred theme is `@style/Theme.PulseDialer`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_main.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 253,
+                                    "endLine": 1,
+                                    "endColumn": 292,
+                                    "charOffset": 252,
+                                    "charLength": 39,
+                                    "snippet": {
+                                        "text": "android:background=\"?attr/colorSurface\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 4,
+                                    "snippet": {
+                                        "text": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:app=\"http://schemas.android.com/apk/res-auto\" android:id=\"@+id/root\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" android:background=\"?attr/colorSurface\">\n <com.google.android.material.appbar.MaterialToolbar android:id=\"@+id/toolbar\" android:layout_width=\"match_parent\" android:layout_height=\"?attr/actionBarSize\" android:title=\"@string/app_name\" app:titleTextColor=\"?attr/colorOnSurface\" />\n <FrameLayout android:id=\"@+id/content\" android:layout_width=\"match_parent\" android:layout_height=\"0dp\" android:layout_weight=\"1\"/>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "89594fd04cfbf1b7"
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background ?attr/colorSurface with a theme that also paints a background (inferred theme is @style/Theme.PulseDialer)",
+                        "markdown": "Possible overdraw: Root element paints background `?attr/colorSurface` with a theme that also paints a background (inferred theme is `@style/Theme.PulseDialer`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/fragment_dialpad.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 178,
+                                    "endLine": 1,
+                                    "endColumn": 217,
+                                    "charOffset": 177,
+                                    "charLength": 39,
+                                    "snippet": {
+                                        "text": "android:background=\"?attr/colorSurface\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 4,
+                                    "snippet": {
+                                        "text": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" android:background=\"?attr/colorSurface\" android:paddingHorizontal=\"18dp\" android:paddingBottom=\"12dp\">\n    <EditText android:id=\"@+id/number\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"60dp\" android:inputType=\"phone\" android:textSize=\"30sp\" android:gravity=\"center\" android:hint=\"@string/number_hint\" android:singleLine=\"true\" android:selectAllOnFocus=\"false\" android:importantForAutofill=\"no\" />\n    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:gravity=\"center\" android:orientation=\"horizontal\">\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "5c91867a6d76da4a"
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background ?attr/colorSurface with a theme that also paints a background (inferred theme is @style/Theme.PulseDialer)",
+                        "markdown": "Possible overdraw: Root element paints background `?attr/colorSurface` with a theme that also paints a background (inferred theme is `@style/Theme.PulseDialer`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/fragment_list.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 178,
+                                    "endLine": 1,
+                                    "endColumn": 217,
+                                    "charOffset": 177,
+                                    "charLength": 39,
+                                    "snippet": {
+                                        "text": "android:background=\"?attr/colorSurface\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 4,
+                                    "snippet": {
+                                        "text": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" android:background=\"?attr/colorSurface\" android:paddingHorizontal=\"16dp\">\n    <EditText android:id=\"@+id/search\" android:layout_width=\"match_parent\" android:layout_height=\"52dp\" android:layout_marginTop=\"8dp\" android:layout_marginBottom=\"8dp\" android:background=\"@drawable/search_background\" android:paddingHorizontal=\"16dp\" android:singleLine=\"true\" android:inputType=\"text\" android:drawableStart=\"@android:drawable/ic_menu_search\" android:drawablePadding=\"10dp\" android:hint=\"@string/search\" android:importantForAutofill=\"no\" />\n    <HorizontalScrollView android:id=\"@+id/filter_scroll\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:fillViewport=\"true\" android:scrollbars=\"none\">\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "ec6a29bdb911450e"
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background ?attr/selectableItemBackground with a theme that also paints a background (inferred theme is @style/Theme.PulseDialer)",
+                        "markdown": "Possible overdraw: Root element paints background `?attr/selectableItemBackground` with a theme that also paints a background (inferred theme is `@style/Theme.PulseDialer`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/item_contact.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 302,
+                                    "endLine": 1,
+                                    "endColumn": 353,
+                                    "charOffset": 301,
+                                    "charLength": 51,
+                                    "snippet": {
+                                        "text": "android:background=\"?attr/selectableItemBackground\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 4,
+                                    "snippet": {
+                                        "text": "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"76dp\" android:gravity=\"center_vertical\" android:orientation=\"horizontal\" android:paddingVertical=\"10dp\" android:paddingHorizontal=\"4dp\" android:background=\"?attr/selectableItemBackground\" android:clickable=\"true\" android:focusable=\"true\">\n    <FrameLayout android:layout_width=\"48dp\" android:layout_height=\"48dp\" android:background=\"@drawable/avatar_background\">\n        <TextView android:id=\"@+id/avatar\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:gravity=\"center\" android:textSize=\"16sp\" android:textStyle=\"bold\" android:textColor=\"@color/pulse_on_primary\" android:contentDescription=\"@string/contact_avatar\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "178e5ab0f89ff353"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 8,
+                    "message": {
+                        "text": "The resource R.string.account_unavailable appears to be unused",
+                        "markdown": "The resource `R.string.account_unavailable` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 95,
+                                    "endLine": 11,
+                                    "endColumn": 121,
+                                    "charOffset": 1585,
+                                    "charLength": 26,
+                                    "snippet": {
+                                        "text": "name=\"account_unavailable\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 9,
+                                    "endLine": 14,
+                                    "snippet": {
+                                        "text": "    <string name=\"empty_recents\">No recent calls are available.</string><string name=\"empty_contacts\">No contacts with phone numbers were found.</string><string name=\"no_results\">No matching results.</string>\n    <string name=\"no_telecom\">Phone account information is not available on this device.</string><string name=\"no_sim_accounts\">No active call-capable SIM or phone accounts are available.</string><string name=\"sim_permission\">Allow Phone state access to discover call-capable accounts that Android exposes. The app does not display SIM identifiers.</string>\n    <string name=\"accounts_heading\">Call-capable accounts reported by Android</string><string name=\"account_unavailable\">Account unavailable</string>\n    <string name=\"sim_contacts_limited\">Contacts stored on a SIM are shown only when the device Contacts provider exposes their origin. Android and device makers may limit SIM contact management. Open the system Contacts app for SIM tools.</string>\n    <string name=\"theme\">Theme</string><string name=\"default_phone\">Default phone app</string><string name=\"make_default\">Set as default dialer</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "3a752fa7ab00b93f"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 8,
+                    "message": {
+                        "text": "The resource R.string.theme appears to be unused",
+                        "markdown": "The resource `R.string.theme` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 13,
+                                    "startColumn": 13,
+                                    "endLine": 13,
+                                    "endColumn": 25,
+                                    "charOffset": 1902,
+                                    "charLength": 12,
+                                    "snippet": {
+                                        "text": "name=\"theme\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 11,
+                                    "endLine": 16,
+                                    "snippet": {
+                                        "text": "    <string name=\"accounts_heading\">Call-capable accounts reported by Android</string><string name=\"account_unavailable\">Account unavailable</string>\n    <string name=\"sim_contacts_limited\">Contacts stored on a SIM are shown only when the device Contacts provider exposes their origin. Android and device makers may limit SIM contact management. Open the system Contacts app for SIM tools.</string>\n    <string name=\"theme\">Theme</string><string name=\"default_phone\">Default phone app</string><string name=\"make_default\">Set as default dialer</string>\n    <string name=\"appearance\">Appearance &amp; personalization</string><string name=\"privacy\">Privacy</string><string name=\"about\">About</string>\n    <string name=\"theme_system\">Follow system</string><string name=\"theme_light\">Light</string><string name=\"theme_dark\">Midnight Blue dark</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "885a8c4ffc8a07cc"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 8,
+                    "message": {
+                        "text": "The resource R.string.accent_saved appears to be unused",
+                        "markdown": "The resource `R.string.accent_saved` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 17,
+                                    "startColumn": 310,
+                                    "endLine": 17,
+                                    "endColumn": 329,
+                                    "charOffset": 2851,
+                                    "charLength": 19,
+                                    "snippet": {
+                                        "text": "name=\"accent_saved\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 15,
+                                    "endLine": 20,
+                                    "snippet": {
+                                        "text": "    <string name=\"theme_system\">Follow system</string><string name=\"theme_light\">Light</string><string name=\"theme_dark\">Midnight Blue dark</string>\n    <string name=\"accent_blue\">Accent: Blue</string><string name=\"accent_sky\">Accent: Sky Blue</string><string name=\"accent_indigo\">Accent: Indigo</string><string name=\"accent_teal\">Accent: Teal</string>\n    <string name=\"density_comfortable\">Comfortable list spacing</string><string name=\"density_compact\">Compact list spacing</string><string name=\"haptics\">Toggle keypad haptics</string><string name=\"haptics_on\">Keypad haptics enabled</string><string name=\"haptics_off\">Keypad haptics disabled</string><string name=\"accent_saved\">Accent saved for future controls</string>\n    <string name=\"privacy_body\">Pulse Dialer reads device contacts and (only while it is the default phone app with permission) call history through Android providers. Data stays on this device. The app has no account, network, analytics or advertising features.</string>\n    <string name=\"about_body\">%1$s · version %2$s\\nA local contacts and phone interface.</string><string name=\"default_status\">Pulse Dialer is already the default phone app, or Android cannot offer that role on this device.</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1de9b74d285cc34b"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 8,
+                    "message": {
+                        "text": "The resource R.string.sim_label appears to be unused",
+                        "markdown": "The resource `R.string.sim_label` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 26,
+                                    "startColumn": 70,
+                                    "endLine": 26,
+                                    "endColumn": 86,
+                                    "charOffset": 5614,
+                                    "charLength": 16,
+                                    "snippet": {
+                                        "text": "name=\"sim_label\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 24,
+                                    "endLine": 29,
+                                    "snippet": {
+                                        "text": "    <string name=\"add_favorite\">Add to favorites</string><string name=\"remove_favorite\">Remove from favorites</string><string name=\"favorite_permission\">Pulse Dialer needs contact edit permission for this change. Grant it when Android asks, then repeat the action.</string><string name=\"edit\">Edit contact</string><string name=\"share\">Share</string><string name=\"delete\">Delete</string><string name=\"delete_contact\">Delete contact?</string><string name=\"delete_confirmation\">Remove %1$s from your device contacts? This cannot be undone.</string><string name=\"contact_deleted\">Contact deleted</string><string name=\"contact_delete_failed\">Contact could not be deleted.</string>\n    <string name=\"jump_to_letter\">Jump to contacts beginning with %1$s</string>\n    <string name=\"choose_sim\">Choose calling account</string><string name=\"sim_label\">SIM %1$d</string><string name=\"call_account_label\">Phone account %1$d</string><string name=\"call_using_account\">Call using %1$s</string>\n    <string name=\"incoming_calls\">Incoming calls</string><string name=\"call_ringing\">Incoming call</string><string name=\"call_dialing\">Calling</string><string name=\"call_connecting\">Connecting</string><string name=\"call_active\">Connected</string><string name=\"call_holding\">On hold</string><string name=\"call_disconnected\">Call ended</string><string name=\"call_ongoing\">Call in progress</string>\n    <string name=\"answer\">Answer</string><string name=\"decline\">Decline</string><string name=\"end_call\">End call</string><string name=\"mute\">Mute</string><string name=\"unmute\">Unmute</string><string name=\"speaker\">Speaker</string><string name=\"speaker_on\">Speaker on</string><string name=\"hold\">Hold</string><string name=\"resume\">Resume</string><string name=\"keypad\">Keypad</string><string name=\"dtmf_keypad\">Call keypad</string><string name=\"loading\">Loading…</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "8aea72e5e28e1e08"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 6,
+                                    "startColumn": 9,
+                                    "endLine": 6,
+                                    "endColumn": 139,
+                                    "charOffset": 1240,
+                                    "charLength": 130,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/answer\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/answer\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 4,
+                                    "endLine": 9,
+                                    "snippet": {
+                                        "text": "    <TextView android:id=\"@+id/call_timer\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"8dp\" android:gravity=\"center\" android:textSize=\"18sp\" android:textColor=\"?attr/colorOnSurface\" />\n    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"40dp\" android:gravity=\"center\" android:orientation=\"horizontal\">\n        <Button android:id=\"@+id/answer\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/answer\" />\n        <Button android:id=\"@+id/decline\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:layout_marginStart=\"12dp\" android:text=\"@string/decline\" />\n        <Button android:id=\"@+id/end_call\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/end_call\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 19,
+                                                "charOffset": 1068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 6,
+                                                "startColumn": 42,
+                                                "charOffset": 1273
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 7,
+                                                "startColumn": 43,
+                                                "charOffset": 1413
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 8,
+                                                "startColumn": 44,
+                                                "charOffset": 1589
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "65936fd41654ab95"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 7,
+                                    "startColumn": 9,
+                                    "endLine": 7,
+                                    "endColumn": 175,
+                                    "charOffset": 1379,
+                                    "charLength": 166,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/decline\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:layout_marginStart=\"12dp\" android:text=\"@string/decline\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 5,
+                                    "endLine": 10,
+                                    "snippet": {
+                                        "text": "    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"40dp\" android:gravity=\"center\" android:orientation=\"horizontal\">\n        <Button android:id=\"@+id/answer\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/answer\" />\n        <Button android:id=\"@+id/decline\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:layout_marginStart=\"12dp\" android:text=\"@string/decline\" />\n        <Button android:id=\"@+id/end_call\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/end_call\" />\n    </LinearLayout>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 19,
+                                                "charOffset": 1068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 6,
+                                                "startColumn": 42,
+                                                "charOffset": 1273
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 7,
+                                                "startColumn": 43,
+                                                "charOffset": 1413
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 8,
+                                                "startColumn": 44,
+                                                "charOffset": 1589
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "7602066c84d77d92"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 8,
+                                    "startColumn": 9,
+                                    "endLine": 8,
+                                    "endColumn": 143,
+                                    "charOffset": 1554,
+                                    "charLength": 134,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/end_call\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/end_call\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 6,
+                                    "endLine": 11,
+                                    "snippet": {
+                                        "text": "        <Button android:id=\"@+id/answer\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/answer\" />\n        <Button android:id=\"@+id/decline\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:layout_marginStart=\"12dp\" android:text=\"@string/decline\" />\n        <Button android:id=\"@+id/end_call\" android:layout_width=\"wrap_content\" android:layout_height=\"56dp\" android:text=\"@string/end_call\" />\n    </LinearLayout>\n    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"24dp\" android:gravity=\"center\" android:orientation=\"horizontal\">\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 19,
+                                                "charOffset": 1068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 6,
+                                                "startColumn": 42,
+                                                "charOffset": 1273
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 7,
+                                                "startColumn": 43,
+                                                "charOffset": 1413
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 8,
+                                                "startColumn": 44,
+                                                "charOffset": 1589
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "2221f84d6496e31e"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 9,
+                                    "endLine": 11,
+                                    "endColumn": 135,
+                                    "charOffset": 1899,
+                                    "charLength": 126,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/mute\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:text=\"@string/mute\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 9,
+                                    "endLine": 14,
+                                    "snippet": {
+                                        "text": "    </LinearLayout>\n    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"24dp\" android:gravity=\"center\" android:orientation=\"horizontal\">\n        <Button android:id=\"@+id/mute\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:text=\"@string/mute\" />\n        <Button android:id=\"@+id/speaker\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/speaker\" />\n        <Button android:id=\"@+id/hold\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/hold\" android:visibility=\"gone\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 10,
+                                                "startColumn": 19,
+                                                "charOffset": 1727
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 11,
+                                                "startColumn": 40,
+                                                "charOffset": 1930
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 12,
+                                                "startColumn": 43,
+                                                "charOffset": 2068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 13,
+                                                "startColumn": 40,
+                                                "charOffset": 2239
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 14,
+                                                "startColumn": 47,
+                                                "charOffset": 2440
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "0790ac87a8df9c59"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 12,
+                                    "startColumn": 9,
+                                    "endLine": 12,
+                                    "endColumn": 174,
+                                    "charOffset": 2034,
+                                    "charLength": 165,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/speaker\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/speaker\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 10,
+                                    "endLine": 15,
+                                    "snippet": {
+                                        "text": "    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"24dp\" android:gravity=\"center\" android:orientation=\"horizontal\">\n        <Button android:id=\"@+id/mute\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:text=\"@string/mute\" />\n        <Button android:id=\"@+id/speaker\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/speaker\" />\n        <Button android:id=\"@+id/hold\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/hold\" android:visibility=\"gone\" />\n        <Button android:id=\"@+id/show_keypad\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/keypad\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 10,
+                                                "startColumn": 19,
+                                                "charOffset": 1727
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 11,
+                                                "startColumn": 40,
+                                                "charOffset": 1930
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 12,
+                                                "startColumn": 43,
+                                                "charOffset": 2068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 13,
+                                                "startColumn": 40,
+                                                "charOffset": 2239
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 14,
+                                                "startColumn": 47,
+                                                "charOffset": 2440
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "d2212e79fb155ecd"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 13,
+                                    "startColumn": 9,
+                                    "endLine": 13,
+                                    "endColumn": 194,
+                                    "charOffset": 2208,
+                                    "charLength": 185,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/hold\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/hold\" android:visibility=\"gone\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 11,
+                                    "endLine": 16,
+                                    "snippet": {
+                                        "text": "        <Button android:id=\"@+id/mute\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:text=\"@string/mute\" />\n        <Button android:id=\"@+id/speaker\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/speaker\" />\n        <Button android:id=\"@+id/hold\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/hold\" android:visibility=\"gone\" />\n        <Button android:id=\"@+id/show_keypad\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/keypad\" />\n    </LinearLayout>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 10,
+                                                "startColumn": 19,
+                                                "charOffset": 1727
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 11,
+                                                "startColumn": 40,
+                                                "charOffset": 1930
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 12,
+                                                "startColumn": 43,
+                                                "charOffset": 2068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 13,
+                                                "startColumn": 40,
+                                                "charOffset": 2239
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 14,
+                                                "startColumn": 47,
+                                                "charOffset": 2440
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "03edff939f1df060"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_call.xml"
+                                },
+                                "region": {
+                                    "startLine": 14,
+                                    "startColumn": 9,
+                                    "endLine": 14,
+                                    "endColumn": 177,
+                                    "charOffset": 2402,
+                                    "charLength": 168,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/show_keypad\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/keypad\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 12,
+                                    "endLine": 17,
+                                    "snippet": {
+                                        "text": "        <Button android:id=\"@+id/speaker\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/speaker\" />\n        <Button android:id=\"@+id/hold\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/hold\" android:visibility=\"gone\" />\n        <Button android:id=\"@+id/show_keypad\" android:layout_width=\"wrap_content\" android:layout_height=\"52dp\" android:layout_marginStart=\"6dp\" android:text=\"@string/keypad\" />\n    </LinearLayout>\n</LinearLayout>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/activity_call.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 10,
+                                                "startColumn": 19,
+                                                "charOffset": 1727
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 11,
+                                                "startColumn": 40,
+                                                "charOffset": 1930
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 12,
+                                                "startColumn": 43,
+                                                "charOffset": 2068
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 13,
+                                                "startColumn": 40,
+                                                "charOffset": 2239
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 14,
+                                                "startColumn": 47,
+                                                "charOffset": 2440
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "887764d607810847"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/fragment_dialpad.xml"
+                                },
+                                "region": {
+                                    "startLine": 4,
+                                    "startColumn": 9,
+                                    "endLine": 4,
+                                    "endColumn": 188,
+                                    "charOffset": 781,
+                                    "charLength": 179,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/contact_access\" android:layout_width=\"wrap_content\" android:layout_height=\"48dp\" android:text=\"@string/contact_suggestions\" android:textAllCaps=\"false\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 2,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "    <EditText android:id=\"@+id/number\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"60dp\" android:inputType=\"phone\" android:textSize=\"30sp\" android:gravity=\"center\" android:hint=\"@string/number_hint\" android:singleLine=\"true\" android:selectAllOnFocus=\"false\" android:importantForAutofill=\"no\" />\n    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:gravity=\"center\" android:orientation=\"horizontal\">\n        <Button android:id=\"@+id/contact_access\" android:layout_width=\"wrap_content\" android:layout_height=\"48dp\" android:text=\"@string/contact_suggestions\" android:textAllCaps=\"false\" />\n        <Button android:id=\"@+id/backspace\" android:layout_width=\"56dp\" android:layout_height=\"48dp\" android:contentDescription=\"@string/backspace\" android:text=\"@string/backspace_symbol\" />\n    </LinearLayout>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/fragment_dialpad.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 3,
+                                                "startColumn": 19,
+                                                "charOffset": 641
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 4,
+                                                "startColumn": 50,
+                                                "charOffset": 822
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 45,
+                                                "charOffset": 1005
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "f9217c6f04926bae"
+                    }
+                },
+                {
+                    "ruleId": "ButtonStyle",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Buttons in button bars should be borderless; use style=\"?android:attr/buttonBarButtonStyle\" (and ?android:attr/buttonBarStyle on the parent)",
+                        "markdown": "Buttons in button bars should be borderless; use `style=\"?android:attr/buttonBarButtonStyle\"` (and `?android:attr/buttonBarStyle` on the parent)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/fragment_dialpad.xml"
+                                },
+                                "region": {
+                                    "startLine": 5,
+                                    "startColumn": 9,
+                                    "endLine": 5,
+                                    "endColumn": 191,
+                                    "charOffset": 969,
+                                    "charLength": 182,
+                                    "snippet": {
+                                        "text": "<Button android:id=\"@+id/backspace\" android:layout_width=\"56dp\" android:layout_height=\"48dp\" android:contentDescription=\"@string/backspace\" android:text=\"@string/backspace_symbol\" />"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 3,
+                                    "endLine": 8,
+                                    "snippet": {
+                                        "text": "    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:gravity=\"center\" android:orientation=\"horizontal\">\n        <Button android:id=\"@+id/contact_access\" android:layout_width=\"wrap_content\" android:layout_height=\"48dp\" android:text=\"@string/contact_suggestions\" android:textAllCaps=\"false\" />\n        <Button android:id=\"@+id/backspace\" android:layout_width=\"56dp\" android:layout_height=\"48dp\" android:contentDescription=\"@string/backspace\" android:text=\"@string/backspace_symbol\" />\n    </LinearLayout>\n    <com.google.android.material.button.MaterialButton android:id=\"@+id/account_access\" android:layout_width=\"match_parent\" android:layout_height=\"48dp\" android:visibility=\"gone\" android:text=\"@string/show_call_accounts\" android:textAllCaps=\"false\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Make borderless"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/src/main/res/layout/fragment_dialpad.xml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 3,
+                                                "startColumn": 19,
+                                                "charOffset": 641
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 4,
+                                                "startColumn": 50,
+                                                "charOffset": 822
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 5,
+                                                "startColumn": 45,
+                                                "charOffset": 1005
+                                            },
+                                            "insertedContent": {
+                                                "text": "style=\"?android:attr/buttonBarButtonStyle\" \n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "95e8e9f987dec6f5"
+                    }
+                },
+                {
+                    "ruleId": "SetTextI18n",
+                    "ruleIndex": 7,
+                    "message": {
+                        "text": "Do not concatenate text displayed with setText. Use resource string with placeholders.",
+                        "markdown": "Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/java/com/example/pulsedialer/DialpadFragment.java"
+                                },
+                                "region": {
+                                    "startLine": 46,
+                                    "startColumn": 662,
+                                    "endLine": 46,
+                                    "endColumn": 702,
+                                    "charOffset": 3018,
+                                    "charLength": 40,
+                                    "snippet": {
+                                        "text": "key[0]+(key[1].isEmpty()?\"\":\"\\n\"+key[1])"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 44,
+                                    "endLine": 49,
+                                    "snippet": {
+                                        "text": "    static DialpadFragment newInstance(String value){DialpadFragment f=new DialpadFragment();Bundle b=new Bundle();b.putString(\"number\",value);f.setArguments(b);return f;}\n    @Nullable @Override public View onCreateView(@NonNull LayoutInflater i,@Nullable ViewGroup p,Bundle b){return i.inflate(R.layout.fragment_dialpad,p,false);}\n    @Override public void onViewCreated(@NonNull View v,Bundle b){rootView=v;number=v.findViewById(R.id.number);number.setShowSoftInputOnFocus(false);number.setText(getArguments()==null?\"\":getArguments().getString(\"number\",\"\"));accent=requireActivity().getPreferences(0).getInt(\"accent\",0xFF3B82F6);accountRow=v.findViewById(R.id.sim_actions);accountAccess=v.findViewById(R.id.account_access);GridLayout grid=v.findViewById(R.id.keypad);String[][] keys={{\"1\",\"\"},{\"2\",\"ABC\"},{\"3\",\"DEF\"},{\"4\",\"GHI\"},{\"5\",\"JKL\"},{\"6\",\"MNO\"},{\"7\",\"PQRS\"},{\"8\",\"TUV\"},{\"9\",\"WXYZ\"},{\"*\",\"\"},{\"0\",\"+\"},{\"#\",\"\"}};for(String[] key:keys){Button x=new Button(requireContext());x.setText(key[0]+(key[1].isEmpty()?\"\":\"\\n\"+key[1]));x.setTextSize(18);x.setMinHeight(dp(58));x.setBackgroundTintList(ColorStateList.valueOf(accent));x.setContentDescription(getString(R.string.digit_description,key[0],key[1]));x.setOnClickListener(z->{if(requireActivity().getPreferences(0).getBoolean(\"haptics\",true))x.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP);int at=number.getSelectionStart();if(at<0)at=number.length();number.getText().insert(at,key[0]);});x.setOnLongClickListener(z->{if(\"0\".equals(key[0])){int at=number.getSelectionStart();if(at<0)at=number.length();number.getText().insert(at,\"+\");return true;}return false;});GridLayout.LayoutParams lp=new GridLayout.LayoutParams();lp.width=0;lp.height=0;lp.columnSpec=GridLayout.spec(GridLayout.UNDEFINED,1f);lp.rowSpec=GridLayout.spec(GridLayout.UNDEFINED,1f);lp.setMargins(dp(5),dp(3),dp(5),dp(3));grid.addView(x,lp);}v.findViewById(R.id.call).setBackgroundTintList(ColorStateList.valueOf(accent));\n        Button back=v.findViewById(R.id.backspace);back.setOnClickListener(x->{int end=number.getSelectionEnd();if(end>0)number.getText().delete(end-1,end);});back.setOnLongClickListener(x->{number.setText(\"\");return true;});\n        suggestions=v.findViewById(R.id.suggestions);suggestions.setLayoutManager(new LinearLayoutManager(requireContext()));adapter=new SuggestionAdapter();suggestions.setAdapter(adapter);\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1b59a75edf5cad1e"
+                    }
+                },
+                {
+                    "ruleId": "SetTextI18n",
+                    "ruleIndex": 7,
+                    "message": {
+                        "text": "Do not concatenate text displayed with setText. Use resource string with placeholders.",
+                        "markdown": "Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/java/com/example/pulsedialer/ListFragment.java"
+                                },
+                                "region": {
+                                    "startLine": 69,
+                                    "startColumn": 841,
+                                    "endLine": 69,
+                                    "endColumn": 945,
+                                    "charOffset": 16183,
+                                    "charLength": 104,
+                                    "snippet": {
+                                        "text": "(c.starred?\"★  \":\"\")+(c.name==null||c.name.isEmpty()?context.getString(R.string.unknown_contact):c.name)"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 67,
+                                    "endLine": 72,
+                                    "snippet": {
+                                        "text": "    private void delete(ContactRepository.Contact c){if(!MainActivity.hasPermission(requireContext(),Manifest.permission.WRITE_CONTACTS)){new AlertDialog.Builder(requireContext()).setMessage(R.string.favorite_permission).setPositiveButton(R.string.grant_permission,(d,w)->((MainActivity)requireActivity()).requestContactWriteAccess()).setNegativeButton(android.R.string.cancel,null).show();return;}new AlertDialog.Builder(requireContext()).setTitle(R.string.delete_contact).setMessage(getString(R.string.delete_confirmation,c.name==null?\"\":c.name)).setNegativeButton(android.R.string.cancel,null).setPositiveButton(R.string.delete,(d,w)->{android.content.Context app=requireContext().getApplicationContext();WORKER.execute(()->{int count=0;try{count=app.getContentResolver().delete(Uri.withAppendedPath(android.provider.ContactsContract.Contacts.CONTENT_URI,String.valueOf(c.id)),null,null);}catch(SecurityException ignored){}int deleted=count;if(getActivity()!=null)getActivity().runOnUiThread(()->{Toast.makeText(requireContext(),deleted>0?R.string.contact_deleted:R.string.contact_delete_failed,Toast.LENGTH_SHORT).show();loadData();});});}).show();}\n    private void favorite(ContactRepository.Contact c){if(!MainActivity.hasPermission(requireContext(),Manifest.permission.WRITE_CONTACTS)){new AlertDialog.Builder(requireContext()).setMessage(R.string.favorite_permission).setPositiveButton(R.string.grant_permission,(d,w)->((MainActivity)requireActivity()).requestContactWriteAccess()).setNegativeButton(android.R.string.cancel,null).show();return;}android.content.ContentValues v=new android.content.ContentValues();v.put(android.provider.ContactsContract.Contacts.STARRED,c.starred?0:1);android.content.Context app=requireContext().getApplicationContext();WORKER.execute(()->{try{app.getContentResolver().update(Uri.withAppendedPath(android.provider.ContactsContract.Contacts.CONTENT_URI,String.valueOf(c.id)),v,null,null);if(getActivity()!=null)getActivity().runOnUiThread(this::loadData);}catch(SecurityException ignored){}});}\n    private static class RowAdapter extends RecyclerView.Adapter<RowHolder>{final List<Object> rows=new ArrayList<>();@NonNull public RowHolder onCreateViewHolder(@NonNull ViewGroup p,int t){return new RowHolder(LayoutInflater.from(p.getContext()).inflate(R.layout.item_contact,p,false));}public void onBindViewHolder(@NonNull RowHolder h,int i){Object row=rows.get(i);android.content.Context context=h.itemView.getContext();boolean compact=context.getSharedPreferences(\"MainActivity\",0).getBoolean(\"compact\",false);int vertical=(int)((compact?5:10)*context.getResources().getDisplayMetrics().density);h.itemView.setPadding(h.itemView.getPaddingLeft(),vertical,h.itemView.getPaddingRight(),vertical);h.photo.setTag(null);if(row instanceof ContactRepository.Contact){ContactRepository.Contact c=(ContactRepository.Contact)row;h.name.setText((c.starred?\"★  \":\"\")+(c.name==null||c.name.isEmpty()?context.getString(R.string.unknown_contact):c.name));h.detail.setText(c.number==null?context.getString(R.string.no_phone):c.number);h.avatar.setText(initials(c.name));h.photo.setImageDrawable(null);h.photo.setVisibility(View.GONE);if(c.photo!=null){h.photo.setTag(c.photo.toString());WORKER.execute(()->{Bitmap image=null;try(java.io.InputStream in=context.getContentResolver().openInputStream(c.photo)){if(in!=null)image=BitmapFactory.decodeStream(in);}catch(Exception ignored){}Bitmap result=image;if(result!=null)h.itemView.post(()->{if(c.photo.toString().equals(h.photo.getTag())){h.photo.setImageBitmap(result);h.photo.setVisibility(View.VISIBLE);}});});}}else{ContactRepository.Recent c=(ContactRepository.Recent)row;String title=c.name==null||c.name.isEmpty()?context.getString(R.string.unknown_number):c.name;h.name.setText(title);h.detail.setText(c.kind()+\" · \"+(c.number==null?\"\":c.number)+\"\\n\"+ContactRepository.dateLabel(c.date)+\" · \"+ContactRepository.duration(c.duration));h.avatar.setText(c.type==android.provider.CallLog.Calls.MISSED_TYPE||c.type==android.provider.CallLog.Calls.REJECTED_TYPE?\"!\":\"↗\");h.photo.setImageDrawable(null);h.photo.setVisibility(View.GONE);}h.itemView.setOnClickListener(v->{if(context instanceof androidx.fragment.app.FragmentActivity){androidx.fragment.app.FragmentActivity a=(androidx.fragment.app.FragmentActivity)context;Fragment f=a.getSupportFragmentManager().findFragmentById(R.id.content);if(f instanceof ListFragment)((ListFragment)f).rowAction(row);}});}public int getItemCount(){return rows.size();}private static String initials(String name){if(name==null||name.trim().isEmpty())return \"•\";String[] s=name.trim().split(\"\\\\s+\");return (s[0].substring(0,1)+(s.length>1?s[s.length-1].substring(0,1):\"\")).toUpperCase(Locale.getDefault());}}\n    private static class RowHolder extends RecyclerView.ViewHolder{TextView name,detail,avatar;ImageView photo;RowHolder(View v){super(v);name=v.findViewById(R.id.name);detail=v.findViewById(R.id.detail);avatar=v.findViewById(R.id.avatar);photo=v.findViewById(R.id.photo);}}\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "e768041b0218082e"
+                    }
+                },
+                {
+                    "ruleId": "SetTextI18n",
+                    "ruleIndex": 7,
+                    "message": {
+                        "text": "Do not concatenate text displayed with setText. Use resource string with placeholders.",
+                        "markdown": "Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/java/com/example/pulsedialer/ListFragment.java"
+                                },
+                                "region": {
+                                    "startLine": 69,
+                                    "startColumn": 1750,
+                                    "endLine": 69,
+                                    "endColumn": 1879,
+                                    "charOffset": 17092,
+                                    "charLength": 129,
+                                    "snippet": {
+                                        "text": "c.kind()+\" · \"+(c.number==null?\"\":c.number)+\"\\n\"+ContactRepository.dateLabel(c.date)+\" · \"+ContactRepository.duration(c.duration)"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 67,
+                                    "endLine": 72,
+                                    "snippet": {
+                                        "text": "    private void delete(ContactRepository.Contact c){if(!MainActivity.hasPermission(requireContext(),Manifest.permission.WRITE_CONTACTS)){new AlertDialog.Builder(requireContext()).setMessage(R.string.favorite_permission).setPositiveButton(R.string.grant_permission,(d,w)->((MainActivity)requireActivity()).requestContactWriteAccess()).setNegativeButton(android.R.string.cancel,null).show();return;}new AlertDialog.Builder(requireContext()).setTitle(R.string.delete_contact).setMessage(getString(R.string.delete_confirmation,c.name==null?\"\":c.name)).setNegativeButton(android.R.string.cancel,null).setPositiveButton(R.string.delete,(d,w)->{android.content.Context app=requireContext().getApplicationContext();WORKER.execute(()->{int count=0;try{count=app.getContentResolver().delete(Uri.withAppendedPath(android.provider.ContactsContract.Contacts.CONTENT_URI,String.valueOf(c.id)),null,null);}catch(SecurityException ignored){}int deleted=count;if(getActivity()!=null)getActivity().runOnUiThread(()->{Toast.makeText(requireContext(),deleted>0?R.string.contact_deleted:R.string.contact_delete_failed,Toast.LENGTH_SHORT).show();loadData();});});}).show();}\n    private void favorite(ContactRepository.Contact c){if(!MainActivity.hasPermission(requireContext(),Manifest.permission.WRITE_CONTACTS)){new AlertDialog.Builder(requireContext()).setMessage(R.string.favorite_permission).setPositiveButton(R.string.grant_permission,(d,w)->((MainActivity)requireActivity()).requestContactWriteAccess()).setNegativeButton(android.R.string.cancel,null).show();return;}android.content.ContentValues v=new android.content.ContentValues();v.put(android.provider.ContactsContract.Contacts.STARRED,c.starred?0:1);android.content.Context app=requireContext().getApplicationContext();WORKER.execute(()->{try{app.getContentResolver().update(Uri.withAppendedPath(android.provider.ContactsContract.Contacts.CONTENT_URI,String.valueOf(c.id)),v,null,null);if(getActivity()!=null)getActivity().runOnUiThread(this::loadData);}catch(SecurityException ignored){}});}\n    private static class RowAdapter extends RecyclerView.Adapter<RowHolder>{final List<Object> rows=new ArrayList<>();@NonNull public RowHolder onCreateViewHolder(@NonNull ViewGroup p,int t){return new RowHolder(LayoutInflater.from(p.getContext()).inflate(R.layout.item_contact,p,false));}public void onBindViewHolder(@NonNull RowHolder h,int i){Object row=rows.get(i);android.content.Context context=h.itemView.getContext();boolean compact=context.getSharedPreferences(\"MainActivity\",0).getBoolean(\"compact\",false);int vertical=(int)((compact?5:10)*context.getResources().getDisplayMetrics().density);h.itemView.setPadding(h.itemView.getPaddingLeft(),vertical,h.itemView.getPaddingRight(),vertical);h.photo.setTag(null);if(row instanceof ContactRepository.Contact){ContactRepository.Contact c=(ContactRepository.Contact)row;h.name.setText((c.starred?\"★  \":\"\")+(c.name==null||c.name.isEmpty()?context.getString(R.string.unknown_contact):c.name));h.detail.setText(c.number==null?context.getString(R.string.no_phone):c.number);h.avatar.setText(initials(c.name));h.photo.setImageDrawable(null);h.photo.setVisibility(View.GONE);if(c.photo!=null){h.photo.setTag(c.photo.toString());WORKER.execute(()->{Bitmap image=null;try(java.io.InputStream in=context.getContentResolver().openInputStream(c.photo)){if(in!=null)image=BitmapFactory.decodeStream(in);}catch(Exception ignored){}Bitmap result=image;if(result!=null)h.itemView.post(()->{if(c.photo.toString().equals(h.photo.getTag())){h.photo.setImageBitmap(result);h.photo.setVisibility(View.VISIBLE);}});});}}else{ContactRepository.Recent c=(ContactRepository.Recent)row;String title=c.name==null||c.name.isEmpty()?context.getString(R.string.unknown_number):c.name;h.name.setText(title);h.detail.setText(c.kind()+\" · \"+(c.number==null?\"\":c.number)+\"\\n\"+ContactRepository.dateLabel(c.date)+\" · \"+ContactRepository.duration(c.duration));h.avatar.setText(c.type==android.provider.CallLog.Calls.MISSED_TYPE||c.type==android.provider.CallLog.Calls.REJECTED_TYPE?\"!\":\"↗\");h.photo.setImageDrawable(null);h.photo.setVisibility(View.GONE);}h.itemView.setOnClickListener(v->{if(context instanceof androidx.fragment.app.FragmentActivity){androidx.fragment.app.FragmentActivity a=(androidx.fragment.app.FragmentActivity)context;Fragment f=a.getSupportFragmentManager().findFragmentById(R.id.content);if(f instanceof ListFragment)((ListFragment)f).rowAction(row);}});}public int getItemCount(){return rows.size();}private static String initials(String name){if(name==null||name.trim().isEmpty())return \"•\";String[] s=name.trim().split(\"\\\\s+\");return (s[0].substring(0,1)+(s.length>1?s[s.length-1].substring(0,1):\"\")).toUpperCase(Locale.getDefault());}}\n    private static class RowHolder extends RecyclerView.ViewHolder{TextView name,detail,avatar;ImageView photo;RowHolder(View v){super(v);name=v.findViewById(R.id.name);detail=v.findViewById(R.id.detail);avatar=v.findViewById(R.id.avatar);photo=v.findViewById(R.id.photo);}}\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "e768041b0218082e"
+                    }
+                },
+                {
+                    "ruleId": "RtlSymmetry",
+                    "ruleIndex": 6,
+                    "message": {
+                        "text": "When you define paddingStart you should probably also define paddingEnd for right-to-left symmetry",
+                        "markdown": "When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/item_contact.xml"
+                                },
+                                "region": {
+                                    "startLine": 6,
+                                    "startColumn": 140,
+                                    "endLine": 6,
+                                    "endColumn": 160,
+                                    "charOffset": 1202,
+                                    "charLength": 20,
+                                    "snippet": {
+                                        "text": "android:paddingStart"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 4,
+                                    "endLine": 9,
+                                    "snippet": {
+                                        "text": "        <ImageView android:id=\"@+id/photo\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:scaleType=\"centerCrop\" android:visibility=\"gone\" android:contentDescription=\"@string/contact_photo\" />\n    </FrameLayout>\n    <LinearLayout android:layout_width=\"0dp\" android:layout_height=\"wrap_content\" android:layout_weight=\"1\" android:orientation=\"vertical\" android:paddingStart=\"14dp\">\n        <TextView android:id=\"@+id/name\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:textSize=\"16sp\" android:textStyle=\"bold\" android:textColor=\"?attr/colorOnSurface\" android:maxLines=\"1\" android:ellipsize=\"end\" />\n        <TextView android:id=\"@+id/detail\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"4dp\" android:textSize=\"13sp\" android:textColor=\"?attr/colorOnSurfaceVariant\" android:maxLines=\"2\" android:ellipsize=\"end\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "49ec41308a335369"
+                    }
+                }
+            ]
+        }
+    ]
+}

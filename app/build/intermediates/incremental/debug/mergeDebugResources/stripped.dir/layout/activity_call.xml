@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/call_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="28dp" android:background="?attr/colorSurface">
+    <TextView android:id="@+id/caller" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textSize="28sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:text="@string/unknown_number" />
+    <TextView android:id="@+id/call_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:gravity="center" android:textSize="16sp" android:textColor="?attr/colorOnSurfaceVariant" />
+    <TextView android:id="@+id/call_timer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:textSize="18sp" android:textColor="?attr/colorOnSurface" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:gravity="center" android:orientation="horizontal">
+        <Button android:id="@+id/answer" android:layout_width="wrap_content" android:layout_height="56dp" android:text="@string/answer" />
+        <Button android:id="@+id/decline" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginStart="12dp" android:text="@string/decline" />
+        <Button android:id="@+id/end_call" android:layout_width="wrap_content" android:layout_height="56dp" android:text="@string/end_call" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center" android:orientation="horizontal">
+        <Button android:id="@+id/mute" android:layout_width="wrap_content" android:layout_height="52dp" android:text="@string/mute" />
+        <Button android:id="@+id/speaker" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginStart="6dp" android:text="@string/speaker" />
+        <Button android:id="@+id/hold" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginStart="6dp" android:text="@string/hold" android:visibility="gone" />
+        <Button android:id="@+id/show_keypad" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginStart="6dp" android:text="@string/keypad" />
+    </LinearLayout>
+</LinearLayout>

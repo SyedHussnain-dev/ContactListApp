@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.PulseDialer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pulse_primary</item>
+        <item name="colorOnPrimary">@color/pulse_on_primary</item>
+        <item name="colorSurface">@color/pulse_surface</item>
+        <item name="colorOnSurface">@color/pulse_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/pulse_on_surface</item>
+        <item name="colorSurfaceContainer">@color/pulse_surface_variant</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">@color/pulse_surface</item>
+        <item name="android:navigationBarColor">@color/pulse_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
