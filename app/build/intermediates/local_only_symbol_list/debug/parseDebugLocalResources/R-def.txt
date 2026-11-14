@@ -207,6 +207,7 @@ id sug_avatar
 id sug_name
 id sug_number
 id suggestions
+id suggestions_container
 id toolbar
 layout activity_call
 layout activity_main
@@ -264,6 +265,7 @@ string contact_avatar
 string contact_count
 string contact_delete_failed
 string contact_deleted
+string contact_number_with_label
 string contact_photo
 string contact_suggestions
 string contacts

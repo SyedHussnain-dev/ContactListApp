@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.pulsedialer.AvatarUtilTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-14T21:05:43.708Z" hostname="HussnainLaptop" time="0.011">
+<testsuite name="com.example.pulsedialer.AvatarUtilTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-14T21:24:35.007Z" hostname="HussnainLaptop" time="0.018">
   <properties/>
-  <testcase name="colorDiffersForDifferentNames" classname="com.example.pulsedialer.AvatarUtilTest" time="0.003"/>
+  <testcase name="colorDiffersForDifferentNames" classname="com.example.pulsedialer.AvatarUtilTest" time="0.004"/>
   <testcase name="colorForNullReturnsDefault" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
   <testcase name="colorIsConsistentForSameName" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
-  <testcase name="initialsAreUppercase" classname="com.example.pulsedialer.AvatarUtilTest" time="0.001"/>
+  <testcase name="initialsAreUppercase" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
   <testcase name="initialsFromSingleName" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
-  <testcase name="initialsFromNullReturnsPlaceholder" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
+  <testcase name="initialsFromNullReturnsPlaceholder" classname="com.example.pulsedialer.AvatarUtilTest" time="0.001"/>
   <testcase name="initialsFromFullName" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
   <testcase name="initialsFromThreeNames" classname="com.example.pulsedialer.AvatarUtilTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

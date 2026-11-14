@@ -122,6 +122,7 @@
     <string name="contact_count">%1$d contacts</string>
     <string name="contact_delete_failed">Contact could not be deleted.</string>
     <string name="contact_deleted">Contact deleted</string>
+    <string name="contact_number_with_label">%1$s · %2$s</string>
     <string name="contact_photo">Contact photo</string>
     <string name="contact_suggestions">Find contacts</string>
     <string name="contacts">Contacts</string>

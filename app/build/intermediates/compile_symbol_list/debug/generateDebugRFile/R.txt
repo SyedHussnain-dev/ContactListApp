@@ -205,6 +205,7 @@ int id sug_avatar 0x0
 int id sug_name 0x0
 int id sug_number 0x0
 int id suggestions 0x0
+int id suggestions_container 0x0
 int id toolbar 0x0
 int layout activity_call 0x0
 int layout activity_main 0x0
@@ -262,6 +263,7 @@ int string contact_avatar 0x0
 int string contact_count 0x0
 int string contact_delete_failed 0x0
 int string contact_deleted 0x0
+int string contact_number_with_label 0x0
 int string contact_photo 0x0
 int string contact_suggestions 0x0
 int string contacts 0x0

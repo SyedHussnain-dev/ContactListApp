@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -47,10 +48,14 @@ public final class FragmentDialpadBinding implements ViewBinding {
   @NonNull
   public final RecyclerView suggestions;
 
+  @NonNull
+  public final FrameLayout suggestionsContainer;
+
   private FragmentDialpadBinding(@NonNull LinearLayout rootView,
       @NonNull MaterialButton accountAccess, @NonNull ImageView backspace, @NonNull ImageView call,
       @NonNull MaterialButton contactAccess, @NonNull GridLayout keypad, @NonNull EditText number,
-      @NonNull LinearLayout simActions, @NonNull RecyclerView suggestions) {
+      @NonNull LinearLayout simActions, @NonNull RecyclerView suggestions,
+      @NonNull FrameLayout suggestionsContainer) {
     this.rootView = rootView;
     this.accountAccess = accountAccess;
     this.backspace = backspace;
@@ -60,6 +65,7 @@ public final class FragmentDialpadBinding implements ViewBinding {
     this.number = number;
     this.simActions = simActions;
     this.suggestions = suggestions;
+    this.suggestionsContainer = suggestionsContainer;
   }
 
   @Override
@@ -137,8 +143,14 @@ public final class FragmentDialpadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.suggestions_container;
+      FrameLayout suggestionsContainer = ViewBindings.findChildViewById(rootView, id);
+      if (suggestionsContainer == null) {
+        break missingId;
+      }
+
       return new FragmentDialpadBinding((LinearLayout) rootView, accountAccess, backspace, call,
-          contactAccess, keypad, number, simActions, suggestions);
+          contactAccess, keypad, number, simActions, suggestions, suggestionsContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

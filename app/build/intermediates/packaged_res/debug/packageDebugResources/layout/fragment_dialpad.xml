@@ -41,13 +41,20 @@
     </FrameLayout>
 
     <!-- T9 suggestions -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/suggestions"
+    <!-- Keep suggestions bounded so they cannot push the keypad off-screen. -->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:overScrollMode="never"
-        android:nestedScrollingEnabled="false"
-        android:visibility="gone"/>
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:id="@+id/suggestions_container">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"/>
+    </FrameLayout>
 
     <!-- Contact access hint -->
     <com.google.android.material.button.MaterialButton
