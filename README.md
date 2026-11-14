@@ -7,7 +7,7 @@ Pulse Dialer is a Java-only Android phone and contacts interface built with Andr
 - Midnight Blue dark theme by default, light theme, and follow-system mode.
 - Recents backed by `CallLog.Calls`, with All, Missed, Incoming, Outgoing and Rejected filters, search, call type, date and duration. Access is gated on the app being the default phone app and holding call-log permission.
 - Contacts backed by `ContactsContract`, including phone-number rows, entries without phone numbers, available contact photos, initials, alphabetical ordering, an A–Z jump index, search, provider-backed favorites, and add/edit/share/delete actions.
-- Dialpad with editing, long-press clear, contact suggestions using local T9 mapping, system `ACTION_DIAL` fallback, and selectable Telecom accounts when more than one call-capable account is reported.
+- Dialpad with editing, long-press clear, clipboard paste/copy/clear actions, leading-plus validation, favorite and contact suggestions using local T9 mapping, system `ACTION_DIAL` fallback, and selectable Telecom accounts when more than one call-capable account is reported.
 - SIM Board showing actual call-capable phone accounts reported by Telecom. It does not treat account order as a SIM slot number or claim that all device contacts live on a SIM.
 - Default phone role request, `ACTION_DIAL` handling, `InCallService`, incoming call notification with answer/decline actions, and an in-call screen driven by Telecom call state.
 - Settings for theme, accent, list density and keypad haptics, plus privacy and app-version information.

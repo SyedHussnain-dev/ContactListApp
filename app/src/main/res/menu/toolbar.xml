@@ -4,5 +4,8 @@
     <item android:id="@+id/action_add" android:title="@string/add_contact" android:icon="@drawable/ic_person_add" app:showAsAction="ifRoom"/>
     <item android:id="@+id/action_dialpad" android:title="@string/dial" android:icon="@drawable/ic_dialpad" app:showAsAction="ifRoom"/>
     <item android:id="@+id/action_manage" android:title="@string/manage_contacts" app:showAsAction="never"/>
+    <item android:id="@+id/action_paste_number" android:title="@string/paste_number" app:showAsAction="never"/>
+    <item android:id="@+id/action_copy_number" android:title="@string/copy_number" app:showAsAction="never"/>
+    <item android:id="@+id/action_clear_number" android:title="@string/clear_number" app:showAsAction="never"/>
     <item android:id="@+id/action_settings" android:title="@string/settings" app:showAsAction="never"/>
 </menu>

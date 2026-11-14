@@ -2,6 +2,8 @@ package com.example.pulsedialer;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.ClipboardManager;
+import android.content.ClipData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
@@ -82,6 +84,7 @@ public class DialpadFragment extends Fragment {
         number = v.findViewById(R.id.number);
         number.setShowSoftInputOnFocus(false);
         number.setText(getArguments() == null ? "" : getArguments().getString("number", ""));
+        setHasOptionsMenu(true);
 
         accountRow = v.findViewById(R.id.sim_actions);
         contactAccessBtn = v.findViewById(R.id.contact_access);
@@ -200,7 +203,9 @@ public class DialpadFragment extends Fragment {
                 if ("0".equals(key[0])) {
                     int at = number.getSelectionStart();
                     if (at < 0) at = number.length();
-                    number.getText().insert(at, "+");
+                    if (at == 0 && number.getText().toString().indexOf('+') < 0) {
+                        number.getText().insert(at, "+");
+                    }
                     return true;
                 }
                 return false;
@@ -234,12 +239,11 @@ public class DialpadFragment extends Fragment {
         if (adapter == null) return;
         adapter.rows.clear();
         String q = query.trim();
-        if (!q.isEmpty()) {
-            for (ContactRepository.Contact c : allContacts) {
-                if (T9.matches(q, c.name, c.number)) {
-                    adapter.rows.add(c);
-                    if (adapter.rows.size() == 5) break;
-                }
+        for (ContactRepository.Contact c : allContacts) {
+            boolean match = q.isEmpty() ? c.starred : T9.matches(q, c.name, c.number);
+            if (match) {
+                adapter.rows.add(c);
+                if (adapter.rows.size() == 5) break;
             }
         }
         adapter.notifyDataSetChanged();
@@ -255,7 +259,10 @@ public class DialpadFragment extends Fragment {
         try {
             TelecomManager tm = (TelecomManager) requireContext().getSystemService(Context.TELECOM_SERVICE);
             accounts = tm == null ? new ArrayList<>() : tm.getCallCapablePhoneAccounts();
-        } catch (SecurityException ignored) {}
+        } catch (SecurityException e) {
+            accountAccessBtn.setVisibility(View.VISIBLE);
+            Toast.makeText(requireContext(), R.string.account_unavailable, Toast.LENGTH_SHORT).show();
+        }
     }
 
     void onPermissionChanged() {
@@ -313,12 +320,12 @@ public class DialpadFragment extends Fragment {
 
     private void placeSelected(PhoneAccountHandle account) {
         String raw = number.getText().toString().trim();
-        if (raw.isEmpty()) {
-            Toast.makeText(requireContext(), R.string.enter_number, Toast.LENGTH_SHORT).show();
+        String clean = PhoneNumberFormatter.sanitize(raw);
+        if (!PhoneNumberFormatter.isDialable(clean)) {
+            Toast.makeText(requireContext(), raw.isEmpty()
+                    ? R.string.enter_number : R.string.invalid_number, Toast.LENGTH_SHORT).show();
             return;
         }
-
-        String clean = raw.replaceAll("[^0-9+*#;,N]", "");
         Uri uri = Uri.fromParts("tel", clean, null);
 
         // Not default dialer → ACTION_DIAL
@@ -371,12 +378,47 @@ public class DialpadFragment extends Fragment {
     }
 
     private void startDialFallback() {
+        String clean = PhoneNumberFormatter.sanitize(number.getText().toString().trim());
         try {
             startActivity(new Intent(Intent.ACTION_DIAL,
-                    Uri.fromParts("tel", number.getText().toString().trim(), null)));
+                    Uri.fromParts("tel", clean, null)));
         } catch (Exception e) {
             Toast.makeText(requireContext(), R.string.call_failed, Toast.LENGTH_LONG).show();
         }
+    }
+
+    void clearNumber() {
+        if (number != null) number.setText("");
+    }
+
+    void copyNumber() {
+        String value = number == null ? "" : number.getText().toString();
+        if (value.isEmpty()) {
+            Toast.makeText(requireContext(), R.string.enter_number, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        ClipboardManager clipboard = (ClipboardManager) requireContext()
+                .getSystemService(Context.CLIPBOARD_SERVICE);
+        if (clipboard != null) {
+            clipboard.setPrimaryClip(ClipData.newPlainText(getString(R.string.dial), value));
+            Toast.makeText(requireContext(), R.string.number_copied, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    void pasteNumber() {
+        ClipboardManager clipboard = (ClipboardManager) requireContext()
+                .getSystemService(Context.CLIPBOARD_SERVICE);
+        if (clipboard == null || !clipboard.hasPrimaryClip()) return;
+        ClipData data = clipboard.getPrimaryClip();
+        if (data == null || data.getItemCount() == 0) return;
+        String pasted = PhoneNumberFormatter.sanitize(
+                data.getItemAt(0).coerceToText(requireContext()).toString());
+        if (!PhoneNumberFormatter.isDialable(pasted)) {
+            Toast.makeText(requireContext(), R.string.invalid_number, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        number.setText(pasted);
+        number.setSelection(number.length());
     }
 
     private int dp(int n) {

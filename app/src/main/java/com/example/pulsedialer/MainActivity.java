@@ -174,6 +174,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void showTab(int id) {
         selectedTab = id;
+        if (toolbar != null) {
+            toolbar.setNavigationIcon(null);
+            toolbar.setNavigationOnClickListener(null);
+        }
         // Update toolbar title
         if (id == R.id.nav_recents) {
             if (getSupportActionBar() != null) getSupportActionBar().setTitle(R.string.recents);
@@ -192,6 +196,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openDialpad(String number) {
         if (getSupportActionBar() != null) getSupportActionBar().setTitle(R.string.dial);
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
         DialpadFragment f = DialpadFragment.newInstance(number);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content, f)
@@ -201,6 +207,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSettings() {
         if (getSupportActionBar() != null) getSupportActionBar().setTitle(R.string.settings);
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content, new SettingsFragment())
                 .addToBackStack("settings")
@@ -281,9 +289,13 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.toolbar, menu);
         Fragment current = getSupportFragmentManager().findFragmentById(R.id.content);
         boolean isContacts = selectedTab == R.id.nav_contacts && current instanceof ListFragment;
+        boolean isDialpad = current instanceof DialpadFragment;
         menu.findItem(R.id.action_add).setVisible(isContacts);
         menu.findItem(R.id.action_manage).setVisible(isContacts);
         menu.findItem(R.id.action_search).setVisible(current instanceof ListFragment);
+        menu.findItem(R.id.action_paste_number).setVisible(isDialpad);
+        menu.findItem(R.id.action_copy_number).setVisible(isDialpad);
+        menu.findItem(R.id.action_clear_number).setVisible(isDialpad);
         return true;
     }
 
@@ -313,6 +325,17 @@ public class MainActivity extends AppCompatActivity {
             if (f instanceof ListFragment) ((ListFragment) f).focusSearch();
             return true;
         }
+        if (id == R.id.action_paste_number || id == R.id.action_copy_number
+                || id == R.id.action_clear_number) {
+            Fragment f = getSupportFragmentManager().findFragmentById(R.id.content);
+            if (f instanceof DialpadFragment) {
+                DialpadFragment dialpad = (DialpadFragment) f;
+                if (id == R.id.action_paste_number) dialpad.pasteNumber();
+                else if (id == R.id.action_copy_number) dialpad.copyNumber();
+                else dialpad.clearNumber();
+            }
+            return true;
+        }
         if (id == R.id.action_manage) {
             showManageContacts();
             return true;
@@ -325,6 +348,8 @@ public class MainActivity extends AppCompatActivity {
         // Restore toolbar title when popping back
         if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
             getSupportFragmentManager().popBackStack();
+            toolbar.setNavigationIcon(null);
+            toolbar.setNavigationOnClickListener(null);
             // Restore current tab title
             if (selectedTab == R.id.nav_recents && getSupportActionBar() != null)
                 getSupportActionBar().setTitle(R.string.recents);
@@ -334,6 +359,8 @@ public class MainActivity extends AppCompatActivity {
                 getSupportActionBar().setTitle(R.string.sim_board);
             invalidateOptionsMenu();
         } else {
+            toolbar.setNavigationIcon(null);
+            toolbar.setNavigationOnClickListener(null);
             super.onBackPressed();
         }
     }

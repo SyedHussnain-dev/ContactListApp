@@ -79,6 +79,11 @@
     <string name="place_call">Place call</string>
     <string name="call">Call</string>
     <string name="call_failed">Could not start the call. Try the system dialer.</string>
+    <string name="paste_number">Paste number</string>
+    <string name="copy_number">Copy entered number</string>
+    <string name="clear_number">Clear number</string>
+    <string name="number_copied">Number copied</string>
+    <string name="invalid_number">Enter a valid phone number.</string>
 
     <!-- Recents -->
     <string name="call_back">Call back</string>
