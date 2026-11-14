@@ -116,6 +116,7 @@
     <string name="calls_role_required">To protect call history, Android makes Recents available only to the default phone app. You can still use Contacts and the dialpad.</string>
     <string name="cancel">Cancel</string>
     <string name="choose_sim">Choose calling account</string>
+    <string name="clear_number">Clear number</string>
     <string name="close">Close</string>
     <string name="contact_avatar">Contact initials</string>
     <string name="contact_count">%1$d contacts</string>
@@ -167,6 +168,7 @@
     <string name="import_failed">Could not import contacts</string>
     <string name="import_success">Contacts imported successfully</string>
     <string name="incoming_calls">Incoming calls</string>
+    <string name="invalid_number">Enter a valid phone number.</string>
     <string name="jump_to_letter">Jump to %1$s</string>
     <string name="keypad">Keypad</string>
     <string name="list_density">List density</string>
@@ -188,6 +190,7 @@
     <string name="ok">OK</string>
     <string name="open_contact">View contact</string>
     <string name="open_sim_settings">Open SIM settings</string>
+    <string name="paste_number">Paste number</string>
     <string name="permission_calls">Call history is only available to the current default phone app. Set Pulse Dialer as default, then allow call history access.</string>
     <string name="permission_contacts">Allow contact access to show your contacts. Your address book stays on this device.</string>
     <string name="permission_denied">Permission not granted. You can change it in Android Settings.</string>

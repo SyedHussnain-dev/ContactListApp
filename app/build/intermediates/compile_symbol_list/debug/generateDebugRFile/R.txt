@@ -89,6 +89,7 @@ int drawable bg_end_call 0x0
 int drawable bg_fab 0x0
 int drawable bg_settings_row 0x0
 int drawable ic_add 0x0
+int drawable ic_back 0x0
 int drawable ic_backspace 0x0
 int drawable ic_call 0x0
 int drawable ic_call_incoming 0x0
@@ -119,8 +120,11 @@ int drawable search_background 0x0
 int id account_access 0x0
 int id action_add 0x0
 int id action_button 0x0
+int id action_clear_number 0x0
+int id action_copy_number 0x0
 int id action_dialpad 0x0
 int id action_manage 0x0
+int id action_paste_number 0x0
 int id action_search 0x0
 int id action_settings 0x0
 int id active_controls 0x0
@@ -252,6 +256,7 @@ int string call_using_account 0x0
 int string calls_role_required 0x0
 int string cancel 0x0
 int string choose_sim 0x0
+int string clear_number 0x0
 int string close 0x0
 int string contact_avatar 0x0
 int string contact_count 0x0
@@ -303,6 +308,7 @@ int string import_contacts 0x0
 int string import_failed 0x0
 int string import_success 0x0
 int string incoming_calls 0x0
+int string invalid_number 0x0
 int string jump_to_letter 0x0
 int string keypad 0x0
 int string list_density 0x0
@@ -324,6 +330,7 @@ int string number_hint 0x0
 int string ok 0x0
 int string open_contact 0x0
 int string open_sim_settings 0x0
+int string paste_number 0x0
 int string permission_calls 0x0
 int string permission_contacts 0x0
 int string permission_denied 0x0

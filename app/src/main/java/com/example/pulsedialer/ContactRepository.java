@@ -25,14 +25,21 @@ public final class ContactRepository {
         public final long id;
         public final String name;
         public final String number;
+        public final String phoneLabel;
         public final Uri photo;
         public final boolean starred;
         public final String email;
 
         Contact(long id, String name, String number, Uri photo, boolean starred, String email) {
+            this(id, name, number, null, photo, starred, email);
+        }
+
+        Contact(long id, String name, String number, String phoneLabel, Uri photo,
+                boolean starred, String email) {
             this.id = id;
             this.name = name;
             this.number = number;
+            this.phoneLabel = phoneLabel;
             this.photo = photo;
             this.starred = starred;
             this.email = email;
@@ -78,6 +85,8 @@ public final class ContactRepository {
             ContactsContract.CommonDataKinds.Phone.CONTACT_ID,
             ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
             ContactsContract.CommonDataKinds.Phone.NUMBER,
+            ContactsContract.CommonDataKinds.Phone.TYPE,
+            ContactsContract.CommonDataKinds.Phone.LABEL,
             ContactsContract.CommonDataKinds.Phone.PHOTO_URI,
             ContactsContract.Contacts.STARRED
         };
@@ -86,12 +95,17 @@ public final class ContactRepository {
                 ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " COLLATE LOCALIZED ASC")) {
             if (cursor != null) {
                 while (cursor.moveToNext()) {
+                    int type = cursor.getInt(3);
+                    String customLabel = cursor.getString(4);
+                    String label = (String) ContactsContract.CommonDataKinds.Phone.getTypeLabel(
+                            c.getResources(), type, customLabel);
                     rows.add(new Contact(
                         cursor.getLong(0),
                         cursor.getString(1),
                         cursor.getString(2),
-                        cursor.isNull(3) ? null : Uri.parse(cursor.getString(3)),
-                        cursor.getInt(4) != 0,
+                        label,
+                        cursor.isNull(5) ? null : Uri.parse(cursor.getString(5)),
+                        cursor.getInt(6) != 0,
                         null
                     ));
                 }

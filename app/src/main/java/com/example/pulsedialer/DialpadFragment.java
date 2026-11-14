@@ -52,6 +52,7 @@ public class DialpadFragment extends Fragment {
 
     private EditText number;
     private RecyclerView suggestions;
+    private View suggestionsContainer;
     private SuggestionAdapter adapter;
     private List<ContactRepository.Contact> allContacts = new ArrayList<>();
     private List<PhoneAccountHandle> accounts = new ArrayList<>();
@@ -93,8 +94,12 @@ public class DialpadFragment extends Fragment {
         // Backspace
         ImageView backspace = v.findViewById(R.id.backspace);
         backspace.setOnClickListener(x -> {
+            int start = number.getSelectionStart();
             int end = number.getSelectionEnd();
-            if (end > 0) number.getText().delete(end - 1, end);
+            String updated = PhoneNumberFormatter.deleteBackward(number.getText().toString(), start, end);
+            int cursor = Math.max(0, Math.min(start == end ? start - (start > 0 ? 1 : 0) : Math.min(start, end), updated.length()));
+            number.setText(updated);
+            number.setSelection(cursor);
         });
         backspace.setOnLongClickListener(x -> {
             number.setText("");
@@ -106,6 +111,7 @@ public class DialpadFragment extends Fragment {
         buildKeypad(grid);
 
         // T9 suggestions
+        suggestionsContainer = v.findViewById(R.id.suggestions_container);
         suggestions = v.findViewById(R.id.suggestions);
         suggestions.setLayoutManager(new LinearLayoutManager(requireContext()));
         adapter = new SuggestionAdapter();
@@ -203,7 +209,8 @@ public class DialpadFragment extends Fragment {
                 if ("0".equals(key[0])) {
                     int at = number.getSelectionStart();
                     if (at < 0) at = number.length();
-                    if (at == 0 && number.getText().toString().indexOf('+') < 0) {
+                    if (at == 0 && number.getText().toString().indexOf('+') < 0
+                            && number.getSelectionStart() == number.getSelectionEnd()) {
                         number.getText().insert(at, "+");
                     }
                     return true;
@@ -247,7 +254,7 @@ public class DialpadFragment extends Fragment {
             }
         }
         adapter.notifyDataSetChanged();
-        suggestions.setVisibility(adapter.rows.isEmpty() ? View.GONE : View.VISIBLE);
+        suggestionsContainer.setVisibility(adapter.rows.isEmpty() ? View.GONE : View.VISIBLE);
     }
 
     // ── Accounts ───────────────────────────────────────────────────────
@@ -442,7 +449,8 @@ public class DialpadFragment extends Fragment {
             ContactRepository.Contact c = rows.get(position);
             AvatarUtil.apply(h.avatar, c.name);
             h.name.setText(c.name);
-            h.number.setText(c.number);
+            h.number.setText(c.phoneLabel == null || c.phoneLabel.isEmpty()
+                    ? c.number : getString(R.string.contact_number_with_label, c.phoneLabel, c.number));
             h.itemView.setOnClickListener(v -> {
                 if (c.number != null) number.setText(c.number);
             });

@@ -29,4 +29,19 @@ public final class PhoneNumberFormatter {
         }
         return "*".equals(sanitized) || "#".equals(sanitized);
     }
+
+    /** Deletes the selected range, or the character immediately before the cursor. */
+    public static String deleteBackward(String value, int selectionStart, int selectionEnd) {
+        if (value == null || value.isEmpty()) return "";
+        int start = Math.max(0, Math.min(selectionStart, value.length()));
+        int end = Math.max(0, Math.min(selectionEnd, value.length()));
+        if (start > end) {
+            int swap = start;
+            start = end;
+            end = swap;
+        }
+        if (start != end) return value.substring(0, start) + value.substring(end);
+        if (start == 0) return value;
+        return value.substring(0, start - 1) + value.substring(start);
+    }
 }

@@ -90,6 +90,7 @@ drawable bg_end_call
 drawable bg_fab
 drawable bg_settings_row
 drawable ic_add
+drawable ic_back
 drawable ic_backspace
 drawable ic_call
 drawable ic_call_incoming
@@ -120,8 +121,11 @@ drawable search_background
 id account_access
 id action_add
 id action_button
+id action_clear_number
+id action_copy_number
 id action_dialpad
 id action_manage
+id action_paste_number
 id action_search
 id action_settings
 id active_controls
@@ -253,6 +257,7 @@ string call_using_account
 string calls_role_required
 string cancel
 string choose_sim
+string clear_number
 string close
 string contact_avatar
 string contact_count
@@ -304,6 +309,7 @@ string import_contacts
 string import_failed
 string import_success
 string incoming_calls
+string invalid_number
 string jump_to_letter
 string keypad
 string list_density
@@ -325,6 +331,7 @@ string number_hint
 string ok
 string open_contact
 string open_sim_settings
+string paste_number
 string permission_calls
 string permission_contacts
 string permission_denied
