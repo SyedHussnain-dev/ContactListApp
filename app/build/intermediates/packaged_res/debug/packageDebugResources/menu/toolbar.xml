@@ -1,5 +1,8 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/action_add" android:title="@string/add_contact" android:icon="@android:drawable/ic_menu_add" app:showAsAction="ifRoom" />
-    <item android:id="@+id/action_dialpad" android:title="@string/dial" android:icon="@android:drawable/ic_menu_call" app:showAsAction="ifRoom" />
-    <item android:id="@+id/action_settings" android:title="@string/settings" app:showAsAction="never" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search" android:title="@string/search" android:icon="@drawable/ic_search" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_add" android:title="@string/add_contact" android:icon="@drawable/ic_person_add" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_dialpad" android:title="@string/dial" android:icon="@drawable/ic_dialpad" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_manage" android:title="@string/manage_contacts" app:showAsAction="never"/>
+    <item android:id="@+id/action_settings" android:title="@string/settings" app:showAsAction="never"/>
 </menu>

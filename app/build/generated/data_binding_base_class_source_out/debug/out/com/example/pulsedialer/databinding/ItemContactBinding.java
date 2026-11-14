@@ -24,6 +24,9 @@ public final class ItemContactBinding implements ViewBinding {
   public final TextView avatar;
 
   @NonNull
+  public final ImageView callTypeIcon;
+
+  @NonNull
   public final TextView detail;
 
   @NonNull
@@ -32,13 +35,19 @@ public final class ItemContactBinding implements ViewBinding {
   @NonNull
   public final ImageView photo;
 
+  @NonNull
+  public final ImageView quickCall;
+
   private ItemContactBinding(@NonNull LinearLayout rootView, @NonNull TextView avatar,
-      @NonNull TextView detail, @NonNull TextView name, @NonNull ImageView photo) {
+      @NonNull ImageView callTypeIcon, @NonNull TextView detail, @NonNull TextView name,
+      @NonNull ImageView photo, @NonNull ImageView quickCall) {
     this.rootView = rootView;
     this.avatar = avatar;
+    this.callTypeIcon = callTypeIcon;
     this.detail = detail;
     this.name = name;
     this.photo = photo;
+    this.quickCall = quickCall;
   }
 
   @Override
@@ -74,6 +83,12 @@ public final class ItemContactBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.call_type_icon;
+      ImageView callTypeIcon = ViewBindings.findChildViewById(rootView, id);
+      if (callTypeIcon == null) {
+        break missingId;
+      }
+
       id = R.id.detail;
       TextView detail = ViewBindings.findChildViewById(rootView, id);
       if (detail == null) {
@@ -92,7 +107,14 @@ public final class ItemContactBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemContactBinding((LinearLayout) rootView, avatar, detail, name, photo);
+      id = R.id.quick_call;
+      ImageView quickCall = ViewBindings.findChildViewById(rootView, id);
+      if (quickCall == null) {
+        break missingId;
+      }
+
+      return new ItemContactBinding((LinearLayout) rootView, avatar, callTypeIcon, detail, name,
+          photo, quickCall);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

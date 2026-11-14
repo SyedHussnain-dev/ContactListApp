@@ -1,7 +1,19 @@
 [
     {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/fragment_settings.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/fragment_settings.xml"
+    },
+    {
         "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/activity_call.xml",
         "source": "com.example.pulsedialer.app-main-38:/layout/activity_call.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/item_favorite.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_favorite.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/item_section_header.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_section_header.xml"
     },
     {
         "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/activity_main.xml",
@@ -16,7 +28,23 @@
         "source": "com.example.pulsedialer.app-main-38:/layout/fragment_dialpad.xml"
     },
     {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/bottom_sheet_call_detail.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/bottom_sheet_call_detail.xml"
+    },
+    {
         "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/fragment_list.xml",
         "source": "com.example.pulsedialer.app-main-38:/layout/fragment_list.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/item_dialpad_suggestion.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_dialpad_suggestion.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/item_date_header.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_date_header.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/item_settings_row.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_settings_row.xml"
     }
 ]

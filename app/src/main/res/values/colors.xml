@@ -1,8 +1,57 @@
 <resources>
+    <!-- Pulse Design System – Light Theme -->
     <color name="pulse_primary">#2563EB</color>
     <color name="pulse_on_primary">#FFFFFF</color>
-    <color name="pulse_surface">#F7F9FD</color>
+    <color name="pulse_surface">#F5F7FC</color>
+    <color name="pulse_surface_main">#FFFFFF</color>
     <color name="pulse_on_surface">#152238</color>
-    <color name="pulse_surface_variant">#E8EDF5</color>
+    <color name="pulse_on_surface_secondary">#64748B</color>
+    <color name="pulse_surface_variant">#EDF3FC</color>
+    <color name="pulse_surface_elevated">#FFFFFF</color>
     <color name="pulse_outline">#D2DCE9</color>
+    <color name="pulse_divider">#E2E8F0</color>
+
+    <!-- Call type colors -->
+    <color name="call_incoming">#16A34A</color>
+    <color name="call_outgoing">#2563EB</color>
+    <color name="call_missed">#DC2626</color>
+    <color name="call_rejected">#EA580C</color>
+
+    <!-- Avatar palette -->
+    <color name="avatar_blue">#3B82F6</color>
+    <color name="avatar_indigo">#6366F1</color>
+    <color name="avatar_teal">#14B8A6</color>
+    <color name="avatar_emerald">#10B981</color>
+    <color name="avatar_amber">#F59E0B</color>
+    <color name="avatar_rose">#F43F5E</color>
+    <color name="avatar_purple">#8B5CF6</color>
+    <color name="avatar_cyan">#06B6D4</color>
+
+    <!-- Accent choices -->
+    <color name="accent_blue">#3B82F6</color>
+    <color name="accent_sky">#38BDF8</color>
+    <color name="accent_indigo">#6366F1</color>
+    <color name="accent_teal">#14B8A6</color>
+
+    <!-- FAB / dialpad -->
+    <color name="fab_green">#16A34A</color>
+    <color name="fab_red">#DC2626</color>
+
+    <!-- Chip / filter -->
+    <color name="chip_selected_bg">#2563EB</color>
+    <color name="chip_selected_text">#FFFFFF</color>
+    <color name="chip_unselected_bg">#EDF3FC</color>
+    <color name="chip_unselected_text">#64748B</color>
+
+    <!-- Dialpad key colors -->
+    <color name="dialpad_key_bg">#EDF3FC</color>
+    <color name="dialpad_key_text">#152238</color>
+    <color name="dialpad_key_sub">#64748B</color>
+
+    <!-- Bottom sheet -->
+    <color name="bottom_sheet_bg">#FFFFFF</color>
+    <color name="bottom_sheet_handle">#D2DCE9</color>
+
+    <!-- Transparent overlay -->
+    <color name="scrim">#80000000</color>
 </resources>

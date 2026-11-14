@@ -1,390 +1,390 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
-MERGED from [androidx.databinding:viewbinding:9.4.1] /home/syed/.gradle/caches/9.7.1/transforms/c58f8fa7393685c294ec4e4286966c14/transformed/viewbinding-9.4.1/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/9acd16d6b65bbd185edc41faa5ef662c/transformed/material-1.14.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/b73c5c92fe528f9ab7f269e9e7889c11/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/576d7b31709117b820dfff18348e6e43/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.appcompat:appcompat:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/b2e9d0e915278c342dd7f41921d9fb2a/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/syed/.gradle/caches/9.7.1/transforms/5fc866ba93befa81e627b57d8949921a/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/syed/.gradle/caches/9.7.1/transforms/466a4e95f1d5c7003d924cbf667e6bfc/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.fragment:fragment:1.8.4] /home/syed/.gradle/caches/9.7.1/transforms/f8a6fcb1f6317e1e21f2858dabf18be3/transformed/fragment-1.8.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity:1.9.2] /home/syed/.gradle/caches/9.7.1/transforms/8fe4abcd549bbf4925f30dfe6a9ca079/transformed/activity-1.9.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/7380383898ba6c99120ccaf945c02f82/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.loader:loader:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/72c99cc8e1395c966b3254d51e682c80/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/a4c5705bab52286c59a2c66bc8acb3e3/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/bb4945b4e1d1b23ba45d292ab02a0db0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/b212888eed8a17b6f08eac0411360fc2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/3d3b181b5f3e95361825d24b236315c7/transformed/customview-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.transition:transition:1.5.0] /home/syed/.gradle/caches/9.7.1/transforms/34be6add387e482030b57670712bb19a/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/95fed62b340301e90399a089e18f6de8/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/8fb786e2338b1e3a768d9694ff1260f9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/7d1a67caf0964a6082f41b2c5309515e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/216918e66dce5df9130daaaf0d058c06/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/syed/.gradle/caches/9.7.1/transforms/c4c41e5f3974f37e61de4444dd2fd3d7/transformed/graphics-shapes-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core-ktx:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/2ec32d2d601df04b07731a66eb51922b/transformed/core-ktx-1.16.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/cbc6049796205dd60f56852debae7fc1/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/39feb7c0aa4ae2c4c496ce1a822b0c6f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/f9cdb60d8aa210057bc98ad94dcf4f16/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/29dd93c31c2d5a360ee58b82144f17c0/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/bc924bf27f230a36d065a719977ae8a7/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/syed/.gradle/caches/9.7.1/transforms/e7fdf6509505ed1f98c11357a3234ede/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/syed/.gradle/caches/9.7.1/transforms/245f49608ba8a5bbcf20ddeaff100d32/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core-viewtree:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/7053f20ded88c150dc00184f4c24fe54/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/0cf129f46cd2e1e7693879bea7d03a15/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/58669ba9d904ec63ff543886c91bde28/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/syed/.gradle/caches/9.7.1/transforms/2554f5512c71e91ca4f77b31c402db11/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/1e72c036358ac086cf3efe3babfdc66d/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/9cbe06ac1e42bab29c3d7238a95d9ff2/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/c4b319edaf4093130d844de06449497b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:1:1-24:12
+MERGED from [androidx.databinding:viewbinding:9.5.1] /home/syed/.gradle/caches/9.7.1/transforms/ac5b7eb759afa5072b10d45a7a8469d9/transformed/viewbinding-9.5.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/7b213470ee7c2dd66a2c8807b037c271/transformed/material-1.14.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/315b39b4c386eacde7ff80205395ce7f/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/5c082e855e38296f3d0131e65500f871/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/40292957a7ebc746e539998678981371/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/syed/.gradle/caches/9.7.1/transforms/e0cd273e784ed2e27718b0ff680e59d6/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/syed/.gradle/caches/9.7.1/transforms/e85401d497d723dac6d306f7b7f0bacd/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.8.4] /home/syed/.gradle/caches/9.7.1/transforms/123886d535b81921a847c826d8584b81/transformed/fragment-1.8.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.2] /home/syed/.gradle/caches/9.7.1/transforms/43143b8343e57e2d808e92ec48080be3/transformed/activity-1.9.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/79a865bde80162bd9f1b96c8c0622929/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.loader:loader:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/adf4c32b98c642c730dc171c3d8380d6/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/592d3b4c1472ddaa73fd81f1832f9457/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/8d3247c79f91ff641c2f7284b1c2d98c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/3cdfce89ea6fe7e609bad1e3974950eb/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/f926bf3ee533be474b7b1fab47dff324/transformed/customview-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.transition:transition:1.5.0] /home/syed/.gradle/caches/9.7.1/transforms/c58beef1f118f560654b96b108a8fa1d/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/1b083287b0bc59a94d7901c8f7a3ec7c/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/b40468a13d7134d8a2b52f4dbaf79fab/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/be8946b04adce534e24bcf5a77d10722/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/c52ea0cccd96f059acc73014e4fce4fc/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/syed/.gradle/caches/9.7.1/transforms/af60020ecfcd545f84f1578324554b7a/transformed/graphics-shapes-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-ktx:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/0ce1d82e2164ae3f584d9c253186dc18/transformed/core-ktx-1.16.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/04f98c4324ee58003f942957faf6bcbc/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/e7bd1f2226a0c5783a74d6497c060964/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/2c3971345817254883bfa9b73e11c2cb/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/ba6a9ff047c4e441cb7583d736df24e3/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/167a2deb5b577afe24c5cd9987ccb82c/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/syed/.gradle/caches/9.7.1/transforms/da7608b7ebff2c30545bff9006a847fe/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/syed/.gradle/caches/9.7.1/transforms/1dd4250f6f259ab9cae5d0c7a54ea13d/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/424c915f8f45f69c7dbbe3f3acb9884c/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/94b1b5544c6ae1936cc3c45171cdad97/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/fceb522747513d4ee70aa2eb46b851d9/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/syed/.gradle/caches/9.7.1/transforms/9243bb7b17d7e42d03a9e9bc6725fa09/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/86c4ac4adc759a38eb77609fc3f29421/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/b0e2288ab11f110646eec11c61cc2ee9/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/9fadd8c4e730bd2805bb917a6567339a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 	package
-		INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:2:5-72
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:2:5-72
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:2:22-69
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:2:22-69
 uses-permission#android.permission.WRITE_CONTACTS
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:3:5-73
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:3:5-73
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:3:22-70
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:3:22-70
 uses-permission#android.permission.READ_CALL_LOG
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:4:5-72
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:4:5-72
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:4:22-69
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:4:22-69
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:5:5-75
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:5:5-75
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:5:22-72
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:5:22-72
 uses-permission#android.permission.CALL_PHONE
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:6:5-69
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:6:5-69
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:6:22-66
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:6:22-66
 uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:8:5-77
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:8:5-77
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:8:22-74
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:8:22-74
 uses-feature#android.hardware.telephony
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:9:5-88
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:9:5-88
 	android:required
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:9:61-85
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:9:61-85
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:9:19-60
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:9:19-60
 application
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:5-23:19
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:5-23:19
-MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/9acd16d6b65bbd185edc41faa5ef662c/transformed/material-1.14.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/9acd16d6b65bbd185edc41faa5ef662c/transformed/material-1.14.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/576d7b31709117b820dfff18348e6e43/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/576d7b31709117b820dfff18348e6e43/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/c4b319edaf4093130d844de06449497b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/c4b319edaf4093130d844de06449497b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:5-23:19
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:5-23:19
+MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/7b213470ee7c2dd66a2c8807b037c271/transformed/material-1.14.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/7b213470ee7c2dd66a2c8807b037c271/transformed/material-1.14.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/5c082e855e38296f3d0131e65500f871/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/5c082e855e38296f3d0131e65500f871/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/9fadd8c4e730bd2805bb917a6567339a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/9fadd8c4e730bd2805bb917a6567339a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:301-327
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:301-327
 	android:label
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:59-91
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:59-91
 	android:fullBackupContent
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:198-243
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:198-243
 	android:roundIcon
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:129-170
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:129-170
 	android:icon
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:92-128
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:92-128
 	android:allowBackup
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:171-197
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:171-197
 	android:theme
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:18-58
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:18-58
 	android:dataExtractionRules
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:244-300
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:244-300
 	android:usesCleartextTraffic
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:10:328-364
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:10:328-364
 activity#com.example.pulsedialer.MainActivity
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:9-15:20
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:11:9-15:20
 	android:launchMode
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:72-102
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:11:72-102
 	android:exported
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:48-71
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:11:48-71
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:11:19-47
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:11:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:13-156
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:12:13-156
 action#android.intent.action.MAIN
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:28-80
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:12:28-80
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:36-77
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:12:36-77
 category#android.intent.category.LAUNCHER
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:80-140
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:12:80-140
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:12:90-137
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:12:90-137
 intent-filter#action:name:android.intent.action.DIAL+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tel
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:13-245
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:13-245
 action#android.intent.action.DIAL
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:28-80
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:28-80
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:36-77
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:36-77
 category#android.intent.category.DEFAULT
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:80-139
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:80-139
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:90-136
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:90-136
 category#android.intent.category.BROWSABLE
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:139-200
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:139-200
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:149-197
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:149-197
 data
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:200-229
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:200-229
 	android:scheme
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:13:206-226
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:13:206-226
 intent-filter#action:name:android.intent.action.DIAL+category:name:android.intent.category.DEFAULT
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:14:13-155
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:14:13-155
 activity#com.example.pulsedialer.CallActivity
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:9-150
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:16:9-150
 	android:excludeFromRecents
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:73-106
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:16:73-106
 	android:exported
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:48-72
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:16:48-72
 	android:theme
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:107-147
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:16:107-147
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:16:19-47
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:16:19-47
 receiver#com.example.pulsedialer.CallActionReceiver
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:17:9-81
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:17:9-81
 	android:exported
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:17:54-78
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:17:54-78
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:17:19-53
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:17:19-53
 service#com.example.pulsedialer.PulseInCallService
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:9-22:19
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:18:9-22:19
 	android:exported
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:113-136
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:18:113-136
 	android:permission
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:53-112
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:18:53-112
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:18:18-52
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:18:18-52
 meta-data#android.telecom.IN_CALL_SERVICE_UI
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:19:13-97
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:19:13-97
 	android:value
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:19:74-94
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:19:74-94
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:19:24-73
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:19:24-73
 meta-data#android.telecom.IN_CALL_SERVICE_RINGING
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:20:13-102
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:20:13-102
 	android:value
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:20:79-99
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:20:79-99
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:20:24-78
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:20:24-78
 intent-filter#action:name:android.telecom.InCallService
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:21:13-99
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:21:13-99
 action#android.telecom.InCallService
-ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:21:28-83
+ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:21:28-83
 	android:name
-		ADDED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml:21:36-80
+		ADDED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml:21:36-80
 uses-sdk
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
-INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
-MERGED from [androidx.databinding:viewbinding:9.4.1] /home/syed/.gradle/caches/9.7.1/transforms/c58f8fa7393685c294ec4e4286966c14/transformed/viewbinding-9.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.databinding:viewbinding:9.4.1] /home/syed/.gradle/caches/9.7.1/transforms/c58f8fa7393685c294ec4e4286966c14/transformed/viewbinding-9.4.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/9acd16d6b65bbd185edc41faa5ef662c/transformed/material-1.14.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/9acd16d6b65bbd185edc41faa5ef662c/transformed/material-1.14.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/b73c5c92fe528f9ab7f269e9e7889c11/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/b73c5c92fe528f9ab7f269e9e7889c11/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/576d7b31709117b820dfff18348e6e43/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/576d7b31709117b820dfff18348e6e43/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/b2e9d0e915278c342dd7f41921d9fb2a/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/b2e9d0e915278c342dd7f41921d9fb2a/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/syed/.gradle/caches/9.7.1/transforms/5fc866ba93befa81e627b57d8949921a/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/syed/.gradle/caches/9.7.1/transforms/5fc866ba93befa81e627b57d8949921a/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/syed/.gradle/caches/9.7.1/transforms/466a4e95f1d5c7003d924cbf667e6bfc/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/syed/.gradle/caches/9.7.1/transforms/466a4e95f1d5c7003d924cbf667e6bfc/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.8.4] /home/syed/.gradle/caches/9.7.1/transforms/f8a6fcb1f6317e1e21f2858dabf18be3/transformed/fragment-1.8.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.8.4] /home/syed/.gradle/caches/9.7.1/transforms/f8a6fcb1f6317e1e21f2858dabf18be3/transformed/fragment-1.8.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity:1.9.2] /home/syed/.gradle/caches/9.7.1/transforms/8fe4abcd549bbf4925f30dfe6a9ca079/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.9.2] /home/syed/.gradle/caches/9.7.1/transforms/8fe4abcd549bbf4925f30dfe6a9ca079/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/7380383898ba6c99120ccaf945c02f82/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/7380383898ba6c99120ccaf945c02f82/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/72c99cc8e1395c966b3254d51e682c80/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/72c99cc8e1395c966b3254d51e682c80/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/a4c5705bab52286c59a2c66bc8acb3e3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/a4c5705bab52286c59a2c66bc8acb3e3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/bb4945b4e1d1b23ba45d292ab02a0db0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/bb4945b4e1d1b23ba45d292ab02a0db0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/b212888eed8a17b6f08eac0411360fc2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/b212888eed8a17b6f08eac0411360fc2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/3d3b181b5f3e95361825d24b236315c7/transformed/customview-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.customview:customview:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/3d3b181b5f3e95361825d24b236315c7/transformed/customview-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] /home/syed/.gradle/caches/9.7.1/transforms/34be6add387e482030b57670712bb19a/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] /home/syed/.gradle/caches/9.7.1/transforms/34be6add387e482030b57670712bb19a/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/95fed62b340301e90399a089e18f6de8/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/95fed62b340301e90399a089e18f6de8/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/8fb786e2338b1e3a768d9694ff1260f9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/8fb786e2338b1e3a768d9694ff1260f9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/7d1a67caf0964a6082f41b2c5309515e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/7d1a67caf0964a6082f41b2c5309515e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/216918e66dce5df9130daaaf0d058c06/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/216918e66dce5df9130daaaf0d058c06/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/syed/.gradle/caches/9.7.1/transforms/c4c41e5f3974f37e61de4444dd2fd3d7/transformed/graphics-shapes-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/syed/.gradle/caches/9.7.1/transforms/c4c41e5f3974f37e61de4444dd2fd3d7/transformed/graphics-shapes-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/2ec32d2d601df04b07731a66eb51922b/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/2ec32d2d601df04b07731a66eb51922b/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/cbc6049796205dd60f56852debae7fc1/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/cbc6049796205dd60f56852debae7fc1/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/39feb7c0aa4ae2c4c496ce1a822b0c6f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/39feb7c0aa4ae2c4c496ce1a822b0c6f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/f9cdb60d8aa210057bc98ad94dcf4f16/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/f9cdb60d8aa210057bc98ad94dcf4f16/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/29dd93c31c2d5a360ee58b82144f17c0/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/29dd93c31c2d5a360ee58b82144f17c0/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/bc924bf27f230a36d065a719977ae8a7/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/bc924bf27f230a36d065a719977ae8a7/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/syed/.gradle/caches/9.7.1/transforms/e7fdf6509505ed1f98c11357a3234ede/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/syed/.gradle/caches/9.7.1/transforms/e7fdf6509505ed1f98c11357a3234ede/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/syed/.gradle/caches/9.7.1/transforms/245f49608ba8a5bbcf20ddeaff100d32/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/syed/.gradle/caches/9.7.1/transforms/245f49608ba8a5bbcf20ddeaff100d32/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-viewtree:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/7053f20ded88c150dc00184f4c24fe54/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-viewtree:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/7053f20ded88c150dc00184f4c24fe54/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/0cf129f46cd2e1e7693879bea7d03a15/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/0cf129f46cd2e1e7693879bea7d03a15/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/58669ba9d904ec63ff543886c91bde28/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/58669ba9d904ec63ff543886c91bde28/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/syed/.gradle/caches/9.7.1/transforms/2554f5512c71e91ca4f77b31c402db11/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/syed/.gradle/caches/9.7.1/transforms/2554f5512c71e91ca4f77b31c402db11/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/1e72c036358ac086cf3efe3babfdc66d/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.tracing:tracing:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/1e72c036358ac086cf3efe3babfdc66d/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/9cbe06ac1e42bab29c3d7238a95d9ff2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/9cbe06ac1e42bab29c3d7238a95d9ff2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/c4b319edaf4093130d844de06449497b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/c4b319edaf4093130d844de06449497b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:9.5.1] /home/syed/.gradle/caches/9.7.1/transforms/ac5b7eb759afa5072b10d45a7a8469d9/transformed/viewbinding-9.5.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:9.5.1] /home/syed/.gradle/caches/9.7.1/transforms/ac5b7eb759afa5072b10d45a7a8469d9/transformed/viewbinding-9.5.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/7b213470ee7c2dd66a2c8807b037c271/transformed/material-1.14.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.14.0] /home/syed/.gradle/caches/9.7.1/transforms/7b213470ee7c2dd66a2c8807b037c271/transformed/material-1.14.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/315b39b4c386eacde7ff80205395ce7f/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/315b39b4c386eacde7ff80205395ce7f/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/5c082e855e38296f3d0131e65500f871/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/syed/.gradle/caches/9.7.1/transforms/5c082e855e38296f3d0131e65500f871/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/40292957a7ebc746e539998678981371/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/syed/.gradle/caches/9.7.1/transforms/40292957a7ebc746e539998678981371/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/syed/.gradle/caches/9.7.1/transforms/e0cd273e784ed2e27718b0ff680e59d6/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/syed/.gradle/caches/9.7.1/transforms/e0cd273e784ed2e27718b0ff680e59d6/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/syed/.gradle/caches/9.7.1/transforms/e85401d497d723dac6d306f7b7f0bacd/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/syed/.gradle/caches/9.7.1/transforms/e85401d497d723dac6d306f7b7f0bacd/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.4] /home/syed/.gradle/caches/9.7.1/transforms/123886d535b81921a847c826d8584b81/transformed/fragment-1.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.4] /home/syed/.gradle/caches/9.7.1/transforms/123886d535b81921a847c826d8584b81/transformed/fragment-1.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.2] /home/syed/.gradle/caches/9.7.1/transforms/43143b8343e57e2d808e92ec48080be3/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.2] /home/syed/.gradle/caches/9.7.1/transforms/43143b8343e57e2d808e92ec48080be3/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/79a865bde80162bd9f1b96c8c0622929/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/79a865bde80162bd9f1b96c8c0622929/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/adf4c32b98c642c730dc171c3d8380d6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/adf4c32b98c642c730dc171c3d8380d6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/592d3b4c1472ddaa73fd81f1832f9457/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/592d3b4c1472ddaa73fd81f1832f9457/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/8d3247c79f91ff641c2f7284b1c2d98c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/8d3247c79f91ff641c2f7284b1c2d98c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/3cdfce89ea6fe7e609bad1e3974950eb/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/3cdfce89ea6fe7e609bad1e3974950eb/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/f926bf3ee533be474b7b1fab47dff324/transformed/customview-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/f926bf3ee533be474b7b1fab47dff324/transformed/customview-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/syed/.gradle/caches/9.7.1/transforms/c58beef1f118f560654b96b108a8fa1d/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/syed/.gradle/caches/9.7.1/transforms/c58beef1f118f560654b96b108a8fa1d/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/1b083287b0bc59a94d7901c8f7a3ec7c/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/1b083287b0bc59a94d7901c8f7a3ec7c/transformed/dynamicanimation-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/b40468a13d7134d8a2b52f4dbaf79fab/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/b40468a13d7134d8a2b52f4dbaf79fab/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/be8946b04adce534e24bcf5a77d10722/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/syed/.gradle/caches/9.7.1/transforms/be8946b04adce534e24bcf5a77d10722/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/c52ea0cccd96f059acc73014e4fce4fc/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/c52ea0cccd96f059acc73014e4fce4fc/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/syed/.gradle/caches/9.7.1/transforms/af60020ecfcd545f84f1578324554b7a/transformed/graphics-shapes-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] /home/syed/.gradle/caches/9.7.1/transforms/af60020ecfcd545f84f1578324554b7a/transformed/graphics-shapes-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/0ce1d82e2164ae3f584d9c253186dc18/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/0ce1d82e2164ae3f584d9c253186dc18/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/04f98c4324ee58003f942957faf6bcbc/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/04f98c4324ee58003f942957faf6bcbc/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/e7bd1f2226a0c5783a74d6497c060964/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/e7bd1f2226a0c5783a74d6497c060964/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/2c3971345817254883bfa9b73e11c2cb/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/2c3971345817254883bfa9b73e11c2cb/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/ba6a9ff047c4e441cb7583d736df24e3/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/ba6a9ff047c4e441cb7583d736df24e3/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/167a2deb5b577afe24c5cd9987ccb82c/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/167a2deb5b577afe24c5cd9987ccb82c/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/syed/.gradle/caches/9.7.1/transforms/da7608b7ebff2c30545bff9006a847fe/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/syed/.gradle/caches/9.7.1/transforms/da7608b7ebff2c30545bff9006a847fe/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/syed/.gradle/caches/9.7.1/transforms/1dd4250f6f259ab9cae5d0c7a54ea13d/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/syed/.gradle/caches/9.7.1/transforms/1dd4250f6f259ab9cae5d0c7a54ea13d/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/424c915f8f45f69c7dbbe3f3acb9884c/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/424c915f8f45f69c7dbbe3f3acb9884c/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/94b1b5544c6ae1936cc3c45171cdad97/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/94b1b5544c6ae1936cc3c45171cdad97/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/fceb522747513d4ee70aa2eb46b851d9/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/fceb522747513d4ee70aa2eb46b851d9/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/syed/.gradle/caches/9.7.1/transforms/9243bb7b17d7e42d03a9e9bc6725fa09/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/syed/.gradle/caches/9.7.1/transforms/9243bb7b17d7e42d03a9e9bc6725fa09/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/86c4ac4adc759a38eb77609fc3f29421/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /home/syed/.gradle/caches/9.7.1/transforms/86c4ac4adc759a38eb77609fc3f29421/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/b0e2288ab11f110646eec11c61cc2ee9/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/syed/.gradle/caches/9.7.1/transforms/b0e2288ab11f110646eec11c61cc2ee9/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/9fadd8c4e730bd2805bb917a6567339a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/9fadd8c4e730bd2805bb917a6567339a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 	android:targetSdkVersion
-		INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/syed/Projects/ContactListApp/app/src/main/AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/5600b60661079dec251e27e526511d96/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/syed/.gradle/caches/9.7.1/transforms/4ffff3f4b0dbc2fd9e81915dce7d97c0/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/5896bce36a5b187e33f83f55de32e0af/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/syed/.gradle/caches/9.7.1/transforms/634a3d268ecca51ce2b61d54fada5ce2/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
 permission#com.example.pulsedialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
 uses-permission#com.example.pulsedialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/b98118874aa1998b78fa3f4d7d0b7bb5/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.16.0] /home/syed/.gradle/caches/9.7.1/transforms/4e51f2c99c2e41a91ed546f01013b0ad/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/02e2e7806315fbe40b3f974c028c63ca/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/syed/.gradle/caches/9.7.1/transforms/447e827188fa4e15f872efa6c13147ce/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/475a592843eaa26efc053f34a97b69ee/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/syed/.gradle/caches/9.7.1/transforms/710444fcf9da210be359555a7adf9942/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92

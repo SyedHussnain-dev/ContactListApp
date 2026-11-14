@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,16 +16,36 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.pulsedialer.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentListBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final FrameLayout rootView;
+
+  @NonNull
+  public final MaterialButton actionButton;
 
   @NonNull
   public final LinearLayout alphaIndex;
+
+  @NonNull
+  public final LinearLayout emptyState;
+
+  @NonNull
+  public final FloatingActionButton fabDialpad;
+
+  @NonNull
+  public final RecyclerView favoritesList;
+
+  @NonNull
+  public final LinearLayout favoritesSection;
+
+  @NonNull
+  public final TextView favoritesTitle;
 
   @NonNull
   public final HorizontalScrollView filterScroll;
@@ -38,23 +60,46 @@ public final class FragmentListBinding implements ViewBinding {
   public final TextView message;
 
   @NonNull
+  public final TextView messageSub;
+
+  @NonNull
   public final EditText search;
 
-  private FragmentListBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout alphaIndex,
+  @NonNull
+  public final ImageView searchClear;
+
+  @NonNull
+  public final FrameLayout searchContainer;
+
+  private FragmentListBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton actionButton,
+      @NonNull LinearLayout alphaIndex, @NonNull LinearLayout emptyState,
+      @NonNull FloatingActionButton fabDialpad, @NonNull RecyclerView favoritesList,
+      @NonNull LinearLayout favoritesSection, @NonNull TextView favoritesTitle,
       @NonNull HorizontalScrollView filterScroll, @NonNull LinearLayout filters,
-      @NonNull RecyclerView list, @NonNull TextView message, @NonNull EditText search) {
+      @NonNull RecyclerView list, @NonNull TextView message, @NonNull TextView messageSub,
+      @NonNull EditText search, @NonNull ImageView searchClear,
+      @NonNull FrameLayout searchContainer) {
     this.rootView = rootView;
+    this.actionButton = actionButton;
     this.alphaIndex = alphaIndex;
+    this.emptyState = emptyState;
+    this.fabDialpad = fabDialpad;
+    this.favoritesList = favoritesList;
+    this.favoritesSection = favoritesSection;
+    this.favoritesTitle = favoritesTitle;
     this.filterScroll = filterScroll;
     this.filters = filters;
     this.list = list;
     this.message = message;
+    this.messageSub = messageSub;
     this.search = search;
+    this.searchClear = searchClear;
+    this.searchContainer = searchContainer;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -79,9 +124,45 @@ public final class FragmentListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.action_button;
+      MaterialButton actionButton = ViewBindings.findChildViewById(rootView, id);
+      if (actionButton == null) {
+        break missingId;
+      }
+
       id = R.id.alpha_index;
       LinearLayout alphaIndex = ViewBindings.findChildViewById(rootView, id);
       if (alphaIndex == null) {
+        break missingId;
+      }
+
+      id = R.id.empty_state;
+      LinearLayout emptyState = ViewBindings.findChildViewById(rootView, id);
+      if (emptyState == null) {
+        break missingId;
+      }
+
+      id = R.id.fab_dialpad;
+      FloatingActionButton fabDialpad = ViewBindings.findChildViewById(rootView, id);
+      if (fabDialpad == null) {
+        break missingId;
+      }
+
+      id = R.id.favorites_list;
+      RecyclerView favoritesList = ViewBindings.findChildViewById(rootView, id);
+      if (favoritesList == null) {
+        break missingId;
+      }
+
+      id = R.id.favorites_section;
+      LinearLayout favoritesSection = ViewBindings.findChildViewById(rootView, id);
+      if (favoritesSection == null) {
+        break missingId;
+      }
+
+      id = R.id.favorites_title;
+      TextView favoritesTitle = ViewBindings.findChildViewById(rootView, id);
+      if (favoritesTitle == null) {
         break missingId;
       }
 
@@ -109,14 +190,33 @@ public final class FragmentListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.message_sub;
+      TextView messageSub = ViewBindings.findChildViewById(rootView, id);
+      if (messageSub == null) {
+        break missingId;
+      }
+
       id = R.id.search;
       EditText search = ViewBindings.findChildViewById(rootView, id);
       if (search == null) {
         break missingId;
       }
 
-      return new FragmentListBinding((LinearLayout) rootView, alphaIndex, filterScroll, filters,
-          list, message, search);
+      id = R.id.search_clear;
+      ImageView searchClear = ViewBindings.findChildViewById(rootView, id);
+      if (searchClear == null) {
+        break missingId;
+      }
+
+      id = R.id.search_container;
+      FrameLayout searchContainer = ViewBindings.findChildViewById(rootView, id);
+      if (searchContainer == null) {
+        break missingId;
+      }
+
+      return new FragmentListBinding((FrameLayout) rootView, actionButton, alphaIndex, emptyState,
+          fabDialpad, favoritesList, favoritesSection, favoritesTitle, filterScroll, filters, list,
+          message, messageSub, search, searchClear, searchContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

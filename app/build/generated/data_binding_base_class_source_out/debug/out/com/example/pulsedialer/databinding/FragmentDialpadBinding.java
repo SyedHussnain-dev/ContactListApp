@@ -4,9 +4,9 @@ package com.example.pulsedialer.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,13 +27,13 @@ public final class FragmentDialpadBinding implements ViewBinding {
   public final MaterialButton accountAccess;
 
   @NonNull
-  public final Button backspace;
+  public final ImageView backspace;
 
   @NonNull
-  public final MaterialButton call;
+  public final ImageView call;
 
   @NonNull
-  public final Button contactAccess;
+  public final MaterialButton contactAccess;
 
   @NonNull
   public final GridLayout keypad;
@@ -48,10 +48,9 @@ public final class FragmentDialpadBinding implements ViewBinding {
   public final RecyclerView suggestions;
 
   private FragmentDialpadBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton accountAccess, @NonNull Button backspace,
-      @NonNull MaterialButton call, @NonNull Button contactAccess, @NonNull GridLayout keypad,
-      @NonNull EditText number, @NonNull LinearLayout simActions,
-      @NonNull RecyclerView suggestions) {
+      @NonNull MaterialButton accountAccess, @NonNull ImageView backspace, @NonNull ImageView call,
+      @NonNull MaterialButton contactAccess, @NonNull GridLayout keypad, @NonNull EditText number,
+      @NonNull LinearLayout simActions, @NonNull RecyclerView suggestions) {
     this.rootView = rootView;
     this.accountAccess = accountAccess;
     this.backspace = backspace;
@@ -97,19 +96,19 @@ public final class FragmentDialpadBinding implements ViewBinding {
       }
 
       id = R.id.backspace;
-      Button backspace = ViewBindings.findChildViewById(rootView, id);
+      ImageView backspace = ViewBindings.findChildViewById(rootView, id);
       if (backspace == null) {
         break missingId;
       }
 
       id = R.id.call;
-      MaterialButton call = ViewBindings.findChildViewById(rootView, id);
+      ImageView call = ViewBindings.findChildViewById(rootView, id);
       if (call == null) {
         break missingId;
       }
 
       id = R.id.contact_access;
-      Button contactAccess = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton contactAccess = ViewBindings.findChildViewById(rootView, id);
       if (contactAccess == null) {
         break missingId;
       }

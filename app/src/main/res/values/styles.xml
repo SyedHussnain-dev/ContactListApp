@@ -1,0 +1,9 @@
+<resources>
+    <style name="PulseNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/pulse_surface_variant</item>
+        <item name="shapeAppearance">@style/PulseNavIndicatorShape</item>
+    </style>
+    <style name="PulseNavIndicatorShape" parent="ShapeAppearance.Material3.Corner.Full">
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

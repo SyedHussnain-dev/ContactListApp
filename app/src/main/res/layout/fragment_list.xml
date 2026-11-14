@@ -1,11 +1,189 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="?attr/colorSurface" android:paddingHorizontal="16dp">
-    <EditText android:id="@+id/search" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:background="@drawable/search_background" android:paddingHorizontal="16dp" android:singleLine="true" android:inputType="text" android:drawableStart="@android:drawable/ic_menu_search" android:drawablePadding="10dp" android:hint="@string/search" android:importantForAutofill="no" />
-    <HorizontalScrollView android:id="@+id/filter_scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:scrollbars="none">
-        <LinearLayout android:id="@+id/filters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingBottom="6dp" />
-    </HorizontalScrollView>
-    <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="18dp" android:gravity="center" android:textColor="?attr/colorOnSurfaceVariant" android:visibility="gone" />
-    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
-        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="8dp" />
-        <LinearLayout android:id="@+id/alpha_index" android:layout_width="24dp" android:layout_height="wrap_content" android:layout_gravity="end|center_vertical" android:orientation="vertical" android:gravity="center" android:visibility="gone" />
-    </FrameLayout>
-</LinearLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Search bar -->
+        <FrameLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/screen_padding_horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_height"
+                android:background="@drawable/search_background"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:hint="@string/search"
+                android:textSize="15sp"
+                android:textColorHint="@color/pulse_on_surface_secondary"
+                android:textColor="?attr/colorOnSurface"
+                android:importantForAutofill="no"
+                android:imeOptions="actionSearch"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="14dp"
+                android:src="@drawable/ic_search"
+                android:importantForAccessibility="no"/>
+
+            <ImageView
+                android:id="@+id/search_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="4dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_close"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/close"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Filter chips for recents -->
+        <HorizontalScrollView
+            android:id="@+id/filter_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:paddingHorizontal="@dimen/screen_padding_horizontal">
+
+            <LinearLayout
+                android:id="@+id/filters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"/>
+        </HorizontalScrollView>
+
+        <!-- Favorites horizontal section for contacts -->
+        <LinearLayout
+            android:id="@+id/favorites_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/favorites_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/favorites"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/pulse_primary"
+                android:paddingHorizontal="@dimen/screen_padding_horizontal"
+                android:paddingVertical="6dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/favorites_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingHorizontal="16dp"
+                android:overScrollMode="never"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/screen_padding_horizontal"
+                android:layout_marginTop="6dp"
+                android:background="@color/pulse_divider"/>
+        </LinearLayout>
+
+        <!-- Empty / permission state -->
+        <LinearLayout
+            android:id="@+id/empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:id="@+id/message_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/pulse_on_surface_secondary"
+                android:textSize="13sp"
+                android:paddingTop="6dp"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                style="@style/Widget.Material3.Button.TonalButton"/>
+        </LinearLayout>
+
+        <!-- Main list -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="80dp"/>
+
+            <!-- Alphabet fast-scroll index -->
+            <LinearLayout
+                android:id="@+id/alpha_index"
+                android:layout_width="@dimen/alpha_index_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="4dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- FAB for dialpad -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_dialpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:src="@drawable/ic_dialpad"
+        android:contentDescription="@string/dial"
+        app:tint="@color/pulse_on_primary"
+        app:backgroundTint="@color/pulse_primary"
+        app:shapeAppearance="@style/PulseShapeMedium"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+</FrameLayout>

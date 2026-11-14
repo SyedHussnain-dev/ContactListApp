@@ -1,8 +1,8 @@
-com.example.pulsedialer.app-pngs-0 /home/syed/AndroidStudioProjects/ContactListApp/app/build/generated/res/pngs/debug
-com.example.pulsedialer.app-updated_navigation_xml-1 /home/syed/AndroidStudioProjects/ContactListApp/app/build/generated/updated_navigation_xml/debug
-com.example.pulsedialer.app-packageDebugResources-2 /home/syed/AndroidStudioProjects/ContactListApp/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.pulsedialer.app-packageDebugResources-3 /home/syed/AndroidStudioProjects/ContactListApp/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.pulsedialer.app-debug-4 /home/syed/AndroidStudioProjects/ContactListApp/app/build/intermediates/merged_res/debug/mergeDebugResources
-com.example.pulsedialer.app-debug-5 /home/syed/AndroidStudioProjects/ContactListApp/app/src/debug/res
-com.example.pulsedialer.app-main-6 /home/syed/AndroidStudioProjects/ContactListApp/app/src/main/res
+com.example.pulsedialer.app-pngs-0 /home/syed/Projects/ContactListApp/app/build/generated/res/pngs/debug
+com.example.pulsedialer.app-updated_navigation_xml-1 /home/syed/Projects/ContactListApp/app/build/generated/updated_navigation_xml/debug
+com.example.pulsedialer.app-packageDebugResources-2 /home/syed/Projects/ContactListApp/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.pulsedialer.app-packageDebugResources-3 /home/syed/Projects/ContactListApp/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.pulsedialer.app-debug-4 /home/syed/Projects/ContactListApp/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.example.pulsedialer.app-debug-5 /home/syed/Projects/ContactListApp/app/src/debug/res
+com.example.pulsedialer.app-main-6 /home/syed/Projects/ContactListApp/app/src/main/res
 gradleHome-0 /home/syed/.gradle

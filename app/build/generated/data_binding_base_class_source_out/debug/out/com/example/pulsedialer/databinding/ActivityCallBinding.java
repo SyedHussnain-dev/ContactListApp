@@ -4,7 +4,7 @@ package com.example.pulsedialer.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,7 +21,10 @@ public final class ActivityCallBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button answer;
+  public final LinearLayout activeControls;
+
+  @NonNull
+  public final ImageView answer;
 
   @NonNull
   public final LinearLayout callRoot;
@@ -36,40 +39,58 @@ public final class ActivityCallBinding implements ViewBinding {
   public final TextView caller;
 
   @NonNull
-  public final Button decline;
+  public final TextView callerAvatar;
 
   @NonNull
-  public final Button endCall;
+  public final ImageView decline;
 
   @NonNull
-  public final Button hold;
+  public final ImageView endCall;
 
   @NonNull
-  public final Button mute;
+  public final ImageView hold;
 
   @NonNull
-  public final Button showKeypad;
+  public final TextView holdLabel;
 
   @NonNull
-  public final Button speaker;
+  public final ImageView mute;
 
-  private ActivityCallBinding(@NonNull LinearLayout rootView, @NonNull Button answer,
-      @NonNull LinearLayout callRoot, @NonNull TextView callState, @NonNull TextView callTimer,
-      @NonNull TextView caller, @NonNull Button decline, @NonNull Button endCall,
-      @NonNull Button hold, @NonNull Button mute, @NonNull Button showKeypad,
-      @NonNull Button speaker) {
+  @NonNull
+  public final TextView muteLabel;
+
+  @NonNull
+  public final ImageView showKeypad;
+
+  @NonNull
+  public final ImageView speaker;
+
+  @NonNull
+  public final TextView speakerLabel;
+
+  private ActivityCallBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout activeControls,
+      @NonNull ImageView answer, @NonNull LinearLayout callRoot, @NonNull TextView callState,
+      @NonNull TextView callTimer, @NonNull TextView caller, @NonNull TextView callerAvatar,
+      @NonNull ImageView decline, @NonNull ImageView endCall, @NonNull ImageView hold,
+      @NonNull TextView holdLabel, @NonNull ImageView mute, @NonNull TextView muteLabel,
+      @NonNull ImageView showKeypad, @NonNull ImageView speaker, @NonNull TextView speakerLabel) {
     this.rootView = rootView;
+    this.activeControls = activeControls;
     this.answer = answer;
     this.callRoot = callRoot;
     this.callState = callState;
     this.callTimer = callTimer;
     this.caller = caller;
+    this.callerAvatar = callerAvatar;
     this.decline = decline;
     this.endCall = endCall;
     this.hold = hold;
+    this.holdLabel = holdLabel;
     this.mute = mute;
+    this.muteLabel = muteLabel;
     this.showKeypad = showKeypad;
     this.speaker = speaker;
+    this.speakerLabel = speakerLabel;
   }
 
   @Override
@@ -99,8 +120,14 @@ public final class ActivityCallBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.active_controls;
+      LinearLayout activeControls = ViewBindings.findChildViewById(rootView, id);
+      if (activeControls == null) {
+        break missingId;
+      }
+
       id = R.id.answer;
-      Button answer = ViewBindings.findChildViewById(rootView, id);
+      ImageView answer = ViewBindings.findChildViewById(rootView, id);
       if (answer == null) {
         break missingId;
       }
@@ -125,44 +152,69 @@ public final class ActivityCallBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.caller_avatar;
+      TextView callerAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (callerAvatar == null) {
+        break missingId;
+      }
+
       id = R.id.decline;
-      Button decline = ViewBindings.findChildViewById(rootView, id);
+      ImageView decline = ViewBindings.findChildViewById(rootView, id);
       if (decline == null) {
         break missingId;
       }
 
       id = R.id.end_call;
-      Button endCall = ViewBindings.findChildViewById(rootView, id);
+      ImageView endCall = ViewBindings.findChildViewById(rootView, id);
       if (endCall == null) {
         break missingId;
       }
 
       id = R.id.hold;
-      Button hold = ViewBindings.findChildViewById(rootView, id);
+      ImageView hold = ViewBindings.findChildViewById(rootView, id);
       if (hold == null) {
         break missingId;
       }
 
+      id = R.id.hold_label;
+      TextView holdLabel = ViewBindings.findChildViewById(rootView, id);
+      if (holdLabel == null) {
+        break missingId;
+      }
+
       id = R.id.mute;
-      Button mute = ViewBindings.findChildViewById(rootView, id);
+      ImageView mute = ViewBindings.findChildViewById(rootView, id);
       if (mute == null) {
         break missingId;
       }
 
+      id = R.id.mute_label;
+      TextView muteLabel = ViewBindings.findChildViewById(rootView, id);
+      if (muteLabel == null) {
+        break missingId;
+      }
+
       id = R.id.show_keypad;
-      Button showKeypad = ViewBindings.findChildViewById(rootView, id);
+      ImageView showKeypad = ViewBindings.findChildViewById(rootView, id);
       if (showKeypad == null) {
         break missingId;
       }
 
       id = R.id.speaker;
-      Button speaker = ViewBindings.findChildViewById(rootView, id);
+      ImageView speaker = ViewBindings.findChildViewById(rootView, id);
       if (speaker == null) {
         break missingId;
       }
 
-      return new ActivityCallBinding((LinearLayout) rootView, answer, callRoot, callState,
-          callTimer, caller, decline, endCall, hold, mute, showKeypad, speaker);
+      id = R.id.speaker_label;
+      TextView speakerLabel = ViewBindings.findChildViewById(rootView, id);
+      if (speakerLabel == null) {
+        break missingId;
+      }
+
+      return new ActivityCallBinding((LinearLayout) rootView, activeControls, answer, callRoot,
+          callState, callTimer, caller, callerAvatar, decline, endCall, hold, holdLabel, mute,
+          muteLabel, showKeypad, speaker, speakerLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

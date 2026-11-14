@@ -1,23 +1,31 @@
 [
     {
-        "merged": "com.example.pulsedialer.app-debug-36:/xml_backup_rules.xml.flat",
-        "source": "com.example.pulsedialer.app-main-38:/xml/backup_rules.xml"
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_dialpad.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_dialpad.xml"
     },
     {
-        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_launcher.xml.flat",
-        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_launcher.xml"
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_backspace.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_backspace.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_contacts.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_contacts.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_import_export.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_import_export.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_settings_row.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_settings_row.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_fab.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_fab.xml"
     },
     {
         "merged": "com.example.pulsedialer.app-debug-36:/layout_fragment_dialpad.xml.flat",
         "source": "com.example.pulsedialer.app-main-38:/layout/fragment_dialpad.xml"
-    },
-    {
-        "merged": "com.example.pulsedialer.app-debug-36:/layout_activity_main.xml.flat",
-        "source": "com.example.pulsedialer.app-main-38:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.example.pulsedialer.app-debug-36:/menu_navigation.xml.flat",
-        "source": "com.example.pulsedialer.app-main-38:/menu/navigation.xml"
     },
     {
         "merged": "com.example.pulsedialer.app-debug-36:/drawable_avatar_background.xml.flat",
@@ -28,23 +36,183 @@
         "source": "com.example.pulsedialer.app-main-38:/menu/toolbar.xml"
     },
     {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_dialpad_key.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_dialpad_key.xml"
+    },
+    {
         "merged": "com.example.pulsedialer.app-debug-36:/xml_data_extraction_rules.xml.flat",
         "source": "com.example.pulsedialer.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_chip_unselected.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_chip_unselected.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_fragment_settings.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_search.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_share.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_end_call.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_end_call.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_settings_row.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_settings_row.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_recents.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_recents.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_call_action_pill.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_call_action_pill.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_call_outgoing.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_call_outgoing.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_more.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_more.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_call_missed.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_call_missed.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_call_incoming.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_call_incoming.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_email.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_email.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_date_header.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_date_header.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_call.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_call.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_edit.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_call_rejected.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_call_rejected.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_star.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/xml_backup_rules.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_bottom_sheet_call_detail.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/bottom_sheet_call_detail.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_call_phone.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_call_phone.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_star_outline.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_star_outline.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_message.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_message.xml"
     },
     {
         "merged": "com.example.pulsedialer.app-debug-36:/drawable_search_background.xml.flat",
         "source": "com.example.pulsedialer.app-main-38:/drawable/search_background.xml"
     },
     {
-        "merged": "com.example.pulsedialer.app-debug-36:/layout_fragment_list.xml.flat",
-        "source": "com.example.pulsedialer.app-main-38:/layout/fragment_list.xml"
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_close.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_add.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_add.xml"
     },
     {
         "merged": "com.example.pulsedialer.app-debug-36:/layout_activity_call.xml.flat",
         "source": "com.example.pulsedialer.app-main-38:/layout/activity_call.xml"
     },
     {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_person_add.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_person_add.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_section_header.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_section_header.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_settings.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_favorite.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_favorite.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_chip_selected.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_launcher.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_delete.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_bottom_sheet_handle.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_bottom_sheet_handle.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_end_call.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_end_call.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/menu_navigation.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/menu/navigation.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_bg_call_button.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/bg_call_button.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_sim.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_sim.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_fragment_list.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/fragment_list.xml"
+    },
+    {
         "merged": "com.example.pulsedialer.app-debug-36:/layout_item_contact.xml.flat",
         "source": "com.example.pulsedialer.app-main-38:/layout/item_contact.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_dialpad_suggestion.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_dialpad_suggestion.xml"
     }
 ]
