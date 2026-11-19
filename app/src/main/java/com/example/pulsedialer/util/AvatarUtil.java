@@ -9,9 +9,9 @@ import java.util.Locale;
 /** Generates consistent avatar colors and initials. */
 public final class AvatarUtil {
     private static final int[] COLORS = {
-        0xFF3B82F6, 0xFF6366F1, 0xFF14B8A6, 0xFF10B981,
-        0xFFF59E0B, 0xFFF43F5E, 0xFF8B5CF6, 0xFF06B6D4,
-        0xFF0EA5E9, 0xFFEC4899, 0xFF84CC16, 0xFFE11D48
+        0xFF1A73E8, 0xFF5C6BC0, 0xFF00897B, 0xFF0D904F,
+        0xFFF9AB00, 0xFFD93025, 0xFF7B61FF, 0xFF00A3C4,
+        0xFF039BE5, 0xFFE91E63, 0xFF7CB342, 0xFFE53935
     };
 
     private AvatarUtil() {}

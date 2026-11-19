@@ -19,7 +19,9 @@ import android.telecom.TelecomManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
+import android.view.HapticFeedbackConstants;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -80,6 +82,8 @@ public class ListFragment extends Fragment {
     private MaterialButton actionButton;
     private RecyclerView list;
     private LinearLayout alphaIndex;
+    private TextView alphaBubble;
+    private char activeAlphaLetter;
     private LinearLayout favoritesSection;
     private RecyclerView favoritesList;
     private FloatingActionButton fabDialpad;
@@ -117,6 +121,7 @@ public class ListFragment extends Fragment {
         actionButton = v.findViewById(R.id.action_button);
         list = v.findViewById(R.id.list);
         alphaIndex = v.findViewById(R.id.alpha_index);
+        alphaBubble = v.findViewById(R.id.alpha_bubble);
         favoritesSection = v.findViewById(R.id.favorites_section);
         favoritesList = v.findViewById(R.id.favorites_list);
         fabDialpad = v.findViewById(R.id.fab_dialpad);
@@ -422,33 +427,133 @@ public class ListFragment extends Fragment {
     // ── Alpha index (Contacts) ─────────────────────────────────────────
 
     private void buildAlphaIndex() {
+        alphaIndex.removeAllViews();
         alphaIndex.setVisibility(View.VISIBLE);
+        activeAlphaLetter = 0;
+
+        int accent = PrefUtil.accent(requireContext());
         for (char letter = 'A'; letter <= 'Z'; letter++) {
-            final char target = letter;
             TextView label = new TextView(requireContext());
             label.setText(String.valueOf(letter));
-            label.setTextSize(10);
-            label.setTextColor(PrefUtil.accent(requireContext()));
+            label.setTextSize(11);
+            label.setTypeface(android.graphics.Typeface.create("sans-serif-medium", android.graphics.Typeface.NORMAL));
+            label.setTextColor(accent);
             label.setGravity(Gravity.CENTER);
-            label.setMinHeight(dp(18));
+            label.setIncludeFontPadding(false);
+            label.setTag(letter);
             label.setContentDescription(getString(R.string.jump_to_letter, String.valueOf(letter)));
-            label.setOnClickListener(x -> jumpToLetter(target));
-            alphaIndex.addView(label, new LinearLayout.LayoutParams(dp(28), dp(18)));
+            // Evenly span the full scrubber height so drag maps across A–Z.
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f);
+            alphaIndex.addView(label, lp);
+        }
+
+        alphaIndex.setOnTouchListener((v, event) -> {
+            switch (event.getActionMasked()) {
+                case MotionEvent.ACTION_DOWN:
+                    v.getParent().requestDisallowInterceptTouchEvent(true);
+                    scrubAlphaIndex(event.getY());
+                    return true;
+                case MotionEvent.ACTION_MOVE:
+                    scrubAlphaIndex(event.getY());
+                    return true;
+                case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL:
+                    v.getParent().requestDisallowInterceptTouchEvent(false);
+                    hideAlphaBubble();
+                    return true;
+                default:
+                    return false;
+            }
+        });
+    }
+
+    private void scrubAlphaIndex(float y) {
+        int count = alphaIndex.getChildCount();
+        if (count == 0) return;
+        int height = alphaIndex.getHeight();
+        if (height <= 0) return;
+
+        float paddedTop = alphaIndex.getPaddingTop();
+        float track = height - paddedTop - alphaIndex.getPaddingBottom();
+        if (track <= 0) track = height;
+
+        float relative = (y - paddedTop) / track;
+        int index = (int) (relative * count);
+        if (index < 0) index = 0;
+        if (index >= count) index = count - 1;
+
+        View child = alphaIndex.getChildAt(index);
+        if (!(child.getTag() instanceof Character)) return;
+        char letter = (Character) child.getTag();
+        if (letter == activeAlphaLetter) {
+            showAlphaBubble(letter);
+            return;
+        }
+
+        activeAlphaLetter = letter;
+        highlightAlphaLetter(index);
+        jumpToLetter(letter);
+        showAlphaBubble(letter);
+        if (PrefUtil.haptics(requireContext())) {
+            alphaIndex.performHapticFeedback(HapticFeedbackConstants.CLOCK_TICK);
         }
     }
 
+    private void highlightAlphaLetter(int activeIndex) {
+        int accent = PrefUtil.accent(requireContext());
+        int onPrimary = requireContext().getColor(R.color.pulse_on_primary);
+        for (int i = 0; i < alphaIndex.getChildCount(); i++) {
+            View child = alphaIndex.getChildAt(i);
+            if (!(child instanceof TextView)) continue;
+            TextView label = (TextView) child;
+            if (i == activeIndex) {
+                label.setBackgroundResource(R.drawable.bg_alpha_letter_active);
+                if (label.getBackground() != null) {
+                    label.getBackground().mutate().setTint(accent);
+                }
+                label.setTextColor(onPrimary);
+            } else {
+                label.setBackground(null);
+                label.setTextColor(accent);
+            }
+        }
+    }
+
+    private void showAlphaBubble(char letter) {
+        if (alphaBubble == null) return;
+        alphaBubble.setText(String.valueOf(letter));
+        alphaBubble.setVisibility(View.VISIBLE);
+    }
+
+    private void hideAlphaBubble() {
+        if (alphaBubble != null) alphaBubble.setVisibility(View.GONE);
+        // Keep last letter highlighted lightly until next scrub.
+    }
+
     private void jumpToLetter(char target) {
+        if (adapter == null || list == null) return;
+        RecyclerView.LayoutManager lm = list.getLayoutManager();
         for (int i = 0; i < adapter.rows.size(); i++) {
             Object row = adapter.rows.get(i);
             if (row instanceof String) {
                 String section = (String) row;
-                if (section.length() == 1 && section.charAt(0) >= target) {
-                    list.scrollToPosition(i);
-                    return;
+                if (section.length() == 1) {
+                    char sectionLetter = Character.toUpperCase(section.charAt(0));
+                    if (sectionLetter >= target) {
+                        if (lm instanceof LinearLayoutManager) {
+                            ((LinearLayoutManager) lm).scrollToPositionWithOffset(i, 0);
+                        } else {
+                            list.scrollToPosition(i);
+                        }
+                        return;
+                    }
                 }
             }
         }
-        if (adapter.getItemCount() > 0) list.scrollToPosition(adapter.getItemCount() - 1);
+        if (adapter.getItemCount() > 0) {
+            list.scrollToPosition(adapter.getItemCount() - 1);
+        }
     }
 
     // ── Data loading ───────────────────────────────────────────────────

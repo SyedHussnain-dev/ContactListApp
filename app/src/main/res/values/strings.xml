@@ -81,6 +81,8 @@
     <string name="call_failed">Could not start the call. Try the system dialer.</string>
     <string name="paste_number">Paste number</string>
     <string name="clear_number">Clear number</string>
+    <string name="hide_dialpad">Hide keypad</string>
+    <string name="show_dialpad">Show keypad</string>
     <string name="invalid_number">Enter a valid phone number.</string>
     <string name="contact_number_with_label">%1$s · %2$s</string>
 

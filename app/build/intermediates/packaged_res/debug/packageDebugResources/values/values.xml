@@ -1,72 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="accent_blue">#3B82F6</color>
-    <color name="accent_indigo">#6366F1</color>
-    <color name="accent_sky">#38BDF8</color>
-    <color name="accent_teal">#14B8A6</color>
-    <color name="avatar_amber">#F59E0B</color>
-    <color name="avatar_blue">#3B82F6</color>
-    <color name="avatar_cyan">#06B6D4</color>
-    <color name="avatar_emerald">#10B981</color>
-    <color name="avatar_indigo">#6366F1</color>
-    <color name="avatar_purple">#8B5CF6</color>
-    <color name="avatar_rose">#F43F5E</color>
-    <color name="avatar_teal">#14B8A6</color>
+    <color name="accent_blue">#1A73E8</color>
+    <color name="accent_indigo">#5C6BC0</color>
+    <color name="accent_sky">#039BE5</color>
+    <color name="accent_teal">#00897B</color>
+    <color name="avatar_amber">#F9AB00</color>
+    <color name="avatar_blue">#1A73E8</color>
+    <color name="avatar_cyan">#00A3C4</color>
+    <color name="avatar_emerald">#0D904F</color>
+    <color name="avatar_indigo">#5C6BC0</color>
+    <color name="avatar_purple">#7B61FF</color>
+    <color name="avatar_rose">#D93025</color>
+    <color name="avatar_teal">#00897B</color>
     <color name="bottom_sheet_bg">#FFFFFF</color>
-    <color name="bottom_sheet_handle">#D2DCE9</color>
-    <color name="call_incoming">#16A34A</color>
-    <color name="call_missed">#DC2626</color>
-    <color name="call_outgoing">#2563EB</color>
-    <color name="call_rejected">#EA580C</color>
-    <color name="chip_selected_bg">#2563EB</color>
+    <color name="bottom_sheet_handle">#C4C6D0</color>
+    <color name="call_incoming">#1B873B</color>
+    <color name="call_missed">#D93025</color>
+    <color name="call_outgoing">#0B57D0</color>
+    <color name="call_rejected">#E37400</color>
+    <color name="chip_selected_bg">#0B57D0</color>
     <color name="chip_selected_text">#FFFFFF</color>
-    <color name="chip_unselected_bg">#EDF3FC</color>
-    <color name="chip_unselected_text">#64748B</color>
-    <color name="dialpad_key_bg">#EDF3FC</color>
-    <color name="dialpad_key_sub">#64748B</color>
-    <color name="dialpad_key_text">#152238</color>
-    <color name="fab_green">#16A34A</color>
-    <color name="fab_red">#DC2626</color>
-    <color name="pulse_divider">#E2E8F0</color>
+    <color name="chip_unselected_bg">#E8EEF7</color>
+    <color name="chip_unselected_text">#44474E</color>
+    <color name="dialpad_key_bg">#E8EEF7</color>
+    <color name="dialpad_key_sub">#5F6368</color>
+    <color name="dialpad_key_text">#1A1C1E</color>
+    <color name="fab_green">#1B873B</color>
+    <color name="fab_red">#D93025</color>
+    <color name="nav_bar_bg">#FFFFFF</color>
+    <color name="pulse_divider">#E8EAF0</color>
+    <color name="pulse_error">#BA1A1A</color>
     <color name="pulse_on_primary">#FFFFFF</color>
-    <color name="pulse_on_surface">#152238</color>
-    <color name="pulse_on_surface_secondary">#64748B</color>
-    <color name="pulse_outline">#D2DCE9</color>
-    <color name="pulse_primary">#2563EB</color>
-    <color name="pulse_surface">#F5F7FC</color>
+    <color name="pulse_on_primary_container">#041E49</color>
+    <color name="pulse_on_secondary_container">#131C2B</color>
+    <color name="pulse_on_surface">#1A1C1E</color>
+    <color name="pulse_on_surface_secondary">#44474E</color>
+    <color name="pulse_outline">#C4C6D0</color>
+    <color name="pulse_outline_variant">#E1E3EC</color>
+    <color name="pulse_primary">#0B57D0</color>
+    <color name="pulse_primary_container">#D3E3FD</color>
+    <color name="pulse_secondary">#565E71</color>
+    <color name="pulse_secondary_container">#DAE2F9</color>
+    <color name="pulse_surface">#F8FAFC</color>
     <color name="pulse_surface_elevated">#FFFFFF</color>
     <color name="pulse_surface_main">#FFFFFF</color>
-    <color name="pulse_surface_variant">#EDF3FC</color>
+    <color name="pulse_surface_variant">#E8EEF7</color>
     <color name="scrim">#80000000</color>
-    <dimen name="action_pill_height">44dp</dimen>
+    <color name="settings_card_bg">#FFFFFF</color>
+    <dimen name="action_pill_height">48dp</dimen>
     <dimen name="action_pill_spacing">10dp</dimen>
-    <dimen name="alpha_index_width">28dp</dimen>
+    <dimen name="alpha_bubble_size">72dp</dimen>
+    <dimen name="alpha_index_width">36dp</dimen>
     <dimen name="alpha_letter_height">18dp</dimen>
-    <dimen name="alpha_letter_size">10sp</dimen>
+    <dimen name="alpha_letter_size">11sp</dimen>
     <dimen name="avatar_size">48dp</dimen>
-    <dimen name="avatar_size_large">96dp</dimen>
+    <dimen name="avatar_size_large">104dp</dimen>
     <dimen name="avatar_text_size">18sp</dimen>
-    <dimen name="avatar_text_size_large">36sp</dimen>
-    <dimen name="bottom_nav_height">64dp</dimen>
-    <dimen name="bottom_sheet_corner">24dp</dimen>
+    <dimen name="avatar_text_size_large">40sp</dimen>
+    <dimen name="bottom_nav_height">80dp</dimen>
+    <dimen name="bottom_sheet_corner">28dp</dimen>
     <dimen name="bottom_sheet_handle_height">4dp</dimen>
-    <dimen name="bottom_sheet_handle_width">40dp</dimen>
+    <dimen name="bottom_sheet_handle_width">36dp</dimen>
     <dimen name="contact_detail_size">13sp</dimen>
     <dimen name="contact_name_size">16sp</dimen>
-    <dimen name="contact_row_min_height">64dp</dimen>
-    <dimen name="contact_row_padding_vertical">12dp</dimen>
+    <dimen name="contact_row_min_height">68dp</dimen>
+    <dimen name="contact_row_padding_vertical">10dp</dimen>
     <dimen name="contact_row_padding_vertical_compact">6dp</dimen>
     <dimen name="detail_header_height">280dp</dimen>
-    <dimen name="dialpad_key_height">60dp</dimen>
-    <dimen name="dialpad_key_margin">4dp</dimen>
-    <dimen name="dialpad_key_radius">18dp</dimen>
-    <dimen name="dialpad_key_size">24sp</dimen>
-    <dimen name="dialpad_number_size">32sp</dimen>
+    <dimen name="dialpad_key_height">72dp</dimen>
+    <dimen name="dialpad_key_margin">6dp</dimen>
+    <dimen name="dialpad_key_radius">100dp</dimen>
+    <dimen name="dialpad_key_size">28sp</dimen>
+    <dimen name="dialpad_number_size">36sp</dimen>
     <dimen name="dialpad_sub_size">10sp</dimen>
+    <dimen name="fab_corner">16dp</dimen>
     <dimen name="fab_margin">20dp</dimen>
     <dimen name="fab_size">56dp</dimen>
-    <dimen name="favorite_avatar_size">56dp</dimen>
-    <dimen name="favorite_item_width">80dp</dimen>
+    <dimen name="favorite_avatar_size">60dp</dimen>
+    <dimen name="favorite_item_width">84dp</dimen>
     <dimen name="favorite_name_size">12sp</dimen>
     <dimen name="filter_chip_height">36dp</dimen>
     <dimen name="filter_chip_spacing">8dp</dimen>
@@ -75,11 +86,12 @@
     <dimen name="screen_title_margin_bottom">12dp</dimen>
     <dimen name="screen_title_margin_top">16dp</dimen>
     <dimen name="screen_title_size">28sp</dimen>
-    <dimen name="search_corner_radius">26dp</dimen>
-    <dimen name="search_height">52dp</dimen>
+    <dimen name="search_corner_radius">24dp</dimen>
+    <dimen name="search_height">48dp</dimen>
     <dimen name="search_padding_horizontal">18dp</dimen>
+    <dimen name="settings_card_radius">16dp</dimen>
     <dimen name="settings_icon_size">24dp</dimen>
-    <dimen name="settings_row_min_height">60dp</dimen>
+    <dimen name="settings_row_min_height">64dp</dimen>
     <string name="about">About</string>
     <string name="about_body">%1$s\nVersion %2$s\n\nA local contacts and phone interface.\nAll data stays on your device.</string>
     <string name="accent_blue">Blue</string>
@@ -164,6 +176,7 @@
     <string name="haptics">Keypad haptics</string>
     <string name="haptics_off">Keypad haptics disabled</string>
     <string name="haptics_on">Keypad haptics enabled</string>
+    <string name="hide_dialpad">Hide keypad</string>
     <string name="hold">Hold</string>
     <string name="import_contacts">Import contacts (VCF)</string>
     <string name="import_failed">Could not import contacts</string>
@@ -209,6 +222,7 @@
     <string name="settings">Settings</string>
     <string name="share">Share</string>
     <string name="show_call_accounts">Show calling accounts</string>
+    <string name="show_dialpad">Show keypad</string>
     <string name="sim_board">SIM Board</string>
     <string name="sim_board_subtitle">Manage your calling accounts</string>
     <string name="sim_board_title">SIM Board</string>
@@ -234,11 +248,11 @@
         <item name="iconPadding">6dp</item>
     </style>
     <style name="DialpadKey" parent="Widget.Material3.Button.TonalButton">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/dialpad_key_text</item>
         <item name="backgroundTint">@color/dialpad_key_bg</item>
-        <item name="cornerRadius">16dp</item>
-        <item name="android:minHeight">58dp</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">72dp</item>
         <item name="android:gravity">center</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -247,8 +261,8 @@
         <item name="bottomSheetStyle">@style/PulseBottomSheetStyle</item>
     </style>
     <style name="PulseBottomSheetShape" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
-        <item name="cornerSizeTopLeft">24dp</item>
-        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeTopLeft">28dp</item>
+        <item name="cornerSizeTopRight">28dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
@@ -264,20 +278,26 @@
         <item name="android:paddingEnd">16dp</item>
     </style>
     <style name="PulseNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/pulse_surface_variant</item>
+        <item name="android:color">@color/pulse_primary_container</item>
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
         <item name="shapeAppearance">@style/PulseNavIndicatorShape</item>
     </style>
     <style name="PulseNavIndicatorShape" parent="ShapeAppearance.Material3.Corner.Full">
         <item name="cornerSize">16dp</item>
+    </style>
+    <style name="PulseShapeLarge" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">24dp</item>
     </style>
     <style name="PulseShapeMedium" parent="ShapeAppearance.Material3.Corner.Medium">
         <item name="cornerSize">16dp</item>
     </style>
     <style name="SettingsCategory" parent="TextAppearance.Material3.TitleSmall">
         <item name="android:textColor">@color/pulse_primary</item>
-        <item name="android:textSize">13sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:letterSpacing">0.06</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
     <style name="SettingsSubtitle" parent="TextAppearance.Material3.BodySmall">
         <item name="android:textColor">@color/pulse_on_surface_secondary</item>
@@ -286,15 +306,26 @@
     <style name="SettingsTitle" parent="TextAppearance.Material3.BodyLarge">
         <item name="android:textColor">@color/pulse_on_surface</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
     <style name="Theme.PulseDialer" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/pulse_primary</item>
         <item name="colorOnPrimary">@color/pulse_on_primary</item>
+        <item name="colorPrimaryContainer">@color/pulse_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/pulse_on_primary_container</item>
+        <item name="colorSecondary">@color/pulse_secondary</item>
+        <item name="colorSecondaryContainer">@color/pulse_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/pulse_on_secondary_container</item>
         <item name="colorSurface">@color/pulse_surface</item>
         <item name="colorOnSurface">@color/pulse_on_surface</item>
         <item name="colorOnSurfaceVariant">@color/pulse_on_surface_secondary</item>
+        <item name="colorSurfaceContainerLowest">@color/pulse_surface_main</item>
         <item name="colorSurfaceContainer">@color/pulse_surface_variant</item>
         <item name="colorSurfaceContainerHigh">@color/pulse_surface_elevated</item>
+        <item name="colorSurfaceContainerHighest">@color/pulse_surface_elevated</item>
+        <item name="colorOutline">@color/pulse_outline</item>
+        <item name="colorOutlineVariant">@color/pulse_outline_variant</item>
+        <item name="colorError">@color/pulse_error</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
@@ -302,5 +333,11 @@
         <item name="android:windowActionModeOverlay">true</item>
         <item name="bottomSheetDialogTheme">@style/PulseBottomSheet</item>
         <item name="shapeAppearanceMediumComponent">@style/PulseShapeMedium</item>
+        <item name="shapeAppearanceLargeComponent">@style/PulseShapeLarge</item>
+        <item name="materialButtonStyle">@style/Widget.Pulse.Button</item>
+    </style>
+    <style name="Widget.Pulse.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 </resources>

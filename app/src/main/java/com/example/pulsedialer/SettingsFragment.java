@@ -84,7 +84,10 @@ public class SettingsFragment extends Fragment {
         ImageView icon = row.findViewById(R.id.setting_icon);
         TextView titleView = row.findViewById(R.id.setting_title);
         TextView subtitleView = row.findViewById(R.id.setting_subtitle);
-        if (icon != null) icon.setImageResource(iconRes);
+        if (icon != null) {
+            icon.setImageResource(iconRes);
+            icon.setColorFilter(requireContext().getColor(R.color.pulse_primary));
+        }
         if (titleView != null) titleView.setText(title);
         if (subtitleView != null) subtitleView.setText(subtitle);
         row.setOnClickListener(x -> action.run());
@@ -101,9 +104,9 @@ public class SettingsFragment extends Fragment {
 
     private String currentAccentLabel() {
         int a = PrefUtil.accent(requireContext());
-        if (a == 0xFF38BDF8) return getString(R.string.accent_sky);
-        if (a == 0xFF6366F1) return getString(R.string.accent_indigo);
-        if (a == 0xFF14B8A6) return getString(R.string.accent_teal);
+        if (a == 0xFF039BE5) return getString(R.string.accent_sky);
+        if (a == 0xFF5C6BC0) return getString(R.string.accent_indigo);
+        if (a == 0xFF00897B) return getString(R.string.accent_teal);
         return getString(R.string.accent_blue);
     }
 
@@ -131,7 +134,7 @@ public class SettingsFragment extends Fragment {
             getString(R.string.accent_indigo),
             getString(R.string.accent_teal)
         };
-        int[] values = {0xFF3B82F6, 0xFF38BDF8, 0xFF6366F1, 0xFF14B8A6};
+        int[] values = {0xFF1A73E8, 0xFF039BE5, 0xFF5C6BC0, 0xFF00897B};
         new AlertDialog.Builder(requireContext())
             .setTitle(R.string.accent_color)
             .setItems(items, (d, w) -> {

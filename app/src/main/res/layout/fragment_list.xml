@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface">
@@ -14,8 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/screen_padding_horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingTop="4dp"
+            android:paddingBottom="10dp">
 
             <EditText
                 android:id="@+id/search"
@@ -28,14 +30,15 @@
                 android:inputType="text"
                 android:hint="@string/search"
                 android:textSize="15sp"
+                android:fontFamily="sans-serif"
                 android:textColorHint="@color/pulse_on_surface_secondary"
                 android:textColor="?attr/colorOnSurface"
                 android:importantForAutofill="no"
                 android:imeOptions="actionSearch"/>
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_gravity="start|center_vertical"
                 android:layout_marginStart="14dp"
                 android:src="@drawable/ic_search"
@@ -61,14 +64,15 @@
             android:layout_height="wrap_content"
             android:fillViewport="true"
             android:scrollbars="none"
-            android:paddingHorizontal="@dimen/screen_padding_horizontal">
+            android:paddingHorizontal="@dimen/screen_padding_horizontal"
+            android:clipToPadding="false">
 
             <LinearLayout
                 android:id="@+id/filters"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="10dp"/>
         </HorizontalScrollView>
 
         <!-- Favorites horizontal section for contacts -->
@@ -85,11 +89,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/favorites"
-                android:textSize="14sp"
-                android:textStyle="bold"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.04"
                 android:textColor="@color/pulse_primary"
                 android:paddingHorizontal="@dimen/screen_padding_horizontal"
-                android:paddingVertical="6dp"/>
+                android:paddingVertical="8dp"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/favorites_list"
@@ -103,8 +108,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginHorizontal="@dimen/screen_padding_horizontal"
-                android:layout_marginTop="6dp"
-                android:background="@color/pulse_divider"/>
+                android:layout_marginTop="10dp"
+                android:background="@color/pulse_outline_variant"/>
         </LinearLayout>
 
         <!-- Empty / permission state -->
@@ -114,7 +119,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="40dp"
+            android:padding="48dp"
             android:visibility="gone">
 
             <TextView
@@ -123,7 +128,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="?attr/colorOnSurfaceVariant"
-                android:textSize="15sp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
                 android:lineSpacingExtra="4dp"/>
 
             <TextView
@@ -132,15 +138,15 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@color/pulse_on_surface_secondary"
-                android:textSize="13sp"
-                android:paddingTop="6dp"
+                android:textSize="14sp"
+                android:paddingTop="8dp"
                 android:visibility="gone"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_button"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:textAllCaps="false"
                 android:visibility="gone"
                 style="@style/Widget.Material3.Button.TonalButton"/>
@@ -157,17 +163,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:paddingBottom="80dp"/>
+                android:paddingEnd="40dp"
+                android:paddingBottom="88dp"
+                android:overScrollMode="ifContentScrolls"/>
 
-            <!-- Alphabet fast-scroll index -->
+            <!-- Floating letter while scrubbing A–Z -->
+            <TextView
+                android:id="@+id/alpha_bubble"
+                android:layout_width="@dimen/alpha_bubble_size"
+                android:layout_height="@dimen/alpha_bubble_size"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/pulse_on_primary"
+                android:background="@drawable/bg_alpha_bubble"
+                android:elevation="8dp"
+                android:visibility="gone"
+                android:importantForAccessibility="no"/>
+
+            <!-- Alphabet fast-scroll scrubber -->
             <LinearLayout
                 android:id="@+id/alpha_index"
                 android:layout_width="@dimen/alpha_index_width"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center_vertical"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="96dp"
+                android:layout_marginEnd="4dp"
                 android:orientation="vertical"
-                android:gravity="center"
-                android:paddingVertical="4dp"
+                android:gravity="center_horizontal"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="2dp"
+                android:background="@drawable/bg_alpha_index"
+                android:elevation="3dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:visibility="gone"/>
         </FrameLayout>
     </LinearLayout>
@@ -185,5 +216,7 @@
         app:tint="@color/pulse_on_primary"
         app:backgroundTint="@color/pulse_primary"
         app:shapeAppearance="@style/PulseShapeMedium"
-        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        app:elevation="3dp"
+        app:hoveredFocusedTranslationZ="4dp"
+        app:pressedTranslationZ="6dp"/>
 </FrameLayout>

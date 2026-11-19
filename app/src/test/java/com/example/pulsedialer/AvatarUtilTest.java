@@ -41,7 +41,7 @@ public class AvatarUtilTest {
 
     @Test public void colorForNullReturnsDefault() {
         int color = AvatarUtil.colorFor(null);
-        assertEquals(0xFF3B82F6, color);
+        assertEquals(0xFF1A73E8, color);
     }
 
     @Test public void initialsAreUppercase() {

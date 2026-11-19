@@ -8,6 +8,10 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_incoming.xml"
     },
     {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_alpha_bubble.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_alpha_bubble.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_end_call.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_end_call.xml"
     },
@@ -20,12 +24,24 @@
         "source": "com.example.pulsedialer.app-main-38:/layout/fragment_dialpad.xml"
     },
     {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_alpha_letter_active.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_alpha_letter_active.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_add.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_add.xml"
     },
     {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_nav_top_divider.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_nav_top_divider.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_chip_unselected.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_chip_unselected.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_quick_call.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_quick_call.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/menu_toolbar.xml.flat",
@@ -36,24 +52,32 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_more.xml"
     },
     {
+        "merged": "com.example.pulsedialer.app-debug-36:/drawable_ic_keyboard_down.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/drawable/ic_keyboard_down.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_call.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_dialpad_display.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_dialpad_display.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_edit.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_edit.xml"
     },
     {
-        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_call_missed.xml.flat",
-        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_missed.xml"
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_star_outline.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_star_outline.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/layout_item_date_header.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/layout/item_date_header.xml"
     },
     {
-        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_star_outline.xml.flat",
-        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_star_outline.xml"
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_call_missed.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_missed.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/layout_fragment_list.xml.flat",
@@ -70,6 +94,10 @@
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/layout_item_contact.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/layout/item_contact.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_mute.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_mute.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_dialpad.xml.flat",
@@ -104,6 +132,10 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_rejected.xml"
     },
     {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_settings_card.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_settings_card.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_star.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_star.xml"
     },
@@ -120,12 +152,12 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_phone.xml"
     },
     {
-        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_backspace.xml.flat",
-        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_backspace.xml"
-    },
-    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_message.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_message.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_backspace.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_backspace.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_call_action_pill.xml.flat",
@@ -136,8 +168,16 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_settings_row.xml"
     },
     {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_speaker.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_speaker.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/layout_item_dialpad_suggestion.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/layout/item_dialpad_suggestion.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_hold.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_hold.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_close.xml.flat",
@@ -168,8 +208,20 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_share.xml"
     },
     {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_dialpad_suggestion.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_dialpad_suggestion.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_bg_alpha_index.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/bg_alpha_index.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_import_export.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_import_export.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_mute_off.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_mute_off.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_back.xml.flat",
@@ -204,12 +256,12 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_recents.xml"
     },
     {
-        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_call_outgoing.xml.flat",
-        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_outgoing.xml"
-    },
-    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_sim.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_sim.xml"
+    },
+    {
+        "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/drawable_ic_call_outgoing.xml.flat",
+        "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/drawable/ic_call_outgoing.xml"
     },
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/layout_activity_main.xml.flat",
@@ -222,5 +274,9 @@
     {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-debug-36:/layout_item_favorite.xml.flat",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/layout/item_favorite.xml"
+    },
+    {
+        "merged": "com.example.pulsedialer.app-debug-36:/layout_item_dialpad_suggestion.xml.flat",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_dialpad_suggestion.xml"
     }
 ]

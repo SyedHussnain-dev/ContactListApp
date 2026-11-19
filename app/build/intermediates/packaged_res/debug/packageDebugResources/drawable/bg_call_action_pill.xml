@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/pulse_primary">
+    android:color="@color/pulse_primary_container">
     <item>
-        <shape android:shape="rectangle">
+        <shape android:shape="oval">
             <solid android:color="@color/pulse_surface_variant"/>
-            <corners android:radius="24dp"/>
         </shape>
     </item>
 </ripple>

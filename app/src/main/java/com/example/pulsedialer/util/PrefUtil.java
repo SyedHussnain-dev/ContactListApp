@@ -18,7 +18,7 @@ public final class PrefUtil {
     public static void setTheme(Context c, String v) { prefs(c).edit().putString("theme", v).apply(); }
 
     // Accent color (ARGB int)
-    public static int accent(Context c) { return prefs(c).getInt("accent", 0xFF3B82F6); }
+    public static int accent(Context c) { return prefs(c).getInt("accent", 0xFF1A73E8); }
     public static void setAccent(Context c, int v) { prefs(c).edit().putInt("accent", v).apply(); }
 
     // Compact mode

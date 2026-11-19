@@ -4,6 +4,7 @@ package com.example.pulsedialer.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,15 +24,19 @@ public final class ItemDialpadSuggestionBinding implements ViewBinding {
   public final TextView sugAvatar;
 
   @NonNull
+  public final ImageView sugCall;
+
+  @NonNull
   public final TextView sugName;
 
   @NonNull
   public final TextView sugNumber;
 
   private ItemDialpadSuggestionBinding(@NonNull LinearLayout rootView, @NonNull TextView sugAvatar,
-      @NonNull TextView sugName, @NonNull TextView sugNumber) {
+      @NonNull ImageView sugCall, @NonNull TextView sugName, @NonNull TextView sugNumber) {
     this.rootView = rootView;
     this.sugAvatar = sugAvatar;
+    this.sugCall = sugCall;
     this.sugName = sugName;
     this.sugNumber = sugNumber;
   }
@@ -69,6 +74,12 @@ public final class ItemDialpadSuggestionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.sug_call;
+      ImageView sugCall = ViewBindings.findChildViewById(rootView, id);
+      if (sugCall == null) {
+        break missingId;
+      }
+
       id = R.id.sug_name;
       TextView sugName = ViewBindings.findChildViewById(rootView, id);
       if (sugName == null) {
@@ -81,7 +92,7 @@ public final class ItemDialpadSuggestionBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemDialpadSuggestionBinding((LinearLayout) rootView, sugAvatar, sugName,
+      return new ItemDialpadSuggestionBinding((LinearLayout) rootView, sugAvatar, sugCall, sugName,
           sugNumber);
     }
     String missingId = rootView.getResources().getResourceName(id);

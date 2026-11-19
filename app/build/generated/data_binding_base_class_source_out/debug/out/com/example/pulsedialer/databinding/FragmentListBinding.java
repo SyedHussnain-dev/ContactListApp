@@ -30,6 +30,9 @@ public final class FragmentListBinding implements ViewBinding {
   public final MaterialButton actionButton;
 
   @NonNull
+  public final TextView alphaBubble;
+
+  @NonNull
   public final LinearLayout alphaIndex;
 
   @NonNull
@@ -72,15 +75,16 @@ public final class FragmentListBinding implements ViewBinding {
   public final FrameLayout searchContainer;
 
   private FragmentListBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton actionButton,
-      @NonNull LinearLayout alphaIndex, @NonNull LinearLayout emptyState,
-      @NonNull FloatingActionButton fabDialpad, @NonNull RecyclerView favoritesList,
-      @NonNull LinearLayout favoritesSection, @NonNull TextView favoritesTitle,
-      @NonNull HorizontalScrollView filterScroll, @NonNull LinearLayout filters,
-      @NonNull RecyclerView list, @NonNull TextView message, @NonNull TextView messageSub,
-      @NonNull EditText search, @NonNull ImageView searchClear,
+      @NonNull TextView alphaBubble, @NonNull LinearLayout alphaIndex,
+      @NonNull LinearLayout emptyState, @NonNull FloatingActionButton fabDialpad,
+      @NonNull RecyclerView favoritesList, @NonNull LinearLayout favoritesSection,
+      @NonNull TextView favoritesTitle, @NonNull HorizontalScrollView filterScroll,
+      @NonNull LinearLayout filters, @NonNull RecyclerView list, @NonNull TextView message,
+      @NonNull TextView messageSub, @NonNull EditText search, @NonNull ImageView searchClear,
       @NonNull FrameLayout searchContainer) {
     this.rootView = rootView;
     this.actionButton = actionButton;
+    this.alphaBubble = alphaBubble;
     this.alphaIndex = alphaIndex;
     this.emptyState = emptyState;
     this.fabDialpad = fabDialpad;
@@ -127,6 +131,12 @@ public final class FragmentListBinding implements ViewBinding {
       id = R.id.action_button;
       MaterialButton actionButton = ViewBindings.findChildViewById(rootView, id);
       if (actionButton == null) {
+        break missingId;
+      }
+
+      id = R.id.alpha_bubble;
+      TextView alphaBubble = ViewBindings.findChildViewById(rootView, id);
+      if (alphaBubble == null) {
         break missingId;
       }
 
@@ -214,9 +224,9 @@ public final class FragmentListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentListBinding((FrameLayout) rootView, actionButton, alphaIndex, emptyState,
-          fabDialpad, favoritesList, favoritesSection, favoritesTitle, filterScroll, filters, list,
-          message, messageSub, search, searchClear, searchContainer);
+      return new FragmentListBinding((FrameLayout) rootView, actionButton, alphaBubble, alphaIndex,
+          emptyState, fabDialpad, favoritesList, favoritesSection, favoritesTitle, filterScroll,
+          filters, list, message, messageSub, search, searchClear, searchContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

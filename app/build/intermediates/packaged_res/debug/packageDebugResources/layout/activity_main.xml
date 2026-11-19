@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
@@ -11,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:title="@string/app_name"
+        android:background="@android:color/transparent"
         app:titleTextColor="?attr/colorOnSurface"
-        app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:titleTextAppearance="@style/TextAppearance.Material3.HeadlineSmall"
         app:navigationIconTint="?attr/colorOnSurface"
         android:elevation="0dp"/>
 
@@ -26,9 +28,14 @@
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/pulse_surface_main"
+        android:minHeight="@dimen/bottom_nav_height"
+        android:background="@drawable/bg_nav_top_divider"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
         app:menu="@menu/navigation"
         app:labelVisibilityMode="labeled"
         app:itemActiveIndicatorStyle="@style/PulseNavIndicator"
-        android:elevation="8dp"/>
+        app:itemPaddingTop="8dp"
+        app:itemPaddingBottom="8dp"
+        android:elevation="0dp"/>
 </LinearLayout>

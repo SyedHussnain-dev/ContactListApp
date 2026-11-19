@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -5,7 +6,7 @@
     android:orientation="horizontal"
     android:gravity="center_vertical"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="12dp"
+    android:paddingVertical="14dp"
     android:background="@drawable/bg_settings_row"
     android:clickable="true"
     android:focusable="true">

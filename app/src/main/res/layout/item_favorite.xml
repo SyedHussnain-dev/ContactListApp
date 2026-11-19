@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/favorite_item_width"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="4dp"
-    android:background="?attr/selectableItemBackground"
+    android:padding="6dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
     android:clickable="true"
     android:focusable="true">
 
@@ -18,7 +19,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:textSize="22sp"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
             android:textColor="@color/pulse_on_primary"
             android:background="@drawable/avatar_background"/>
 
@@ -38,7 +39,8 @@
         android:gravity="center"
         android:textSize="@dimen/favorite_name_size"
         android:textColor="?attr/colorOnSurface"
+        android:fontFamily="sans-serif-medium"
         android:maxLines="2"
         android:ellipsize="end"
-        android:paddingTop="4dp"/>
+        android:paddingTop="6dp"/>
 </LinearLayout>

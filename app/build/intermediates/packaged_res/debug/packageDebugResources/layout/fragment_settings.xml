@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface"
     android:clipToPadding="false"
-    android:paddingBottom="24dp">
+    android:paddingBottom="32dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,24 +18,29 @@
             android:layout_height="wrap_content"
             android:text="@string/appearance"
             style="@style/SettingsCategory"
-            android:paddingTop="20dp"
-            android:paddingBottom="8dp"/>
+            android:paddingTop="16dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="4dp"/>
 
-        <!-- Theme -->
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_theme"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_settings_card"
+            android:paddingVertical="4dp">
 
-        <!-- Accent -->
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_accent"/>
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_theme"/>
 
-        <!-- Density -->
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_density"/>
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_accent"/>
 
-        <!-- Haptics -->
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_haptics"/>
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_density"/>
+
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_haptics"/>
+        </LinearLayout>
 
         <!-- Phone category -->
         <TextView
@@ -43,10 +49,19 @@
             android:text="@string/default_phone"
             style="@style/SettingsCategory"
             android:paddingTop="24dp"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="10dp"
+            android:paddingStart="4dp"/>
 
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_default_phone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_settings_card"
+            android:paddingVertical="4dp">
+
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_default_phone"/>
+        </LinearLayout>
 
         <!-- Privacy category -->
         <TextView
@@ -55,10 +70,19 @@
             android:text="@string/privacy"
             style="@style/SettingsCategory"
             android:paddingTop="24dp"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="10dp"
+            android:paddingStart="4dp"/>
 
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_privacy"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_settings_card"
+            android:paddingVertical="4dp">
+
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_privacy"/>
+        </LinearLayout>
 
         <!-- About category -->
         <TextView
@@ -67,9 +91,18 @@
             android:text="@string/about"
             style="@style/SettingsCategory"
             android:paddingTop="24dp"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="10dp"
+            android:paddingStart="4dp"/>
 
-        <include layout="@layout/item_settings_row"
-            android:id="@+id/setting_about"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_settings_card"
+            android:paddingVertical="4dp">
+
+            <include layout="@layout/item_settings_row"
+                android:id="@+id/setting_about"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

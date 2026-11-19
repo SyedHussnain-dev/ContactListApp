@@ -16,6 +16,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.pulsedialer.R;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -31,16 +32,31 @@ public final class FragmentDialpadBinding implements ViewBinding {
   public final ImageView backspace;
 
   @NonNull
-  public final ImageView call;
+  public final FloatingActionButton call;
+
+  @NonNull
+  public final FrameLayout callContainer;
 
   @NonNull
   public final MaterialButton contactAccess;
 
   @NonNull
+  public final LinearLayout dialpadBottomContainer;
+
+  @NonNull
+  public final LinearLayout dialpadRoot;
+
+  @NonNull
   public final GridLayout keypad;
 
   @NonNull
+  public final ImageView keypadToggle;
+
+  @NonNull
   public final EditText number;
+
+  @NonNull
+  public final FrameLayout numberCard;
 
   @NonNull
   public final LinearLayout simActions;
@@ -52,17 +68,25 @@ public final class FragmentDialpadBinding implements ViewBinding {
   public final FrameLayout suggestionsContainer;
 
   private FragmentDialpadBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton accountAccess, @NonNull ImageView backspace, @NonNull ImageView call,
-      @NonNull MaterialButton contactAccess, @NonNull GridLayout keypad, @NonNull EditText number,
+      @NonNull MaterialButton accountAccess, @NonNull ImageView backspace,
+      @NonNull FloatingActionButton call, @NonNull FrameLayout callContainer,
+      @NonNull MaterialButton contactAccess, @NonNull LinearLayout dialpadBottomContainer,
+      @NonNull LinearLayout dialpadRoot, @NonNull GridLayout keypad,
+      @NonNull ImageView keypadToggle, @NonNull EditText number, @NonNull FrameLayout numberCard,
       @NonNull LinearLayout simActions, @NonNull RecyclerView suggestions,
       @NonNull FrameLayout suggestionsContainer) {
     this.rootView = rootView;
     this.accountAccess = accountAccess;
     this.backspace = backspace;
     this.call = call;
+    this.callContainer = callContainer;
     this.contactAccess = contactAccess;
+    this.dialpadBottomContainer = dialpadBottomContainer;
+    this.dialpadRoot = dialpadRoot;
     this.keypad = keypad;
+    this.keypadToggle = keypadToggle;
     this.number = number;
+    this.numberCard = numberCard;
     this.simActions = simActions;
     this.suggestions = suggestions;
     this.suggestionsContainer = suggestionsContainer;
@@ -108,8 +132,14 @@ public final class FragmentDialpadBinding implements ViewBinding {
       }
 
       id = R.id.call;
-      ImageView call = ViewBindings.findChildViewById(rootView, id);
+      FloatingActionButton call = ViewBindings.findChildViewById(rootView, id);
       if (call == null) {
+        break missingId;
+      }
+
+      id = R.id.call_container;
+      FrameLayout callContainer = ViewBindings.findChildViewById(rootView, id);
+      if (callContainer == null) {
         break missingId;
       }
 
@@ -119,15 +149,35 @@ public final class FragmentDialpadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.dialpad_bottom_container;
+      LinearLayout dialpadBottomContainer = ViewBindings.findChildViewById(rootView, id);
+      if (dialpadBottomContainer == null) {
+        break missingId;
+      }
+
+      LinearLayout dialpadRoot = (LinearLayout) rootView;
+
       id = R.id.keypad;
       GridLayout keypad = ViewBindings.findChildViewById(rootView, id);
       if (keypad == null) {
         break missingId;
       }
 
+      id = R.id.keypad_toggle;
+      ImageView keypadToggle = ViewBindings.findChildViewById(rootView, id);
+      if (keypadToggle == null) {
+        break missingId;
+      }
+
       id = R.id.number;
       EditText number = ViewBindings.findChildViewById(rootView, id);
       if (number == null) {
+        break missingId;
+      }
+
+      id = R.id.number_card;
+      FrameLayout numberCard = ViewBindings.findChildViewById(rootView, id);
+      if (numberCard == null) {
         break missingId;
       }
 
@@ -150,7 +200,8 @@ public final class FragmentDialpadBinding implements ViewBinding {
       }
 
       return new FragmentDialpadBinding((LinearLayout) rootView, accountAccess, backspace, call,
-          contactAccess, keypad, number, simActions, suggestions, suggestionsContainer);
+          callContainer, contactAccess, dialpadBottomContainer, dialpadRoot, keypad, keypadToggle,
+          number, numberCard, simActions, suggestions, suggestionsContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

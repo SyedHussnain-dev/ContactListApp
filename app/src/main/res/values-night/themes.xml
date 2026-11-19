@@ -2,11 +2,21 @@
     <style name="Theme.PulseDialer" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/pulse_primary</item>
         <item name="colorOnPrimary">@color/pulse_on_primary</item>
+        <item name="colorPrimaryContainer">@color/pulse_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/pulse_on_primary_container</item>
+        <item name="colorSecondary">@color/pulse_secondary</item>
+        <item name="colorSecondaryContainer">@color/pulse_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/pulse_on_secondary_container</item>
         <item name="colorSurface">@color/pulse_surface</item>
         <item name="colorOnSurface">@color/pulse_on_surface</item>
         <item name="colorOnSurfaceVariant">@color/pulse_on_surface_secondary</item>
+        <item name="colorSurfaceContainerLowest">@color/pulse_surface_main</item>
         <item name="colorSurfaceContainer">@color/pulse_surface_variant</item>
         <item name="colorSurfaceContainerHigh">@color/pulse_surface_elevated</item>
+        <item name="colorSurfaceContainerHighest">@color/pulse_surface_elevated</item>
+        <item name="colorOutline">@color/pulse_outline</item>
+        <item name="colorOutlineVariant">@color/pulse_outline_variant</item>
+        <item name="colorError">@color/pulse_error</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
@@ -14,5 +24,7 @@
         <item name="android:windowActionModeOverlay">true</item>
         <item name="bottomSheetDialogTheme">@style/PulseBottomSheet</item>
         <item name="shapeAppearanceMediumComponent">@style/PulseShapeMedium</item>
+        <item name="shapeAppearanceLargeComponent">@style/PulseShapeLarge</item>
+        <item name="materialButtonStyle">@style/Widget.Pulse.Button</item>
     </style>
 </resources>

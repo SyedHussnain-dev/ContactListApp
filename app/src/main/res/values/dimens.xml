@@ -5,20 +5,20 @@
     <dimen name="screen_title_margin_top">16dp</dimen>
     <dimen name="screen_title_margin_bottom">12dp</dimen>
 
-    <dimen name="search_height">52dp</dimen>
-    <dimen name="search_corner_radius">26dp</dimen>
+    <dimen name="search_height">48dp</dimen>
+    <dimen name="search_corner_radius">24dp</dimen>
     <dimen name="search_padding_horizontal">18dp</dimen>
 
-    <dimen name="contact_row_padding_vertical">12dp</dimen>
+    <dimen name="contact_row_padding_vertical">10dp</dimen>
     <dimen name="contact_row_padding_vertical_compact">6dp</dimen>
-    <dimen name="contact_row_min_height">64dp</dimen>
+    <dimen name="contact_row_min_height">68dp</dimen>
     <dimen name="avatar_size">48dp</dimen>
-    <dimen name="avatar_size_large">96dp</dimen>
+    <dimen name="avatar_size_large">104dp</dimen>
     <dimen name="avatar_text_size">18sp</dimen>
-    <dimen name="avatar_text_size_large">36sp</dimen>
+    <dimen name="avatar_text_size_large">40sp</dimen>
 
-    <dimen name="favorite_avatar_size">56dp</dimen>
-    <dimen name="favorite_item_width">80dp</dimen>
+    <dimen name="favorite_avatar_size">60dp</dimen>
+    <dimen name="favorite_item_width">84dp</dimen>
     <dimen name="favorite_name_size">12sp</dimen>
 
     <dimen name="contact_name_size">16sp</dimen>
@@ -26,30 +26,33 @@
 
     <dimen name="fab_size">56dp</dimen>
     <dimen name="fab_margin">20dp</dimen>
+    <dimen name="fab_corner">16dp</dimen>
 
     <dimen name="filter_chip_height">36dp</dimen>
     <dimen name="filter_chip_spacing">8dp</dimen>
 
-    <dimen name="dialpad_number_size">32sp</dimen>
-    <dimen name="dialpad_key_size">24sp</dimen>
+    <dimen name="dialpad_number_size">36sp</dimen>
+    <dimen name="dialpad_key_size">28sp</dimen>
     <dimen name="dialpad_sub_size">10sp</dimen>
-    <dimen name="dialpad_key_height">60dp</dimen>
-    <dimen name="dialpad_key_margin">4dp</dimen>
-    <dimen name="dialpad_key_radius">18dp</dimen>
+    <dimen name="dialpad_key_height">72dp</dimen>
+    <dimen name="dialpad_key_margin">6dp</dimen>
+    <dimen name="dialpad_key_radius">100dp</dimen>
 
-    <dimen name="bottom_nav_height">64dp</dimen>
-    <dimen name="alpha_index_width">28dp</dimen>
+    <dimen name="bottom_nav_height">80dp</dimen>
+    <dimen name="alpha_index_width">36dp</dimen>
     <dimen name="alpha_letter_height">18dp</dimen>
-    <dimen name="alpha_letter_size">10sp</dimen>
+    <dimen name="alpha_letter_size">11sp</dimen>
+    <dimen name="alpha_bubble_size">72dp</dimen>
 
     <dimen name="detail_header_height">280dp</dimen>
-    <dimen name="action_pill_height">44dp</dimen>
+    <dimen name="action_pill_height">48dp</dimen>
     <dimen name="action_pill_spacing">10dp</dimen>
 
-    <dimen name="bottom_sheet_corner">24dp</dimen>
-    <dimen name="bottom_sheet_handle_width">40dp</dimen>
+    <dimen name="bottom_sheet_corner">28dp</dimen>
+    <dimen name="bottom_sheet_handle_width">36dp</dimen>
     <dimen name="bottom_sheet_handle_height">4dp</dimen>
 
-    <dimen name="settings_row_min_height">60dp</dimen>
+    <dimen name="settings_row_min_height">64dp</dimen>
     <dimen name="settings_icon_size">24dp</dimen>
+    <dimen name="settings_card_radius">16dp</dimen>
 </resources>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/call_root"
     android:layout_width="match_parent"
@@ -13,15 +14,15 @@
 
     <!-- Caller avatar -->
     <FrameLayout
-        android:layout_width="96dp"
-        android:layout_height="96dp">
+        android:layout_width="@dimen/avatar_size_large"
+        android:layout_height="@dimen/avatar_size_large">
         <TextView
             android:id="@+id/caller_avatar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textSize="36sp"
-            android:textStyle="bold"
+            android:textSize="@dimen/avatar_text_size_large"
+            android:fontFamily="sans-serif-medium"
             android:textColor="@color/pulse_on_primary"
             android:background="@drawable/avatar_background"/>
     </FrameLayout>
@@ -35,7 +36,8 @@
         android:textColor="?attr/colorOnSurface"
         android:fontFamily="sans-serif-medium"
         android:text="@string/unknown_number"
-        android:paddingTop="20dp"/>
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"/>
 
     <TextView
         android:id="@+id/call_state"
@@ -52,9 +54,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:gravity="center"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textColor="?attr/colorOnSurface"
-        android:fontFamily="sans-serif-medium"/>
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.04"/>
 
     <Space
         android:layout_width="0dp"
@@ -67,17 +70,17 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingHorizontal="40dp">
+        android:paddingHorizontal="48dp">
 
         <ImageView
             android:id="@+id/decline"
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:padding="24dp"
+            android:padding="22dp"
             android:src="@drawable/ic_end_call"
             android:background="@drawable/bg_end_call"
             android:contentDescription="@string/decline"
-            android:elevation="4dp"/>
+            android:elevation="2dp"/>
 
         <Space
             android:layout_width="0dp"
@@ -88,11 +91,11 @@
             android:id="@+id/answer"
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:padding="24dp"
+            android:padding="22dp"
             android:src="@drawable/ic_call"
             android:background="@drawable/bg_call_button"
             android:contentDescription="@string/answer"
-            android:elevation="4dp"/>
+            android:elevation="2dp"/>
     </LinearLayout>
 
     <!-- Active call controls -->
@@ -102,7 +105,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingHorizontal="24dp"
+        android:paddingHorizontal="20dp"
         android:visibility="gone">
 
         <LinearLayout
@@ -116,7 +119,7 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:padding="16dp"
-                android:src="@drawable/ic_call"
+                android:src="@drawable/ic_mute"
                 android:background="@drawable/bg_call_action_pill"
                 android:contentDescription="@string/mute"/>
             <TextView
@@ -124,9 +127,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mute"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 android:textColor="?attr/colorOnSurfaceVariant"
-                android:paddingTop="4dp"/>
+                android:paddingTop="6dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -140,7 +143,7 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:padding="16dp"
-                android:src="@drawable/ic_call"
+                android:src="@drawable/ic_speaker"
                 android:background="@drawable/bg_call_action_pill"
                 android:contentDescription="@string/speaker"/>
             <TextView
@@ -148,9 +151,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/speaker"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 android:textColor="?attr/colorOnSurfaceVariant"
-                android:paddingTop="4dp"/>
+                android:paddingTop="6dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -164,7 +167,7 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:padding="16dp"
-                android:src="@drawable/ic_call"
+                android:src="@drawable/ic_hold"
                 android:background="@drawable/bg_call_action_pill"
                 android:contentDescription="@string/hold"
                 android:visibility="gone"/>
@@ -173,9 +176,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hold"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 android:textColor="?attr/colorOnSurfaceVariant"
-                android:paddingTop="4dp"
+                android:paddingTop="6dp"
                 android:visibility="gone"/>
         </LinearLayout>
 
@@ -197,9 +200,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/keypad"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 android:textColor="?attr/colorOnSurfaceVariant"
-                android:paddingTop="4dp"/>
+                android:paddingTop="6dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -207,20 +210,19 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="28dp"
-        android:paddingBottom="40dp">
+        android:paddingTop="32dp"
+        android:paddingBottom="48dp">
 
         <ImageView
             android:id="@+id/end_call"
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:layout_gravity="center"
-            android:padding="24dp"
+            android:padding="22dp"
             android:src="@drawable/ic_end_call"
             android:background="@drawable/bg_end_call"
             android:contentDescription="@string/end_call"
-            android:elevation="4dp"
+            android:elevation="2dp"
             android:visibility="gone"/>
     </FrameLayout>
 </LinearLayout>

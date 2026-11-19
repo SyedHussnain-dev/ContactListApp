@@ -1,57 +1,68 @@
 <resources>
-    <!-- Pulse Design System – Midnight Blue Dark Theme -->
-    <color name="pulse_primary">#3B82F6</color>
-    <color name="pulse_on_primary">#FFFFFF</color>
-    <color name="pulse_surface">#0B1220</color>
-    <color name="pulse_surface_main">#111C2E</color>
-    <color name="pulse_on_surface">#F5F7FC</color>
-    <color name="pulse_on_surface_secondary">#A8B6CA</color>
-    <color name="pulse_surface_variant">#18263A</color>
-    <color name="pulse_surface_elevated">#1E2D42</color>
-    <color name="pulse_outline">#26374D</color>
-    <color name="pulse_divider">#1E2D42</color>
+    <!-- Pulse Design System – Dark (Material 3 tonal) -->
+    <color name="pulse_primary">#A8C7FA</color>
+    <color name="pulse_on_primary">#062E6F</color>
+    <color name="pulse_primary_container">#0842A0</color>
+    <color name="pulse_on_primary_container">#D3E3FD</color>
+    <color name="pulse_secondary">#BEC6DC</color>
+    <color name="pulse_secondary_container">#3E4759</color>
+    <color name="pulse_on_secondary_container">#DAE2F9</color>
+    <color name="pulse_surface">#111318</color>
+    <color name="pulse_surface_main">#1A1C20</color>
+    <color name="pulse_on_surface">#E2E2E6</color>
+    <color name="pulse_on_surface_secondary">#C4C6D0</color>
+    <color name="pulse_surface_variant">#242830</color>
+    <color name="pulse_surface_elevated">#2A2E36</color>
+    <color name="pulse_outline">#8E9099</color>
+    <color name="pulse_outline_variant">#3C4048</color>
+    <color name="pulse_divider">#2A2E36</color>
+    <color name="pulse_error">#FFB4AB</color>
 
     <!-- Call type colors -->
-    <color name="call_incoming">#4ADE80</color>
-    <color name="call_outgoing">#60A5FA</color>
-    <color name="call_missed">#F87171</color>
-    <color name="call_rejected">#FB923C</color>
+    <color name="call_incoming">#81C995</color>
+    <color name="call_outgoing">#A8C7FA</color>
+    <color name="call_missed">#F28B82</color>
+    <color name="call_rejected">#FDD663</color>
 
     <!-- Avatar palette -->
-    <color name="avatar_blue">#3B82F6</color>
-    <color name="avatar_indigo">#6366F1</color>
-    <color name="avatar_teal">#14B8A6</color>
-    <color name="avatar_emerald">#10B981</color>
-    <color name="avatar_amber">#F59E0B</color>
-    <color name="avatar_rose">#F43F5E</color>
-    <color name="avatar_purple">#8B5CF6</color>
-    <color name="avatar_cyan">#06B6D4</color>
+    <color name="avatar_blue">#8AB4F8</color>
+    <color name="avatar_indigo">#AECBFA</color>
+    <color name="avatar_teal">#78D9C6</color>
+    <color name="avatar_emerald">#81C995</color>
+    <color name="avatar_amber">#FDD663</color>
+    <color name="avatar_rose">#F28B82</color>
+    <color name="avatar_purple">#C58AF9</color>
+    <color name="avatar_cyan">#78D9EC</color>
 
     <!-- Accent choices -->
-    <color name="accent_blue">#3B82F6</color>
-    <color name="accent_sky">#38BDF8</color>
-    <color name="accent_indigo">#6366F1</color>
-    <color name="accent_teal">#14B8A6</color>
+    <color name="accent_blue">#8AB4F8</color>
+    <color name="accent_sky">#7DD3FC</color>
+    <color name="accent_indigo">#AECBFA</color>
+    <color name="accent_teal">#78D9C6</color>
 
     <!-- FAB / dialpad -->
-    <color name="fab_green">#22C55E</color>
-    <color name="fab_red">#EF4444</color>
+    <color name="fab_green">#81C995</color>
+    <color name="fab_red">#F28B82</color>
 
     <!-- Chip / filter -->
-    <color name="chip_selected_bg">#3B82F6</color>
-    <color name="chip_selected_text">#FFFFFF</color>
-    <color name="chip_unselected_bg">#18263A</color>
-    <color name="chip_unselected_text">#A8B6CA</color>
+    <color name="chip_selected_bg">#A8C7FA</color>
+    <color name="chip_selected_text">#062E6F</color>
+    <color name="chip_unselected_bg">#242830</color>
+    <color name="chip_unselected_text">#C4C6D0</color>
 
     <!-- Dialpad key colors -->
-    <color name="dialpad_key_bg">#18263A</color>
-    <color name="dialpad_key_text">#F5F7FC</color>
-    <color name="dialpad_key_sub">#A8B6CA</color>
+    <color name="dialpad_key_bg">#2A2E36</color>
+    <color name="dialpad_key_text">#E2E2E6</color>
+    <color name="dialpad_key_sub">#9AA0A6</color>
 
     <!-- Bottom sheet -->
-    <color name="bottom_sheet_bg">#111C2E</color>
-    <color name="bottom_sheet_handle">#26374D</color>
+    <color name="bottom_sheet_bg">#1A1C20</color>
+    <color name="bottom_sheet_handle">#5F6368</color>
+
+    <!-- Nav / chrome -->
+    <color name="nav_bar_bg">#1A1C20</color>
+    <color name="settings_card_bg">#1A1C20</color>
 
     <!-- Transparent overlay -->
-    <color name="scrim">#80000000</color>
+    <color name="scrim">#99000000</color>
 </resources>

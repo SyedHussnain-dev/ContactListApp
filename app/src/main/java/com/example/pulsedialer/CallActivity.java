@@ -105,6 +105,7 @@ public class CallActivity extends AppCompatActivity {
                 muted = !muted;
                 s.setMuted(muted);
                 muteLabel.setText(muted ? R.string.unmute : R.string.mute);
+                mute.setImageResource(muted ? R.drawable.ic_mute_off : R.drawable.ic_mute);
             }
         });
         speaker.setOnClickListener(v -> {
@@ -113,6 +114,14 @@ public class CallActivity extends AppCompatActivity {
                 speakerOn = !speakerOn;
                 s.setAudioRoute(speakerOn ? CallAudioState.ROUTE_SPEAKER : CallAudioState.ROUTE_EARPIECE);
                 speakerLabel.setText(speakerOn ? R.string.speaker_on : R.string.speaker);
+                speaker.setBackgroundResource(speakerOn
+                        ? R.drawable.bg_call_button
+                        : R.drawable.bg_call_action_pill);
+                if (speakerOn) {
+                    speaker.setColorFilter(0xFFFFFFFF);
+                } else {
+                    speaker.clearColorFilter();
+                }
             }
         });
         hold.setOnClickListener(v -> {

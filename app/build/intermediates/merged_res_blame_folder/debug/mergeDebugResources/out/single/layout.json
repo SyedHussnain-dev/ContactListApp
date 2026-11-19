@@ -32,6 +32,10 @@
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/layout/item_date_header.xml"
     },
     {
+        "merged": "com.example.pulsedialer.app-mergeDebugResources-35:/layout/item_dialpad_suggestion.xml",
+        "source": "com.example.pulsedialer.app-main-38:/layout/item_dialpad_suggestion.xml"
+    },
+    {
         "merged": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-mergeDebugResources-35:/layout/fragment_list.xml",
         "source": "/home/syed/.gradle/daemon/9.7.1/com.example.pulsedialer.app-main-38:/layout/fragment_list.xml"
     },
